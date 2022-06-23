@@ -158,7 +158,7 @@ public class PatternLanguage implements PlmlConstants, GexfConstants {
         }
     }
 
-    // 1. Elimina links para outras coleções e os not related
+    // 1. Elimina links para outras coleções e os not-related
     // 2. Elimina os links duplicados
     private void consolidateLinks() {
         System.out.println("Consolidating pattern language links:");
