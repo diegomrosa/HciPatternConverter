@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="event-calendar" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name></name>
+<author>Martijn van Welie</author>
+<problem>Users want to be informed about future or past events
+</problem>
+
+
+<context>You are designing a site for an institution that organizes many off-line events. Typically these include a <pattern-link type="is-contained-by" patternID="museum"/>, concert halls, educational institutes, governmental institutes etc. The number of events may range from just a view up to many per day.
+</context>
+
+<illustration><img src="images/events-baylor-small.png" border="1"/><br/>From
+<a href="http://www.baylor.edu/calendar">www.baylor.edu</a><br/>
+</illustration>
+
+<pattlet>Present a list of events starting from the current date and allow users to select/search for other dates
+</pattlet>
+
+
+<solution>The basic concept for the event calendar is to place a central list of event together with controls for scoping/filtering the list of events. <br/><br/>
+
+<b>List of events</b><br/>
+The list of events takes the <pattern-link type="contains" patternID="center-stage"/> and may be displayed using <pattern-link type="contains" patternID="zebra-table"/> for increased clarity. Each event is listed with at least a date and basic description. Optionally, an icon or link can be used to add the event to a calendar program such as Outlook (a variation of the <pattern-link type="not-related" patternID="favourites"/> pattern). Another optional element may be to include a <pattern-link type="contains" patternID="send-to-friend"/> so that event may be send to other people. In some cases, it may be possible that users can also add items to the calendar themselves: in that case, add an <pattern-link type="contains" patternID="action-button"/> for that functionality.
+<br/>
+<br/>
+
+<b>Scoping</b><br/>
+Usually event calendars present the events per month, but views per day are also used when the number of events is very high. Using a <pattern-link type="contains" patternID="date-selector"/> users can choose the month and/or date. When the event calendar only has events on some days, it is good to show that fact already in the <pattern-link type="contains" patternID="date-selector"/> by coloring the days, making them bold or just making days with events linkable and others not. It is also possible to use other mechanisms for selecting dates or periods, for example using a search field or a timeline. Usually the scoping mechanism is placed above the list of events but depending on layout constraints it may also appear on the left or right of the event listing.
+<br/>
+<br/>
+<b>Filtering on categories</b><br/>
+When the events are numerous and can be categorized, it makes a lot of sense to allow users to filter directly on the categories. The categories can be presented as tabs, pull-down, or simply a list.
+<br/>
+<br/>
+<b>Searching</b><br/>
+For agendas with many events it may make sense to search through the how list. Usually, it is a simple version of <pattern-link type="contains" patternID="advanced-search"/> that has been limited to the <b>period</b>, <b>category</b> and <b>keyword</b>.
+<br/><br/>
+<img src="images/event-calendar-wf.gif" border="0"/><br/>
+</solution>
+
+<rationale>An event calendar is basically a long list of items that must allow filtering. By using the familiar <pattern-link type="contains" patternID="date-selector"/> users can easily select the dates they are interested in. The additional filtering on categories provides an alternative way of finding the event that interest the users.
+</rationale>
+
+<example><img src="images/events-usc-small.png" border="1"/><br/>
+<img src="images/events-pensacola-small.png" border="1"/><br/>
+<img src="images/events-inel-small.png" border="1"/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

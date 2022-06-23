@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="tutorial" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name></name>
+<author>Martijn van Welie</author>
+<problem>
+</problem>
+
+
+<context>
+</context>
+
+<illustration><img src="images/#" border="1"/><br/>From 
+<a href="http://www.gap.com">www.gap.com</a><br/> 
+</illustration>
+
+<pattlet>
+</pattlet>
+
+
+<solution>See book "Building a web-based education system"
+</solution>
+
+<rationale>
+</rationale>
+
+<example><img src="#"/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

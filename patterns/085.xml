@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="captcha" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>CAPTCHA</name>
+<author>Martijn van Welie</author>
+<problem>The application needs confirmation that the action that is about to happen is done by a human rather than an automated machine
+</problem>
+
+
+<context>Captchas main occur on a <pattern-link type="is-contained-by"  patternID="forms"/>, often used as part of a <pattern-link type="is-contained-by"  patternID="registration"/> procedure or <pattern-link type="is-contained-by" patternID="comment-box"/>. Mostly to prevent bogus user accounts from being created or link spam in <pattern-link type="is-contained-by" patternID="blog"/>. Considering the <a href="http://www.w3.org/TR/turingtest/">accessibility problems</a> of Captchas, they should be considered a 'last resort' and should only be used when other technical options have been tried. In all other cases, except the creating of accounts, public ID systems such as <a href="http://www.sixapart.com/typekey/">TypeKey</a> or <a href="https://accountservices.passport.net/ppnetworkhome.srf?lc=1033">MS Live ID</a> should be considered, although that poses additional 'barriers' for users as well.
+</context>
+
+<illustration><img src="images/captcha-yahoo.png" /><br/>From 
+<a href="http://www.yahoo.com">www.yahoo.com</a> 
+</illustration>
+
+<pattlet>Present users with a mangled image containing numbers and letters that humans can still 'decipher' but is hard for machines to read. 
+</pattlet>
+
+
+<solution>A Captcha is a acronym for 'Completely Automated Public Turing test to tell Computers and Humans Apart'. So the idea is to create something that is 'do-able' for humans but very hard for computers to do in an automated way.<br/>
+<br/>
+The most popular Captchas are using mangled images with characters in them. Humans can still see them and have to enter them before completing the task at hand, as the 'proof' of their being human. Usually up to 5 symbols are enough and lines, colors, and other distortions are used to mangle the image.<br/>
+<br/>
+The basic interaction here is that the user is asked to enter the numbers in the image shown. Upon submitting the <pattern-link type="is-contained-by" patternID="forms"/>, the number is verified. If correct, the action will be completed and otherwise refused and an error message is displayed.
+</solution>
+
+<rationale>A Captcha is a basic form of a <a href="http://en.wikipedia.org/wiki/Turing_test">Turing test</a>. The effectiveness of the Captha depends on how difficult the task is. Some OCR systems are able to 'crack' a Captcha but if you make the Captcha too difficult it will also cause problems for humans. In addition, it speaks for itself that a Captcha is also very hard to use for people who are visually impaired. Note that some blog spammers employ humans to create spam blog so a Captcha is not an effective countermeasure.<br/>
+<br/>
+If this common form of Captcha does not work for you, consider other Turing tests such as a 'math problem' or 'trivia question', or even a 'voice captcha'. 
+</rationale>
+
+<example><a href="http://www.gmail.com">Google</a> also uses a Captcha when you are signing up for a Gmail account:<br/>
+<img src="images/captcha-google.png"/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+<code-links>
+	<a href="http://www.captchacreator.com/">Captcha Creator (PHP)</a><br/>
+	<a href="http://www.white-hat-web-design.co.uk/articles/php-captcha.php">PHP Captcha security</a>
+</code-links>
+<literature>
+<a href="http://en.wikipedia.org/wiki/Captcha">Wikipedia on Captchas</a><br/>
+<a href="http://www.w3.org/TR/turingtest/">Inaccessibility of CAPTCHA (W3C)</a><br/>
+<a href="http://www.standards-schmandards.com/index.php?2005/01/01/11-captcha">Voice CAPTCHAs</a><br/>
+<a href="http://www.cs.sfu.ca/~mori/research/gimpy/">Breaking a Visual Captcha</a>
+</literature>
+</pattern>

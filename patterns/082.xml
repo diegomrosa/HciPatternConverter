@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="news" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>What's new?</name>
+<author>Martijn van Welie</author>
+<problem>The users want to know about changes to the site
+</problem>
+
+<illustration>
+<img src="images/news-ex.gif" border="1"/><br/>
+From <a href="http://www.shell.com/">www.shell.com</a>
+<br/>
+</illustration>
+
+<context>Sites that are regularly updated. For example, for product updates and press releases. Users want to know about updates but don't want to check often. News is not the main content of the site but still important to users.
+</context>
+
+<pattlet>Add a news section to the home page that contains the most recent news headlines.
+</pattlet>
+
+<solution>Assign a separate area of the home page to news items. Each item should be short and to the point. Each item is a link that points to a larger description of the news or to the section it applies to. The number of news items shown is limited i.e. typically less than 5. The news items are sorted on date with the most recent item at the top. The heading of the news section may function as a link to a larger news section on the site. The news items remain there for a certain period of time after which they are removed, for example after a week. Alternatively, when new items are added to oldest ones are removed. The news section is typically placed in the center of the home page or at the right/left of the page.
+</solution>
+
+<rationale>When the news items are present on the home page, the users only need to check that page and can jump to the specific items from there.
+</rationale>
+
+<example><img src="images/macromedia-news.png" border="1"/><br/>
+This example is Macromedia's home page and presents a news section in the center of the page. Each news item is short and uses "newspaper" style language. Clicking on the news item take the users to the full story.
+</example>
+
+<impact></impact>
+
+<uses><a href="http://www.audi.nl">www.audi.nl</a>; <a href="http://www.soundblaster.com">www.soundblaster.com</a> and many other corporate web sites.
+</uses>
+</pattern>

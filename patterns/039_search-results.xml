@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="search-results" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Search Results</name>
+<author>Martijn van Welie</author>
+<problem>Users need to process a list of search results 
+</problem>
+
+
+<context>Users have done some for of search, e.g. using a <pattern-link type="is-contained-by" patternID="search"/> or <pattern-link type="is-contained-by" patternID="advanced-search"/> or <pattern-link type="is-contained-by" patternID="booking"/>. Now the users need to process the result, most likely by choosing one or more items for further investigation i.e. seeing the page, adding the item to a <pattern-link type="not-related" patternID="shopping-cart"/>, collect items for a <pattern-link type="not-related" patternID="comparison"/>.
+</context>
+
+<illustration><img src="images/results-amazon.gif" border="1"/><br/>From 
+<a href="http://www.amazon.com">www.amazon.com</a><br/> 
+</illustration>
+
+<pattlet>Present sorted results with a short description
+</pattlet>
+
+
+<solution>Users are presented with a numbered list of results, sorted by relevance and starting with the most relevant result. Quite often, the number of results is too high to make all results fit on a page. Therefore results are shown in batches of 10 to 20 results using a <pattern-link type="contains" patternID="paging"/> mechanism. Users will generally only look at the first two pages of results and then refine their query if they didn't find what they wanted.<br/>
+<br/>
+<b>Displaying results</b>. Ideally, the object itself is shown as the result along with a short description. This is possible when users search for objects like books, cars, mobile phones and so on. See the example of Amazon below. When users searched for a page within the site, the title of the page is the best thing to show. Other elements of a description include a summary, location, category, author etc. Which description elements are most appropriate depends on the particular site you are building. Nonetheless, descriptions should be short (e.g. 3 lines) and to the point. You may also "type" results by indicating the type in words or using icons. Also provide a link "more like this..." to find similar results (if your search engine supports this)<br/>
+<br/>
+<b>Categorizing results</b>. If the results represent several "types" of objects, consider categorizing the results by that type. For example, when searching on Amazon, results may be books, movies, or CD's etc. If your site has an <pattern-link type="is-contained-by" patternID="advanced-search"/>, users can select the type directly for a more focused search. If you use categorized results, you need to show the top 5 results in each category and allow users to see the whole list for that category<br/>
+<br/>
+<b>Special results</b>. If your site uses <pattern-link type="not-related" patternID="topic-pages"/> and users typed in a keyword that matches a topic, you must present the corresponding topic page as a special result. It probably is more relevant than any of the other results anyway. Therefore, present such special results first and separate from the other "normal" results.<br/>
+<br/>
+<b>Built-up of the results page</b>. The results page has the follow built-up:<br/>
+
+<ul>
+<li>A header saying something like "Search Results"</li>
+<li>A search box that tells users what they typed in and allows them to refine it.</li>
+<li>A link to <pattern-link type="is-contained-by" patternID="advanced-search"/> if it is available. Also present links to other Search related functionality such as <pattern-link type="not-related" patternID="search-tips"/>, <pattern-link type="not-related" patternID="faq"/>, <pattern-link type="not-related" patternID="site-index"/>,<pattern-link type="not-related" patternID="sitemap"/>.</li>
+<li>A statement about the results, how many, spelling suggestions etc</li>
+<li>The results, categorized if appropriate, and paged using <pattern-link type="contains" patternID="paging"/></li>
+</ul>
+<br/>
+Consider combining this with a <pattern-link type="not-related" patternID="favourites"/> mechanism to collect search results. Either for <pattern-link type="contains" patternID="comparison"/> or <pattern-link type="not-related" patternID="shopping-cart"/> functionality.
+In some cases it makes sense to filter on the search results. For example, by showing only items that have been added to the site in the last 2 weeks. Or setting the sort-order.
+</solution>
+
+<rationale>
+</rationale>
+
+<example>
+<img src="images/results-amazon2.png" border="1"/><br/>
+<img src="images/results-google-small.gif" border="1"/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern collection="welie" patternID="doormat" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Doormat</name>
+<author>Martijn van Welie</author>
+<problem>Users need to be directed to the right section of the website
+</problem>
+
+
+<context>You are designing the <pattern-link type="is-contained-by" patternID="homepage"/> of an information rich website. Typically a <pattern-link type="is-contained-by" patternID="corporate"/> or an <pattern-link type="is-contained-by" patternID="information-experience"/>.
+</context>
+
+<illustration><img src="images/doormat-adobe-small.png" border="1"/>From 
+<a href="http://www.adobe.com">www.adobe.com</a><br/> 
+</illustration>
+
+<pattlet>List the main categories with the elements in the center of the home-page
+</pattlet>
+
+
+<solution>Divide your site into very few main sections. Three or four main sections is preferable because the clean and informative effect of the doormat is otherwise rapidly diminishing. Place the labels of each main section above a list of sub-items of that section. The sub-items must also not be too numerous, typically 4-8 items.
+</solution>
+
+<rationale>The doormat give users a quick and informative overview of the primary choices they need to make. Nothing important is hidden and all options in the doormat are accessible in one click.
+</rationale>
+
+<example><img src="images/doormat-att-small.png" border="1"/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

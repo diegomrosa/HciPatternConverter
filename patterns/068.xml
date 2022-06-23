@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="shopping-cart" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Shopping Cart</name>
+<author>Martijn van Welie</author>
+<problem>Users want to buy a product
+</problem>
+
+<illustration>
+<img src="images/waterpik-shopping.png" border="1"/><br/>
+From <a href="http://www.waterpikstore.com/">www.waterpikstore.com</a>
+<br/>
+</illustration>
+
+<context>A site where users can browse through products and buy them. Users are not very frequent buyers and are possibly novices. For returning customers, consider a ONE-CLICK SHOPPING system. Users may buy more than one product. Users may want to select products now but pay later. Users may decide to purchase somewhere else at any time
+</context>
+
+<pattlet>Introduce a shopping cart where users can put their products in before they actually purchase them.
+</pattlet>
+
+
+<solution>
+When users view a product description, they can choose to add it to their shopping cart. After adding an item to their cart, the users are shown the current contents of the cart. Users can inspect their cart contents at any time using a link that is available on every page. A persistent mini-cart could also be shown directly on the content pages. Basically the cart is a <pattern-link type="specialization" patternID="favourites"/> that is used to collect products.<br/>
+<br/>
+The description of the cart contents typically includes the name of the items, the quantity, availability and prices. Users can remove items from their cart if they wish and change quantities. The description of the goods is a link to the product details. Users always see the total costs of a purchase, so including shipping costs if applicable. The users must also be informed of the payment options such as which credit cards are accepted. From the cart page, the users can continue shopping or proceed with the checkout procedure. The items stay in the cart for a certain period of time, e.g. 90 days. 
+<br/>
+<img src="images/shopping2.gif" align="center"/>
+<br/><a href="wireframes/shopping.ppt">view wireframe</a>
+</solution>
+
+<rationale>The shopping cart is a very well known and international metaphor. This pattern allows users to gather all products first and pay for them all at once and whenever they want. By showing the total costs including shipping the users know exactly what they will have to pay when they decide to purchase. The checkout procedure using a <a href="wizard.html">Wizard</a> helps users to accomplish the actual purchase with all possible assistance.
+</rationale>
+
+<example><img src="images/amazon-cart.png"/><br/>
+At amazon.com users can browse through many products and add them to their shopping cart without any commitments. They can view the contents of their cart with one click and proceed with the actual purchase whenever they want. The option to view the contents of the cart is available on every page. 
+<br/><br/>
+Barnes and Noble show a mini-cart on every page so that users can always see a brief overview of their cart contents.
+<br/><img src="images/mini-cart.png"/><br/>
+
+At <a href="http://www.gap.com">www.gap.com</a>, shoppers find this "mini-cart" on every page. In fact, they call it a "bag" and shop a small image of the bags you get when shopping in a Gap store:<br/><img src="images/mini-cart-gap.gif"/><br/>
+An inspection of the "bag" shows the following overview:<br/><img src="images/cart-example-gap-small.gif" border="1"/><br/>
+<br/>
+At <a href="http://www.guess.com">www.guess.com</a>, they combined the number of items and the cart icon, well a bag in this case...<br/>
+<img src="images/shopping-guess.png" border="1"/>
+</example>
+
+<impact></impact>
+
+<uses><a href="http://www.amazon.com">www.amazon.com</a>; <a href="http://www.bol.com">www.bol.com</a>; <a href="http://www.bn.com">www.bn.com</a>; <a href="http://www.proxis.com">www.proxis.com</a>; 
+<a href="http://www.apothuis.nl">www.apothuis.nl</a>; 
+<a href="http://www.waterpikstore.com">www.waterpikstore.com</a> 
+</uses>
+
+<references>Consider the <a href="login.html">Login</a> pattern when users need to identify themselves. Use a <a href="http://www.cs.vu.nl/~martijn/patterns/wizard.html">Wizard</a> for the checkout procedure.
+</references>
+</pattern>

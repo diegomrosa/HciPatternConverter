@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="search-tips" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Search Tips</name>
+<author>Martijn van Welie</author>
+<problem>Users need to know how to control the search engine
+</problem>
+
+<illustration>
+<img src="images/vws-tips.png" border="1"/><br/>
+From <a href="http://www.minvws.nl">www.minvws.nl/</a>
+<br/>
+</illustration>
+
+<context>Beginners that use a search function that allows for some more elaborate term matching control. Not to be used with Advanced Search.
+</context>
+
+
+<pattlet>Offer help on keywords and on matching options.
+</pattlet>
+
+<solution>Provide short description together with an example. One line of explanation, give an example. Use simple wording. For example; "Use quotes to search for an exact phrase" or "Use commas to search for any combination of the words". The provide an example.
+Make sure they are visible next to the search itself. Either with a link or immediately.
+</solution>
+
+<rationale>The explanation describes in non-technical words what users can do while the example shows them how to do it. This avoids syntax errors.
+</rationale>
+
+<example>This example is taken from <a href="http://www.ibm.com">IBM</a><br/><img src="images/search-tips-ibm.png"/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

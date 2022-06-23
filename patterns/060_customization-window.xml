@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="customization-window" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Customization Window</name>
+<author>Martijn van Welie</author>
+<problem>Users ideally want to have fully personalized content
+</problem>
+
+<illustration><img src="images/personalization-window-yahoo.png" border="1"/>
+<br/>
+From the My Yahoo sections of <a href="http://www.yahoo.com">www.yahoo.com</a>
+<br/>
+</illustration>
+
+<context>Websites that offer categorized content where users may be only interested in a handful of categories or items. This pattern is used when there is some form of customization available to the users. Often this is when it is a personal site such as a <pattern-link type="is-contained-by" patternID="my-site"/>. Typically users will need to do some form of <pattern-link type="not-related" patternID="login"/>.
+</context>
+
+<pattlet>Use "windows" with select items that users can adapt or click away.
+</pattlet>
+
+<solution>Users are presented with areas that look like they are kind of windows. The have a "close" or "minimize" button next to an "edit" or "customize" button. Users can customized what is displayed in the window or take it away completely. The settings are stored for each user and they see their customized window upon return.<br/>
+<img src="images/customization-window-wf.gif"/>
+</solution>
+
+<rationale>The window metaphor suggest functionality many users are familiar with. By making them customizable users can dynamically create the web page as they want.
+</rationale>
+
+<example>The site www.startpagina.nl is almost completely built up using customization windows: <br/>
+<img src="images/startpagina-maximized.png"/>
+<br/>and..<br/><img src="images/startpagina-minimized.png"/>
+</example>
+
+<uses><a href="http://www.yahoo.com">www.yahoo.com</a>; 
+<a href="http://www.kranten.com">www.kranten.com</a>;
+<a href="http://www.netscape.com">www.netscape.com</a>;
+<a href="http://www.startpagina.nl">www.startpagina.nl</a>;
+</uses>
+
+<references>
+</references>
+
+</pattern>

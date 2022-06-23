@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="login" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Login</name>
+<author>Martijn van Welie</author>
+<problem>The users need to identify themselves so that stored data about/of them can be used in the process they are in
+</problem>
+
+<illustration>
+<img src="images/login-bn-small.gif" border="1"/><br/>
+From <a href="http://www.bn.com">www.bn.com</a>
+<br/><br/>
+</illustration>
+
+<context>When users frequently return to a site that uses large amounts of data about or belonging to the users, it is convenient to have users enter that information once and use it again for future visits to the site. Usually the information that is stored is personal information and can include name, age, gender, shipping addresses, stock portfolio, bank account numbers and credit card numbers. In order to be able to access their data, users must complete their <pattern-link type="contains" patternID="registration"/> first. <br/>
+
+For many site types it can be convenient to store information of/about visitor. Often these are <pattern-link type="is-contained-by" patternID="commerce"/>, <pattern-link type="is-contained-by" patternID="community"/> or <pattern-link type="is-contained-by" patternID="application"/> such as electronic banking applications.
+</context>
+
+<pattlet>When needed, ask the users to login using a combination of an email-address and a password
+</pattlet>
+
+
+<solution>
+<b>Late login</b><br/> Allow users free access of the site until it is absolutely necessary that they identify themselves. Tell them why they need to log in.<br/>
+<br/>
+<b>Email address and password</b><br/> Use a combination of an email address and a password. Optionally the email can be filled in automatically the next time the user returns. By using the email address as "login name" users can retrieve their password if they loose it (which they will...). Offer help to users who forgot their password. <br/>
+<br/>
+<b>Storing username/password locally</b><br/> If the users need to log in very often, it can become annoying to type in the username/password over and over again. To help users, offer the possibility to remember the username/password locally on the users' computer, e.g. using "cookies". The next time the login screen is shown all fields will be automatically filled-in and users only need to confirm. The default should be unchecked, i.e. the username/password is not stored locally.<br/>
+<br/>
+<b>Security</b><br/> For some sites it is very important that users understand that their activities are safe enough. If so, tell users that they can use "secure" connections.<br/>
+<br/>
+<b>Provide feedback</b><br/>Once users are logged in, let the site provide feedback that confirms this. Do not suggest that users are logged in, for example by welcoming them by name once they enter the site, when they are not.<br/>
+
+<br/>
+<img src="images/login-wf.gif"/><br/>
+<i>Basic Login wireframe</i><br/>
+<br/>
+The login screen usually starts with a statement that the user needs to log in, including a solid reason that should motivate the user to do so. If that statement requires elaboration, provide a link to a help text. Then the username and password fields are shown. Users can use the TAB key to go from the username field to the password field and press ENTER instead of selecting the "Log in" button. A link to help users who have forgotten their password must be displayed directly under the password field. <br/>
+<br/>
+Depending on the amount of screen-space available, it is also possible to make a more clear distinction between new and registered users, like in the examples of Barnes &amp; Noble and Amazon. More advanced users don't really need this and will do fine with the shorter version.<br/>
+<br/>
+Then an <pattern-link type="contains" patternID="action-button"/> is shown to confirm the login. Other relevant options can be shown at the bottom.<br/>
+<br/>
+Some users simply enter a username/password without having registered before, expecting the system to recognize this and respond intelligently. However, usually this results in an error message but you could also try to start the registration, at least on the error page, using the username/password that was already submitted.
+</solution>
+
+<rationale>Users do not like to be bothered with login procedures. Only if they believe they have a reason to return frequently and the benefits of registering are clear, they will actually register. Even so, they should only be asked to do so when it is absolutely necessary. This also facilitates browsing and exploring the site without commitments. Using a combination of the email address as the username and password makes it possible to email users their password when they loose it, and relieves them from remembering again another login name.
+</rationale>
+
+<example>At Amazon's, the users log in with their email address and password. They are offered help in case they forgot their password.<br/><img src="images/amazon-login.gif" border="1"/><br/>
+
+
+At <a href="http://www.ebay.com">www.ebay.com</a>, users get this sign-in screen that elegantly deals with the new and registered users: <br/>
+<img src="images/login-ebay-small.gif" border="1"/><br/>
+What is also interesting about this example is that you can also sign in using your Microsoft Passport. That is a system that allows you to create a "digital passport" once and use it on all site that require a login (and support Microsoft Passport, of course...). 
+</example>
+
+<impact></impact>
+
+<uses><a href="http://www.amazon.com">www.amazon.com</a>; <a href="http://www.bn.com">www.bn.com</a> 
+</uses>
+<references>Consider the <a href="registration.html">Registration</a> pattern to register new users.
+</references>
+</pattern>

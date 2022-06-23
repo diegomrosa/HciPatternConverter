@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="news-ticker" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>News Ticker</name>
+<author>Martijn van Welie</author>
+<problem>The user needs to stay updated about certain facts regardless of what he is currently ding
+</problem>
+
+
+<context>A News Ticker is typically used on a <pattern-link type="is-contained-by"  patternID="news-site"/> or a Financial Site. There the user may be browsing for other information and the news ticker can keep updates coming by.
+</context>
+
+<illustration><img src="images/ticker-ft.png" border="1"/><br/>From 
+<a href="http://www.ft.com">www.ft.com</a><br/> 
+</illustration>
+
+<pattlet>Use a box with scrolling text to display the latest info and place it at the top part of the page.
+</pattlet>
+
+
+<solution>Place the information of interest (News, stock quotes, football scores etc) in a box, separating each item using white space or dots. Then let is scroll slowly right to left (or inverse for languages that are read from right to left). Alternatively each item can also fade in and out instead of scrolling but then the previous items are not visible. 
+</solution>
+
+<rationale>A news ticker is perhaps not the most usable thing but it isn't intended to interact with. It is there and people can look at it while they can do other things. The version where fading is used is good for things linke headlines but it is not good when the items are in a certain order or take very little space such as scores or quotes.
+</rationale>
+
+<example>A ticker for stock quotes on a financial site:<br/><img src="images/ticker-fd.png" border="1"/><br/>
+<br/>An example from CNN:<br/><img src="images/ticker-cnn-small.png" border="1"/>
+
+<br/><br/>This example is from www.abc.es:<br/><img src="images/ticker-abc.png" border="1"/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="parts-selector" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Parts Selector</name>
+
+<author>Martijn van Welie
+</author>
+
+<problem>Users need to configure an object consisting of several parts.</problem>
+
+
+<illustration>
+<img src="images/nvm-part-selector.png" border="1"/><br/>
+From <a href="http://www.funda.nl/">www.funda.nl/</a>
+<br/>
+</illustration>
+
+<context>
+A complex objects needs to be created by the users or modified later on. The object consists of several parts where the user must select the appropriate combinations of parts. The parts must be independent of each other so that they can be removed or added without consequences for other parts. The number of parts should be more than 10 and can possibly be categorized. The user may not know which parts are available. At some point users may change their minds and remove selected parts. Users need to know which parts are selected and which are available. The number of available parts may change during usage of the application.
+</context>
+
+<pattlet>
+Show all the parts and allow the user to add or remove a part from the selection list.
+</pattlet>
+
+<solution>
+Show the list of parts, in categories if applicable, on one side and the list of selected parts on the other side. Place add and remove functionality in between the left and right side. The user can add parts by selecting them and then adding them to the parts list. Consider speed-ups such as double-clicking or dragging to add or remove an item.
+</solution>
+
+<rationale>
+Showing both the available and selected parts gives the users a complete and instant overview. The visual organization creates a logical task flow from left to right. Because part lists are used the design can easily accommodate new parts or categories.
+</rationale>
+
+<example>This example is taken from Yahoo. Users can personalize their own pages and this screenshot shows how to select the movie-theatre from which they want to see the listings.<br/>
+<img src="images/parts-selector-yahoo.png" border="1"/>
+</example>
+
+<uses>
+<a href="http://www.yahoo.com">www.yahoo.com</a>; 
+<a href="http://www.funda.nl">www.funda.nl</a>
+</uses>
+</pattern>
+

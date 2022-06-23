@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="search" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Simple Search</name>
+<author>Martijn van Welie</author>
+<problem>The users need to find an item or specific information.
+</problem>
+
+<illustration>
+<img src="images/tucows-search.png" border="1"/><br/>
+From <a href="http://www.tucows.com/">www.tucows.com</a>
+<br/>
+</illustration>
+
+<context>Any web site that already has primary navigation. User may want to search for an item in a category. User might want to further specify a query
+</context>
+
+<pattlet>Offer a search
+</pattlet>
+
+<solution><i>* The search interface</i><br/>
+Offer search functionality consisting of a search label, a keyword field, a filter if applicable and a "go" button. Pressing the return key has the same function as selecting the "go" button. Also provide <pattern-link type="contains" patternID="search-tips"/> and examples in a separate page. A link to that page is placed next to the search functionality. The edit box for the search term is large enough to accommodate 3 typical user queries (typically around 20 characters). If the number of filters is more than 2, use a combobox for filter-selection, otherwise a radiobutton. <br/>
+<br/>
+<b>Search</b> -- editbox -- <b>for/in</b> -- filter -- <b>Go button</b><br/>or just...<br/><br/>
+-- editbox -- <b>Go button</b>
+<br/>
+<br/>
+<i>* Presenting search results</i><br/>
+The search results are presented on a new page with clear label containing at least "Searchresults" or similar. The search function is repeated in the top-part of the page with the entered keywords, so that the users know what the keywords were. <br/>
+<br/>
+
+The number of "hits" is reported and the list of search results is organized; sorted or rated with the best matches at the top. When there are more than 10 results use a <pattern-link type="not-related" patternID="paging"/> mechanism. Each search result shows a link to the item itself and a snippet of text to explain the item. Preferably that would a summary or abstract but can also be the first lines of text of the resulting item. The structure of a "result" typically shows:
+<br/>
+1. Page Title<br/>
+2. Description<br/>
+3. Categorization<br/>
+4. URL, Size, Date
+<br/><br/>
+<i>* Keyword matching</i><br/>
+If more than one search term is used the search engine must handle them as follows: if no special separators are used (not including the space), the search is interpreted as an OR function, the results that match both terms are listed first. If special separators are used the search engine must be able to handle more than one convention. For example, sometimes the "AND/OR" separators are used but using a "+" or a "-", include and exclude, must also be handled correctly. The engine must also be able to handle spelling mistakes of at least one character.
+</solution>
+
+<rationale>By using this setup the whole search becomes a sentence that reads like the search query. 
+</rationale>
+
+<example><img src="images/tucows-search.png"/><br/>
+In this example from tucows, the designers actually were able to make the search read like a sentence. Users can "download software package X for Win2000"....
+
+
+</example>
+
+<uses><a href="http://www.amazon.com">www.amazon.com</a>;
+</uses>
+
+<references>Consider the <a href="paging.html">Paging</a> or <a href="http://www.cs.vu.nl/~martijn/patterns/listbrowsing.html">List Browser</a> patterns for navigating through a large set of results. However, users will not check more than one or two pages of search results; instead they will edit the search terms again.
+</references>
+</pattern>

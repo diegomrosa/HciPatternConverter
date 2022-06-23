@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="guestbook" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+
+<name>Guestbook</name>
+
+<author>Bob Klaasse</author>
+
+<problem>Users want to leave comments on a web-page.
+</problem>
+
+
+<context>You are designing a personal tinted website, and the website owner wants to receive criticism, compliments and remarks of people
+with the same interests/appreciations in public. For example, a guest-book could be used in an <pattern-link type="is-contained-by" patternID="artist-sites"/>
+</context>
+
+<illustration><img src="images/guestbook-garfunkel.gif" border="1"/><br/>From
+<a href="http://www.websitetoolbox.com">www.websitetoolbox.com</a><br/>
+</illustration>
+
+<pattlet>Show comments and give the users the opportunity to give comments.
+</pattlet>
+
+
+<solution>
+A guest-book exists of two parts.
+At the first part, the <pattern-link type="contains" patternID="comment-box"/>, the user can give his comments.
+At the second part of the guest-book, the comments are being displayed.<br/>
+
+The situation of the comment box depends on the number of fields you want to use.
+If there are many fields, the comment box should be situated on another page than the page where the comments are displayed.
+In this situation there should be a clear link to the comment box on the comments page.
+If there aren't many fields to fill in (a maximum of four), the comment box should be situated on top of the displayed comments.<br/>
+For the possible fields of the comment box and their characteristics: go to the page about <pattern-link type="contains" patternID="forms"/>s.
+When choosing fields remember that the fewer fields to fill in, the sooner a user will leave a message.<br/>
+The most elementary fields of a comment box used for a guest-book are a field to fill in a name, one for an e-mail address, and one for comments.
+<br/><br/>
+
+The comments should be displayed below each other, with the last posted comment on top.
+
+A maximum of fifteen comments per page should be displayed, and below them there must be a way of  <pattern-link type="contains" patternID="paging"/>. <br/>
+It doesn't read easily when the comment box is too width, so the lines of text shouldn't have the full length of the screen.
+As you can see in the guest-book of turnersportscars.com the comment is displayed next to the other information.
+In that way more comments fits on one page.<br/>
+Each comment must be displayed with the filled-in fields, and the time they were posted.<br/>
+The distinction between different comments must be clear.
+As you can see in the examples on this page, that could be done by using <pattern-link type="contains" patternID="zebra-table"/>, lines, or by putting them in boxes.<br/>
+Users would like it to know how many people has written in the guest-book,
+so on top of the comments page there should be displayed how many entries there are in the guest-book.
+<br/>
+<br/>
+In fact a guest-book is a kind of a <pattern-link type="contains" patternID="forum"/>. 
+A difference is that in a guest-book there is just one subject: the content of the website.
+A guest-book is used for communication to the web-master, whereas a forum is also used for communication between users.
+
+
+
+
+<br/>
+
+
+</solution>
+
+<rationale>
+By knowing what other people think about what is stated on the website, you could improve your website or explain why you have made certain choices.
+Visitors might like to read what is being said in the guest-book because they are interested in other people's opinion<br/>
+</rationale>
+
+<example>
+<illustration><img src="images/guestbook-comsite.gif" border="1"/><br/>From
+<a href="http://www.air-radiohead.com">www.comsite.de</a><br/> <br/>
+</illustration>
+<illustration><img src="images/guestbook-tunersportcars-small.gif" border="1"/><br/>From
+<a href="http://www.turnersportscars.com/">www.turnersportscars.com/</a><br/>
+</illustration>
+</example>
+
+<uses>
+Guest-books are used much in personal tinted websites.
+<br/>
+<a href="http://www.websitetoolbox.com">www.websitetoolbox.com</a><br/>
+<a href="http://www.comsite.de">www.comsite.de</a><br/>
+<a href="http://www.turnersportscars.com/">www.turnersportscars.com/</a><br/>
+
+</uses>
+
+<references>
+</references>
+</pattern>

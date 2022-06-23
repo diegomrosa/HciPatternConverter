@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="list-builder" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>List Builder</name>
+<author>Martijn van Welie</author>
+<problem>The users need to build up and manage a list of items
+</problem>
+
+<illustration>
+<img src="images/list-builder-ex.gif" border="1"/><br/>
+From <a href="http://www.bol.com/">www.bol.com</a><br/>
+</illustration>
+
+<context>Users have several items to manage. They may be confronted directly with a long list or they may need to build up a new list. The list of items is typically ordered and could be quite long. Users want to have a complete overview of the list but the space to display it is limited. Users need to perform operations on them and see the results. Certain operations can be done on many items at the same time while other operations can only be done on one item at a time.
+</context>
+
+<pattlet>Present the total list and provide editing functionality next to it.
+</pattlet>
+
+<solution>The users first see the total of items in the list. If the list is empty it says so, for example "no items added" or "empty". If <b>all</b> operations can be performed at the same time, use a <b>type A</b> solution, otherwise use a <b>type B</b> solution. If type A is chosen, provide the editing functionality below the list. If the list is likely to become longer than 10 items the functionality should be placed above the list. Type B solutions are typical when the functionality contains an "Edit..." function where some properties of the item can be changed.
+<br/>
+<img src="images/listbuilder-schema.png"/>
+<br/>
+When an item is added to the list, the view on the list shows the added item by highlighting it, as feedback to the users that the operation has been performed correctly. If necessary the list should "scroll" to the position of the new item in the list.
+</solution>
+
+<rationale>
+By showing the overview first the users always know what the current status is. Editing functionality is then seen as "operations" on the current list.
+</rationale>
+
+<example>This example from the Hotmail service shows a type A solution. <br/><img src="images/hotmail-overview.png" border="1"/>
+</example>
+
+<uses><a href="http://www.hotmail.com">www.hotmail.com</a>;
+<a href="http://www.amazon.com">www.amazon.com</a>;
+</uses>
+
+<references>When lists get longer (more than 10-15 items), consider a <a href="paging.html">Paging</a> mechanism for making it easier to find particular items.
+</references>
+</pattern>

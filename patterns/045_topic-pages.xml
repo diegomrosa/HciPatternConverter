@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="topic-pages" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Topic Pages</name>
+<author>Martijn van Welie</author>
+<problem>Users are searching for information in a large set of unknown documents
+</problem>
+
+<illustration>
+<img src="images/vws-ex.gif" border="1"/><br/>
+From <a href="http://www.minvws.nl/">www.minvws.nl</a>
+<br/>
+</illustration>
+
+<context>The web site offers a very large collection of documents. The number of documents is so large that browsing documents by classification becomes problematic. However, a small number of popular topics exist and for each topic a few documents will provide most users what they are looking for. Users must get results quickly rather than exhaustively. Users have no idea how the desired is classified
+</context>
+
+<pattlet>Offer special topic pages with links to most relevant documents
+</pattlet>
+
+<solution><img src="images/topic-pages-wf.gif"/><br/><br/>
+Present the concept of topic pages on the same page as the primary navigation/search mechanism. Either present an access point or a selection of topics.
+All topics are available from a topic overview page, typically an alphabetical index. When a topic is selected the actual topic page is shown. It consists of informative text about the topic and a list of most useful links. 
+</solution>
+
+<rationale>The reason the site has so many documents is usually to be complete. However, in practice users will only request a small set of documents. An analysis of most popular documents (log files, search-terms) will show that the number of topics is actually quite limited. By creating topic pages for the selected topics, users can directly find the documents rather than going through a possibly complex document selection dialog. 
+</rationale>
+
+<example>This example is taken from the web site of the Dutch Ministry of Welfare. The site contains many official and unofficial documents. The topic pages provide quick access to the most popular documents. <img src="images/guidepage.png" border="1"/>
+</example>
+
+<uses>
+</uses>
+
+<references>Topic pages are often used in combination with Advanced Search as the main retrieval mechanism. The list of all topics is usually presented as an alphabetical Index.
+</references>
+</pattern>

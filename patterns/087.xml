@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="color-coded-section" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+
+<name>Color Coded Sections</name>
+<author>Martijn van Welie</author>
+<problem>Users need to recognize that they are in the right place
+</problem>
+
+
+<context>Complex sites with a lot of "sub-sites" or 'sub-categories" that almost form a site of their own. Typically, <pattern-link type="is-contained-by" patternID="commerce"/> sites. Because of the complexity of the site, some extra re-enforcement of where users are is welcomed.
+</context>
+
+<illustration>
+<img src="images/colorcoded-amazon1.gif" border="1"/><br/>
+<img src="images/colorcoded-amazon2.gif" border="1"/><br/>
+From <a href="http://www.amazon.com">www.amazon.com</a><br/> 
+</illustration>
+
+<pattlet>Color each major section with it's own color
+</pattlet>
+
+
+<solution>The most common way to tell users where they are is using "words", i.e. a label that names the section. In addition to such verbal communication, the users can also receive "visual" cues that communicate the same thing, e.g. using icons and colors. A subtle color-coding of sections can help users to recognize where they are. <br/>
+
+So use a fairly saturated color to color fixed elements of the page such as navigation bars. <pattern-link type="contains" patternID="doubletab"/> is especially suited for coloring. Do not color the background because such changes in large area's of the page will be perceived as too heavy. If possible, choose colors that are related to the topic of the section. Do not use the same color for more than one section and use colors consistently.
+</solution>
+
+<rationale>Re-enforces recognition of users that they are in a particular section. Relies on recognition rather than recall. When used creatively, the colors can contribute to the "fun" aspect of the site.
+</rationale>
+
+<example>At <a href="http://www.apple.com">www.apple.com</a> color-coded sections are used in the same way as Amazon does. They even used a "jaguar" skin to "color" the section:<br/><img src="images/colorcoded-apple1-small.png" border="1"/><br/>
+<img src="images/colorcoded-apple2-small.png" border="1"/><br/>
+<img src="images/colorcoded-apple3-small.gif" border="1"/>
+</example>
+
+<uses>see also <a href="http://www.the.ohio-state.edu/1_academics/level_3_academics/department_overview.html">ww.the.ohio-state.edu</a>
+
+</uses>
+
+<references>
+</references>
+</pattern>

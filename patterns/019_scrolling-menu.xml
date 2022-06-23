@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern collection="welie" patternID="scrolling-menu" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Scrolling Menu</name>
+<author>Martijn van Welie</author>
+<problem>The user needs to select an image out of a set of images.
+</problem>
+
+<illustration>
+<img src="images/scrolling-menu-oranjewoud.png" border="1"/><br/>
+From <a href="http://www.oranjewoud.nl/">www.oranjewoud.nl/</a>
+<br/>
+</illustration>
+
+
+<context>The users are looking for a particular image which they can recognize/select by seeing a thumbnail of it. Thumbnails are being presented because it is not feasible to show the full-blown images for performance and screen-space reasons. The set of images is typically between 5 and 25 items and may be linearly ordered. Users must be able to quickly scan items with a minimum of actions. Users must be able to select an item. Users must be able to quickly go to the end of beginning of the set.
+</context>
+
+<pattlet>Show the items on a linear scrolling menu
+</pattlet>
+
+<solution><img src="images/scrolling-menu-wf.png"/><br/>
+The center of the menu is the selection area. When the users move the pointer from the center, the menu scrolls in opposite direction. The speed of scrolling increases slightly when the pointer is further from the center. Preferably, arrows are placed at either sides so that the users known they can do something with the row of thumbnails. If the mouse is back in the center, the nearest image is highlighted and selectable by clicking on it. After selecting, the full-blown item is presented while the scrolling menu stays in place. When the page is first loaded the menu must start to scroll and the scrolling speeds must only change when the mouse-pointer is close to the menu.
+</solution>
+
+<rationale>Since screen space is limited, it is not possible to simply sum up all thumbnails. The scrolling makes it possible to present several thumbnails at a time. The scrolling effect minimizes users actions but may also complicate selection for some users. Such a menu is very dynamic and may increase the fun factor for some users. 
+</rationale>
+
+<example>
+At www.heystranger.com the images are simply thumbnails for larger version. Unfortunately the menu oes not stay in place when viewing the full-blown version.
+<img src="images/scrolling-menu-stranger.png"/><br/>
+At www.graphpaper.com the scrolling menu is used to select pages from a sketchbook.
+<img src="images/scrolling-menu-graphpaper.png"/>
+At <a href="http://disney.go.com/disneypictures/main.html">Walt Disney Pictures</a> a scrolling menu is used to select a trailer of a movie:<br/>
+<img src="images/scroll-ex-disney.gif"/>
+At Rockport.com there is a scrolling menu to select the main categories of products:<br/>
+<img src="images/scrolling-menu-rockport-small.png"/>
+</example>
+
+<uses>
+<a href="http://www.graphpaper.com">www.graphpaper.com</a>; 
+<a href="http://www.heystranger.com">www.heystranger.com</a>; 
+<a href="http://www.oranjewoud.nl">www.oranjewoud.nl</a>; 
+<a href="http://disney.go.com/disneypictures/main.html">Walt Disney Pictures</a>; 
+</uses>
+
+<references>This pattern is a sort of automatic <a href="paging.html">Paging</a> mechanism but then for thumbnails and more at the same time. If the items become too numerous try a hierarchy.
+</references>
+</pattern>

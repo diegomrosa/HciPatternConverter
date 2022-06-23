@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="portals" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Portal</name>
+<author>Martijn van Welie</author>
+<problem>Users want to access a wide variety of information
+</problem>
+
+<illustration>
+<img src="images/planet-home-small.png" border="1"/><br/>
+From <a href="http://www.planet.nl/">www.planet.nl</a>
+<br/>
+</illustration>
+
+<context>The number of topics is limited to 10. 
+</context>
+
+<pattlet>Create several sub-sites, one per topic, with one overall home-page
+</pattlet>
+
+
+<solution>What is the role of the home-page? How to design a home-page?
+Navigating between portals. Horizontally showing the sub-sites followed by the logo and main sub-site navigation. Usually a 3 column layout.
+
+From top to bottom:<br/>
+1. sub-site navigation<br/>
+2. logo<br/>
+3. main navigation and main content<br/>
+4. right column for contextual or shared stuff<br/>
+<img src="images/portal.png"/>
+The home-page's main function is to guide people to one of the sub-sites.
+Use "preview blocks" that show what is going on in the specific sub-sites.
+Usually the home-page also has a feature article and a list of headlines.
+</solution>
+
+<rationale>
+</rationale>
+
+<example><img src="images/planet-news.small.png"/><br/>
+<img src="images/discovery-home.png"/><br/>
+<img src="images/discovery-tlc.png"/><br/>
+</example>
+
+<uses>www.discovery.com; www.planet.nl; www.zibb.nl
+</uses>
+
+<references>
+</references>
+</pattern>

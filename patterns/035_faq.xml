@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="faq" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Frequently Asked Questions (FAQ)</name>
+<author>Martijn van Welie</author>
+<problem>Users have questions concerning a site or topics related to the site.
+</problem>
+
+
+<context>The site provides a service for users such as developing pictures, sending books or clothes and so on. Typically <pattern-link type="is-contained-by" patternID="commerce"/> sites, or <pattern-link type="is-contained-by" patternID="community"/> sites. Users will always have some questions about the service such as what to do in case something goes wrong or just getting more informed about the service. The site itself should already answer the primary questions such as what the service is and what it costs, but more detailed questions need to be addressed differently. These questions can be collected from your support department or other type of feedback that has been received by the site owners. In addition, a FAQ can also be used to simply provide background information on a topic related to content on the site. Sometimes a website deals with a "new" topic so that users cannot be expected to know about it already, so a FAQ can be used to "educate" them a bit.
+</context>
+
+<illustration><img src="images/faq-ex3-small.png" border="1"/><br/>From 
+<a href="http://forum.nokia.com">forum.nokia.com</a><br/> 
+</illustration>
+
+<pattlet>Create a page with Frequently Asked Questions (FAQ) and provide short answers
+</pattlet>
+
+
+<solution>The FAQ is one page that starts with the questions, possible numbered and categorized, and is followed by the answers at the bottom of the page. The questions are links that link to the answer at the lower part of the page. Do not show answers on different pages or in popup windows. When showing an answer, both the question and the answer are displayed.<br/>
+<br/>
+If the number of questions is larger than 10, start numbering the questions so that people can easily refer to them. If you use categories, number the questions "category nr" + "question nr". If you have many questions and categories, the page becomes quite long and you will need a <pattern-link type="contains" patternID="top"/> link so that users can easily jump back and forth.<br/>
+<br/>
+Try to keep all questions on one page and organize them in sections when there are more than 10 questions. If the FAQ deals with the site in general, make the FAQ accessible via the <pattern-link type="is-contained-by" patternID="meta-navigation"/> or some via other fixed element on the site's pages e.g. the help or support section. If the FAQ deals with a particular subsection in the site, place the link close to where it belongs to. Consider not using the term FAQ if your audience cannot be expected to know the term FAQ already, but using "Questions and Answers" instead.<br/>
+</solution>
+
+<rationale>A FAQ is a very goal-responsive feature since it can directly answer an actual question that users have. It almost has the directness of an "interview" and collects a lot of information in a central place. Keeping both the question index and the answer on one page eliminates page reloads. 
+</rationale>
+
+<example>This example from Macromedia shows a categorized list of questions with the answers on th same page. It also uses the <a href="top.html">Back to Top</a> pattern for jumping back and forth the questions and answers.<br/><a href="http://www.macromedia.com/software/flashcom/productinfo/faq/">www.macromedia.com</a><br/><img src="images/faq-ex2.gif" border="1"/>
+<br/>
+<img src="images/faq-cookiecentral.gif" border="1"/><br/><a href="http://www.cookiecentral.com/faq/">www.cookiecentral.com</a>
+
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

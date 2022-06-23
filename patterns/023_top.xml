@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern collection="welie" patternID="top" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>To the Top</name>
+<author>Martijn van Welie</author>
+<problem>The users need to go back to the top of the page
+</problem>
+
+<illustration>
+<img src="images/top-ex.gif" border="1"/><br/>
+From <a href="http://www.macromedia.com/">www.macromedia.com/</a>
+<br/>
+</illustration>
+
+<context>Pages are longer than 2 views and users are likely to go back and forth the top of the page. Typical use of this pattern is in combination with long page types such as an <a href="#">Article Page</a> or a <pattern-link type="is-contained-by" patternID="faq"/> where the users jump from question to answer and back. Another situation is when displaying long texts and users need to get access to the navigation again.
+</context>
+
+
+<pattlet>Provide a link to the top of the page at locations in the main content
+</pattlet>
+
+
+<solution>Choose strategic locations to place a link in the content labeled 'back to top' or just 'top' with or without and up-pointing icon. Strategic locations are typically paragraph endings or other types of 'blocks'. The link itself points to an anchor placed at the top of the page.<br/>
+
+Basically this solution can be used for to reasons:
+<ol>
+<li>To get back to the main navigation</li>
+<li>To get back to the top part of the content</li>
+</ol>
+If you are doing it for the first option, consider using a <pattern-link type="is-alternative" patternID="repeated-menu"/> at the bottom of the page instead. Even having both a "to the top" link and a repeated menu can be a bit redundant but nevertheless useful for users.
+</solution>
+
+<rationale>This allows users to go back the main navigation from almost every scrolling position. It may also be convenient for disabled users who scrolling is difficult to do.
+
+</rationale>
+
+<example>This example from <a href="http://www.sonystyle.com">Sony</a> is taken from a product page that is several views long.<br/><img src="images/top-sony.gif" border="1"/><br/>
+
+This example is from www.cooper.com where a <a href="repeated-menu.html">Repeated Menu</a> is combined with a "to the top" link in an <a href="#">Article Page</a>.<br/><img src="images/top-cooper.png" border="1"/>
+</example>
+
+<uses><a href="http://www.sonystyle.com">Sony</a>, <a href="http://www.macromedia.com">Macromedia</a>
+</uses>
+
+</pattern>

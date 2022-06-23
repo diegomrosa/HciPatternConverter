@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="vpd" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Virtual Product Display</name>
+<author>Martijn van Welie</author>
+<problem>Users need to 'try' a product before buying/renting/leasing it
+</problem>
+
+
+<context>You are designing a <pattern-link type="is-contained-by" patternID="commerce"/>, <pattern-link type="is-contained-by" patternID="museum"/>, <pattern-link type="is-contained-by" patternID="artist-sites"/>, <pattern-link type="is-contained-by" patternID="travel-site"/> where there are objects for sale/rent/view and 'seeing' it beforehand significantly influences the decision involved. Trying out a product is an important part of the <pattern-link type="is-contained-by" patternID="shopping"/> which is hard to do on the web but not impossible. Since we cannot offer the real thing we can only offer a 'virtual' surrogate. <br/>
+<br/>
+A Virtual Product Display is not used if there are many products you want to show, because the benefits may not outweigh the expenses to create them. So it is best suited for fixed collections or hardly changing objects that are on display for quite a while. These may include hotel rooms, movies, books, luxury products and so on.
+</context>
+
+<illustration><img src="images/nokia-3d.png" border="1"/><br/>From 
+<a href="http://www.nokia.com">www.nokia.com</a><br/> 
+</illustration>
+
+<pattlet>Allow users to interact 'virtually' with the object 
+</pattlet>
+
+
+<solution>For each sort of product you have to decide what the best 'virtual' product display is. There are several possibilities for creating a 'virtual' product.<br/>
+<br/>
+<b>3D models</b>. For artifacts such as mobile phones, cars, couches that users may want to see from every angle, a photorealistic 3D model is the best way to show the object. Users can turn it around and even zoom in or out.<br/>
+<br/>
+<b>360 deg photo shot</b>. Typically used when a couple of pictures is not enough and you want to create the feeling of really being there. Well suited for hotel rooms or other holiday destinations and museums.<br/>
+<br/>
+<b>Fragments of the real object</b>. Instead of showing or giving away the entire object, you only give away some fragments. So for a book you may offer a single chapter and for a movie a trailer. This is actually not very 'virtual', you simple offer a piece of a larger thing.
+</solution>
+
+<rationale>This is as close at it get to seeing/trying/touching the real thing without the product or the users being really there. Virtual displays may be expensive to produce but can be very effective in persuading users to choose your product.
+</rationale>
+
+<example>At <a href="www.amazon.com">Amazon</a> you can 'look inside' the book and see a number of pages as they appear in the book:<br/>
+<img src="images/vpd-amazon.gif" border="1"/><br/>
+<br/>
+<br/>And at the <a href="http://adelaide.regency.hyatt.com/adela/ipix_01.html">Hyatt hotel</a> you can look around in the hotel without being there. There is even the possibility of taking a tour:<br/>
+<img src="images/vpd-hyatt-small.png" border="1"/>
+</example>
+
+<uses>http://www.hermitagemuseum.org/
+</uses>
+
+<references>
+</references>
+</pattern>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern collection="welie" patternID="shortcut-box" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Shortcut Box</name>
+<author>Martijn van Welie</author>
+<problem>Users want to access specific functionality in a direct way.
+</problem>
+
+<illustration>
+<img src="images/quick-link-example1.png" border="1"/><br/>
+From <a href="http://www.vodafone.co.uk/">www.vodafone.co.uk</a>
+<br/>
+</illustration>
+
+<context>The site has a "normal" navigation but there are several locations in the site that are often used by users. These are not necessarily related to each other in different ways than frequency of use. Sometimes those pages reside on the second or third level because of a logical structuring while at the same time, they need to be accessible easily.
+</context>
+
+<pattlet>Let users select important locations from a combobox.
+</pattlet>
+
+
+<solution>Add a combobox on a fixed location of the page and fill it will link locations. When selected the users are taken immediately to the location.
+</solution>
+
+<rationale>Normal navigation has a "one-size-fits-all" character. However, in specific situations there are locations that are visited so often that you want to speed up the access to those locations. The shortcut box allows visitors to reach such locations very directly.
+</rationale>
+
+<example>At <a href="http://www.ibm.com">IBM's site</a>, visitors can immediately select a particular industry rather than going through the normal navigation.<br/><img src="images/shortcut-ex2.gif"/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

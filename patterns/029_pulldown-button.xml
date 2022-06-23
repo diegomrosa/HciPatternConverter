@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern collection="welie" patternID="pulldown-button" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Pulldown button</name>
+<author>Martijn van Welie</author>
+<aka/>
+<problem>The user needs to select an item out of a set of items
+</problem>
+
+
+<context>The items need considerable space to display, usually because the are displayed as an image. At the same time the space for the items is limited. Typically only enough for 5-8 items. The set of items shouldn't be to large because otherwise it takes to long to select the item. Do not use for more than 3x times the amount of items that are visible at one time.
+</context>
+
+<illustration><img src="images/pulldown-button-funda.png"/><br/>From 
+<a href="http://www.funda.nl">www.funda.nl</a> 
+</illustration>
+
+<pattlet>Show the items by their visual representation in a circular fashion so that one item can be selected at a time.
+</pattlet>
+
+
+<solution> Show the item in a rectangular space with arrow buttons at both ends. Display the items and highlight the one that is currently selected. 
+</solution>
+
+<rationale>tbw
+</rationale>
+
+<example><a href="http://www.gmail.com">Google</a> also uses a pulldown-button for replying and hiding other options:<br/>
+<img src="images/pulldown-button-gmail.png"/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+<code-links>
+	<a href="http://www.yourhead.com/carousel/index.html">Carousel component</a><br/>
+	<a href="http://theflashblog.com/?p=188">3D Carousel in Flash</a><br/>
+	http://www.jdstiles.com/java/nav/3dspinmenu.html
+http://billwscott.com/carousel/
+</code-links>
+<literature>
+</literature>
+</pattern>

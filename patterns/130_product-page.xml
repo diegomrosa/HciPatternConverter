@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="product-page" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Product Page</name>
+<author>Martijn van Welie</author>
+<problem>Users need to know information about a product as part of a purchase decision or product support need.
+</problem>
+
+
+<context>Designing a <pattern-link type="is-contained-by" patternID="commerce"/> site or a <pattern-link type="is-contained-by" patternID="corporate"/>. The site is either a reseller (shop), manufacturer, opiniator (product comparisons).
+</context>
+
+<illustration><img src="images/product-page-adobe-small.gif" border="1"/><br/>From
+<a href="http://www.adobe.com">www.adobe.com</a><br/>
+</illustration>
+
+<pattlet>Show the product with categorized information sections and linking to other relevant pieces of information
+</pattlet>
+
+
+<solution>Users are looking for information about a product. In some cases high-level information such a the price or picture are what they are looking for, but it can just as well be very detailed information about a particular feature. The product page shows the most general and descriptive information first and then allows users to access more detailed information.
+
+Experiences:
+<ul>
+<li>Reading about features</li>
+<li>Being told about the product and seeing it in action (video, 3D model, guided tour)</li>
+<li>Hearing opinions about the product (interviews, forum, customer testimonials)</li>
+<li>Getting help with using the product (manuals, faq's, updates,)</li>
+</ul>
+
+What is the product, downloads, <pattern-link type="contains" patternID="faq"/>, features, <pattern-link type="contains" patternID="guided-tour"/>, product brochure download, preview/tryout.
+
+The basic information of a product page consists of:
+<ul>
+<li>The name of the product</li>
+<li>Manufacturer description</li>
+<li>Product options (size, colour, memory, quantity,languages)</li>
+<li>Image of the product (both small and large on request)</li>
+<li>Sample of the product, or interactive demo etc</li>
+<li>The price (official, discounted, offer)</li>
+<li>Inventory status</li>
+<li>Key benefits</li>
+<li>Short product description</li>
+<li>User ratings</li>
+<li>Testimonials</li>
+<li>Sales raking</li>
+<li>Detailed product features</li>
+<li>Link to product comparison</li>
+<li>Related product/accessories</li>
+<li>tell a friend link</li>
+<li>printable version</li>
+<li>list of product that other people also bought</li>
+<li>FAQ</li>
+<li>Training(materials)</li>
+<li>Product support</li>
+<li>Product forum/community</li>
+<li>Shopfinder</li>
+<li>Guided tour</li>
+<li>Buy/download/order link</li>
+<li>Hardware/system/usage requirements</li>
+</ul>
+It really depends whether the product page falls into a e-shop or not. When trying to sell the product a lot of the additional 'shopping' stuff is needed which you don't find on simply the manufacturer's page.
+
+A product page is actually a 'micro-site' because it has its own navigation and can contain more than a dozen subpages per product.
+</solution>
+
+<rationale>A product page must inform users before buying it and help them with the product once they have it.
+</rationale>
+
+<example><img src="#"/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

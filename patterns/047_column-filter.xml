@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="column-filter" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Table Filter</name>
+<author>Martijn van Welie</author>
+<problem>Users want to control which subset of the total information they want to see in tables.
+</problem>
+
+
+<context>You are designing a <pattern-link type="is-contained-by" patternID="application"/> or any other site where a lot of data is presented in a table, possibly using a <pattern-link type="is-contained-by" patternID="table-sorter"/>. The amount of information-items is high and users need to filter out certain items. for example, belonging to a certain category or which certain attributes.
+</context>
+
+<illustration><img src="images/column-filter-hotmail.png" border="1"/><br/>From 
+<a href="http://www.hotmail.com">www.hotmail.com</a><br/> 
+</illustration>
+
+<pattlet>Allow the users to select a subset of the information items directly above the table
+</pattlet>
+
+
+<solution>There are two ways that a subset can be selected, either using one combo box based on one dimension or using combo boxes for every column in the table (multi-dimensional filter).  When there are only a few meaningful subsets use a combo box. When users require very flexible filtering, for example in a issue tracking system, provide combo boxes in every column so that complex filters can be made.<br/>
+<br/>
+When users can filter on column values, the interface becomes a variation of <pattern-link type="is-alternative" patternID="faceted-navigation"/> since users are building up facet values as they set column filters to specific values. After the selection by the user, the table is automatically redrawn showing only the elements of the subset. When users often create the same complex filter (e.g. all open issues assigned to me with high priority), provide functionality to store filters.<br/>
+<br/><img src="images/table-filter-wf.png" border="0"/>
+<br/><br/>
+Usually, the table can only display the first items of the subsets and therefore <pattern-link type="contains" patternID="paging"/> is needed to browse through the entire list.<br/>
+</solution>
+
+<rationale>Filtering allows users to quickly reduce the amount of items shown and help them to adjust their information to the task. For expert users, multi-dimensional filtering on all columns can be a very powerful feature that can replace reporting functionality or the <pattern-link type="is-alternative" patternID="advanced-search"/> functionality. 
+</rationale>
+
+<example>This example taken from Excel where multi-column filtering is used in an issue list:<br/> <br/><img src="images/excell-filter.png" border="1"/><br/>
+<br/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

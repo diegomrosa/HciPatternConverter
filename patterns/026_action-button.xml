@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern collection="welie" patternID="action-button" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Action Button</name>
+<author>Martijn van Welie</author>
+<problem>Users need to take important action that is relevant in the current context of the page they are viewing. They must be made aware of the importance of the action in relation to other actions on the page or site.
+</problem>
+
+
+<context>Users navigate through a site using links but not all links are conceptually the same. Normal text links are for navigating and do not have any side-effects, it is simply for going from page to page. Other links are used to create a specific effect such as <i>starting/ending</i> a process or <i>committing</i> something to a database. For example, starting a search in a <pattern-link type="is-contained-by" patternID="search"/>, ordering a product, submitting a money transfer and so on. Such links are actions important because they can cause side-effects that cannot be undone easily or because they have other consequences for the users.<br/>
+<br/>
+Actions are typically taken on a <pattern-link type="is-contained-by" patternID="product-page"/> or any result or overview pages such as found in a <pattern-link type="is-contained-by" patternID="product-advisor"/> or <pattern-link type="is-contained-by" patternID="search-results"/>. It holds for all of these that the users are looking at the display of an object of interest on which they intend to take and important action. Typically actions like "buy", "bid", "search", "add to cart" etc. These action are typically important because they are part of the main task sequence that is relevant on the page.
+</context>
+
+<illustration><img src="images/actionbutton-bn.png" border="1"/><br/>From 
+<a href="http://www.bn.com">www.bn.com</a><br/> 
+</illustration>
+
+<pattlet>Use push-button with the action 'verb' as part of the label.
+</pattlet>
+
+
+<solution>A push-button visually stands out on the page and is easily distinguishable from a textual link. It therefore attracts more attention than simple text link and suggests an "action" because of it's "push-button" affordance. The button can be a standard system button but more frequently it is a graphic that fits in with the overall page design. Even when it is a graphic, a 3D-look is important to create the "push"-affordance, so 'flat' action buttons must be avoided. The button should be coloured using a different color than the background colour used on the page so that it stands out sufficiently. Make sure that the button is not too small. The larger they are, the easier it is to select them. The label inside the button must contain the 'action verb' as part of the label e.g. 'buy', 'add', 'submit' etc.<br/>
+<br/>
+Place the push-button very near to the object(s) it belongs to. Quite often, the best places are above and to the right of the item itself. That way, you are can be sure that the button is visible without scrolling. Buttons used on a <pattern-link type="is-contained-by" patternID="forms"/> are an exception to this and the button is placed at the right-bottom location. When buttons are used in lists, e.g. in a <pattern-link type="is-contained-by" patternID="list-builder"/>, buttons are often both above AND below the list of items.
+</solution>
+
+<rationale>The main reason for using action buttons is that because of their visual appearance, they get more attention and become visually distinct from normal text links. This is what is needed for important tasks such as "buy", "sell" etc.
+</rationale>
+
+<example>Here is another example from <a href="http://www.ebay.com">www.ebay.com</a> where action buttons are used for making a "bid" on an item that is up for auctioning:<br/><img src="images/actionbutton-ebay.png" border="1"/>
+</example>
+
+<uses><a href="http://www.ebay.com">www.ebay.com</a>;<a href="http://www.bn.com">www.bn.com</a>;<a href="http://www.amazon.com">www.amazon.com</a>
+</uses>
+
+<references>
+</references>
+</pattern>

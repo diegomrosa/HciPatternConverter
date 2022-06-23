@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="poll" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Poll</name>
+<author>Martijn van Welie</author>
+<problem>Users want to state their opinion about a certain statement that is relevant to the site's content
+</problem>
+
+
+<context>You are designing a site where interaction with the users is desired. Typically this will be a <pattern-link  type="is-contained-by"  patternID="news-site"/> or <pattern-link type="is-contained-by" patternID="community"/> where visitors are to be encouraged to share their opinions and improve interactivity.
+</context>
+
+<illustration><img src="images/poll-ex1.gif" border="1"/><br/>From 
+<a href="http://www.cnn.com">www.cnn.com</a><br/> 
+</illustration>
+
+<pattlet>List the statements as exclusive options and present the results directly after voting.
+</pattlet>
+
+<solution>The poll consists of two steps. First the list of options is presented, usually using radiobuttons, together with a 'vote' button. After clicking the vote button, the results are displayed. The results include both a percentage and an absolute number. <br/>
+<img src="images/poll-wf.gif" border="0"/><br/>
+The results are usually displayed on a new page or in a popup window. However, when using Flash it is also display the results directly in the poll widget, see Nike example below. In some cases it is also possible to see the statistics already BEFORE voting. When an objective vote is needed, this should not be done since it gives people extra knowledge before voting and influences their vote.
+</solution>
+
+<rationale>A poll is a very simple and direct page element that invites users to interact with the site. Users can even do it anonymously so there is no barrier at all to participate. Polls are often linked to content on the site such as articles or products, and the results of a poll can be linked to a discussion in a <pattern-link type="is-contained-by" patternID="forum"/>.
+</rationale>
+
+<example>This is the results screen from a poll at <a href="http://www.cnn.com">CNN</a><br/><br/>
+<img src="images/poll-ex2.gif" border="1"/>
+<br/><br/>
+Using Flash. it is also possible to combine the selection of options and the results in one, as well as eliminating the vote button! This example is taken from <a href="http://www.nikewomen.com">Nike Women</a>. It first shows three options and after clicking one of the options...<br/><br/>
+<img src="images/poll-nike1.png" border="1"/><br/><br/>
+...it immediately gives you the poll results per option...<br/><br/>
+<img src="images/poll-nike2.png" border="1"/><br/><br/>
+
+</example>
+
+
+</pattern>

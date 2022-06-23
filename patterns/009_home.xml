@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern collection="welie" patternID="home" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Home</name>
+<author>Martijn van Welie</author>
+<problem>Users need to get back to a safe/start/familiar point
+</problem>
+
+<illustration>
+<img src="images/cnn-home.gif" border="1"/><br/>
+From <a href="http://www.cnn.com">www.cnn.com</a>
+<br/>
+</illustration>
+
+<context>In most Web/WAP sites there is a home page. This page is usually the starting point for interaction. When users arrive at an arbitrary page within the site, they should be able to go back to the home page. 
+</context>
+
+<pattlet>Use a fixed element, such as the site's logo, as a link to the home page
+</pattlet>
+
+<solution>Add a link to the home-page on every page. Place the link at the top of the page and if appropriate on the bottom of the screen. If the site has a logo, make the logo a link to the home-page as well. Otherwise, simply link the home-page using the label "home", either a text label or an icon of a house. Make sure the link is always found on the same place.
+<br/>
+If the site has sub-sites, you need to make a distinction between the root home and the local home. In that case make de logo the local home and provide a link to the root home.
+</solution>
+
+<rationale>A home link provides a safe exit on every page and always on the same position. No matter what, the users can always get back to a familiar place. Logo's identify the site and are therefore easily chosen to get back to the home page.
+</rationale>
+
+<example>This example of the Apple website shows how the Apple logo is used as a link to the home page.
+<br/><img src="images/apple-doubletab.png"/>
+</example>
+
+<impact/>
+
+<uses>Many, many, many websites :-)
+</uses>
+
+<references>If the <a href="meta-navigation.html">Meta Navigation</a> pattern is used, the home link can also be part of that.
+</references>
+</pattern>

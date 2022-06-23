@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern collection="welie" patternID="teaser-menu" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Teaser Menu</name>
+<author>Martijn van Welie</author>
+<problem>User has to select a link
+</problem>
+
+<illustration>
+<img src="images/cnn-teaser.png" border="1"/><br/>
+From <a href="http://www.cnn.com/">www.cnn.com/</a>
+<br/>
+</illustration>
+
+<context>Very full web pages with secondary navigation. You have the main menu but there are also other menus that do not fit with the main menu.
+</context>
+
+<pattlet>Show a partial menu with "expand" capabilities
+</pattlet>
+
+
+<solution>Present a list of links that come from the menu and allow the users to see all links. When users click on the "expand" link the entire list is show, either on a new page or by moving down other items below.
+<br/><img src="images/teaser-wf.gif"/>
+</solution>
+
+<rationale>The teaser menu shows what kind of things the users are able to find without showing them all. This saves spaces and increases the information "scent" of the menu label.
+</rationale>
+
+<example>A variation at www.zibb.nl<br/><img src="images/teaser.jpg"/>
+
+</example>
+
+<uses>www.zibb.nl
+</uses>
+
+<references>
+</references>
+</pattern>

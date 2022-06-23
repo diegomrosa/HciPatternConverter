@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="send-to-friend" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Send to a friend</name>
+<author>Martijn van Welie</author>
+<problem>Users want to inform others of something they have found.
+</problem>
+
+<illustration>
+<img src="images/send-friend-yahoo.png" border="1"/><br/>
+From <a href="http://movies.yahoo.com/">movies.yahoo.com/</a>
+<br/>
+</illustration>
+
+<context>When you are trying to sell things, it may be the case that users find something that they don't want for themselves but they think somebody else may be interested in it. 
+</context>
+
+
+<pattlet>Offer a the possibility to send a email with a link to the item
+</pattlet>
+
+
+<solution>
+</solution>
+
+<rationale>
+</rationale>
+
+<example><img src="images/send-friend.png" border="1"/>
+</example>
+
+<uses><a href="http://www.amazon.com">www.amazon.com</a>, disney...
+</uses>
+
+<references>
+</references>
+</pattern>

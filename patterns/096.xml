@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="font-enlarger" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Font Enlarger</name>
+<author>Martijn van Welie</author>
+<problem>Users want to view the page in a larger font size
+</problem>
+
+
+<context>The users are viewing pages with a lot of prose-like content that they must read. For example on a <pattern-link type="is-contained-by" patternID="article-page"/>. Especially users with reduced eyesight will often find that the default font size is to small for them to read the text comfortably.
+</context>
+
+<illustration><img src="images/font-enlarger-cnn.png" border="1"/><br/>From 
+<a href="http://www.cnn.com">www.cnn.com</a><br/> 
+</illustration>
+
+<pattlet>Allow users to increase/decrease the font size of the text using special controls in the page.
+</pattlet>
+
+
+<solution>Provide font size controls next to the text. Either show controls for a specific font size or show controls to increase or decrease the font size.
+</solution>
+
+<rationale>Although many browsers also support the enlargement of fonts via the View menu and keyboard shortcuts, many people don't know how to use the feature. Having a special control on the page, near the text is a more direct way of doing the same thing.
+</rationale>
+
+<example>At <a href="http://www.iht.com">www.iht.com</a> users can zoom in or out:<br/><img src="images/font-enlarger-iht.png" border="1"/>
+<br/>
+http://www.tedco.org/
+http://www.harper-adams.ac.uk/accessibility/
+http://www.airnorth.com.au
+www.dell.com
+</example>
+
+<uses>
+</uses>
+
+<code-links>
+<a href="http://labnol.blogspot.com/2006/12/allow-site-visitors-to-change-font.html" alt="font resiziing">Font resizing</a> <br/>
+<a href="http://www.white-hat-web-design.co.uk/articles/js-fontsize.php" alt="resizing using javascript">JS font resizing</a>
+</code-links>
+<references>
+</references>
+</pattern>

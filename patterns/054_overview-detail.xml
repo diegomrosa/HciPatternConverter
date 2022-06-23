@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="overview-detail" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name></name>
+<author>Martijn van Welie</author>
+<problem>Users need to inspect objects that are part of a set
+</problem>
+
+
+<context>You are designing a <pattern-link type="is-contained-by" patternID="application"/> or any other site where image collections are browse-able.
+</context>
+
+<illustration><img src="images/overview-flex.png" border="1"/><br/>From 
+<a href="http://www.macromedia.com">www.macromedia.com</a><br/> 
+</illustration>
+
+<pattlet>Show an overview of all objects and display object details of a selected object on a new page
+</pattlet>
+
+
+<solution>Show the overview of all objects in the set, or a part of it when the set is too large and a <pattern-link type="is-contained-by" patternID="list-builder"/> or <pattern-link type="not-related" patternID="paging"/> is used. Each object is selectable by clicking on it's name and/or other identifying label. Make both images of the item and the label clickable if relevant to create a <pattern-link type="contains" patternID="enlarged-clickarea"/>. Selected objects are shown on a new page in their full glory.
+<br/>
+<br/>
+When the screen-space permits it, combine both the overview and the detail view on the same page. 
+</solution>
+
+<rationale>People like to work from overviews and the overview is usually the main <pattern-link type="is-contained-by" patternID="view"/> they are working in. Overviews should contain enough information to select objects for a particular purpose. The detailed view then shows the object with all the details that cannot be shown otherwise, because they are not relevant or because it is too much information to show in the available space. This pattern underlies many other patterns such as the <pattern-link type="is-contained-by" patternID="image-browsing"/> and <pattern-link type="is-contained-by" patternID="list-builder"/> or <pattern-link type="is-contained-by" patternID="navigator"/>
+</rationale>
+
+<example>In this innovative example users see a miniaturized version of a document on the left and the text itself on the right.<br/><img src="images/navigator-sapient.gif" border="1"/><br/><br/>
+At Flickr, a typical use of overview by detail is found when browsing images:<br/><img src="images/overview-flickr.png" border="1"/><br/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

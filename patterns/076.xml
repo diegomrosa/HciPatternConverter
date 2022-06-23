@@ -1,0 +1,73 @@
+<?xml version="1.0"?>  <pattern
+collection="welie" patternID="rating" xmlns="http://www.welie.com/plml"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Rating</name> 
+<author>Martijn van Welie</author> 
+<problem>The user wants rate an object she
+knowledge about</problem>
+
+<aka>
+<pattern-link type="is-alias" patternID="ratinganobject" collection="yahoo" label="Rating an object"/>
+</aka>
+
+<context>In any site that deals with particular objects that are offered on the site and where
+users discuss, use or buy the objects. Typically such a site is a site with consumer goods
+such as cameras, movies, songs, hotels, holiday locations but also more virtual things such as
+news items, code samples, tutorials, articles and so on.
+
+In someway or another, when the site has a social aspect to it, rating may be applicable.
+Typically a <pattern-link type="is-contained-by" patternID="commerce"/> </context>
+
+<illustration><img src="images/rating1.jpg" border="1"/><br/>From <a
+href="http://www.download.com">www.download.com</a><br/> </illustration>
+
+<pattlet>Present a rating next to the product and the option to rate it</pattlet>
+
+
+<solution> A rating is mostly placed on a <pattern-link type="is-contained-by" patternID="product-page"/> fairly close
+to the main product name or image. Usually it is placed below or to the right of it. There are generally 2 types of ratings that may appear:
+<ul>
+<li>A rating by an editor (which cannot be modified by a user)</li>
+<li>A rating by the audience (any user or registered users only)</li>
+</ul>
+
+<b>The audience rating</b><br/>
+The rating by the audience has several important details to it that matter. First of all the number of votes that have been cast must be displayed in order to give some sense of reliability.
+In addition a 'rate it' link or <pattern-link type="contains" patternID="action-button"/> must be present.
+<br/><br/>
+<b>The rating task</b><br/>
+There are several subtasks here:
+<ul>
+<li>Set the rating including remarks.<br/>Usually this is done using a mouse-over effect on a set of stars or simply a classic pulldown list</li>
+<li>Applying the rating<br/>Usually a click will do. With pulldown lists a click on the rate it button is required.</li>
+<li>Confirming and storing the rating<br/>Sometimes a confirmation step is done where the vote can be reviewed before it is stored. When no confirm step is done it is important to provide visual feedback that the vote has been cast.</li>
+<li>Back to start. <br/> A 'thank-you' and back to the product page.</li>
+</ul>
+
+<b>Rating for registered users only</b>
+Very often it is required to <pattern-link type="is-contained-by" patternID="login"/> before a vote can be cast. On the one hand this can be used to prevent multiple votes per person, but it also common when the site uses more extensive reviews of which the rating is simply an element.
+<br/><br/>
+<b>Login issues</b>
+Issues: - multiple votes - directness of interaction - logging in - seeing the current rating
+- when logged in you want to see your own rating! - explaining the scale - Combining rating
+with review
+
+</solution>
+
+<rationale> </rationale>
+
+<example><img src="#"/>
+http://www.cssremix.com/ 
+
+</example>
+
+<uses> </uses>
+
+<code-links><a href="http://www.masugadesign.com/the-lab/scripts/unobtrusive-ajax-star-rating-bar/">Ajax style stars</a><br/>
+<a href="http://komodomedia.com/blog/index.php/2005/08/24/creating-a-star-rater-using-css/">Stars using CSS</a><br/>
+</code-links>
+
+<references> http://www.masugadesign.com/the-lab/scripts/unobtrusive-ajax-star-rating-bar/
+http://www.guidetobuy.info/product6-beamers.html </references> </pattern>

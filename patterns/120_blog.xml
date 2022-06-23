@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="blog" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+
+<name>Blog Page</name>
+<author>Martijn van Welie</author>
+<problem>Users want to share their views with others on a daily basis
+</problem>
+
+
+<context>You are designing a 'personal section' on a <pattern-link type="is-contained-by" patternID="artist-sites"/> or as part of someone's personal site. It could even be suitable for a personal section on a <pattern-link type="is-contained-by" patternID="corporate"/> when a specific employee is allowed to write personal views on a company-related subject. A blog can be written by one person only or a group of several persons. When it can be used by any visitor it effectively turns into a Guest Book. It is a way for <pattern-link type="is-contained-by" patternID="community-building"/>
+</context>
+
+<illustration><img src="images/blog-ex1-small.gif" border="1"/><br/>From
+<a href="http://www.thestudyofdesign.com/NC/">www.thestudyofdesign.com</a><br/>
+</illustration>
+
+<pattlet>Create a page with daily news 'blobs' and archived news blobs
+</pattlet>
+
+
+<solution>A 'Blog' page is essentially one single page with short personal stories, sort of like an online diary. The most recent article is displayed at the top of the page and older news blobs are gradually being pushed down. After a certain period, e.g. a month, a number of news blobs is 'archived', leaving more space for new articles.<br/>
+<br/>
+A Blog is usually run by one person but it is not uncommon to see a Blog that is run by a group of persons, e.g. friends. In such cases, the author's name is displayed with every article, next to the date and title of the article. Below the article there is usually a possibility for commenting on a article and the number of comments is shown directly below the article. Then there is usually also a 'permalink' which is a link that points to the article directly rather than the entire page of article. These permalinks can be used by others to reference the article directly or bookmark it. There can also be a 'trackback' link that points to other blog article that references the article. The exact functionality depends on the specific package that is being used to implement the Blog, e.g. <a href="http://www.blogger.com/">Blogger</a>. In some cases, these packages also have a <pattern-link type="contains" patternID="search"/> to search in the archives.
+</solution>
+
+<rationale>A Blog is a very simply thing. It is just a list of small news articles. They are very popular nowadays and give people a means to voice their thoughts on any topic they like for whoever is interested.
+</rationale>
+
+<example><img src="images/blog-ex2-small.gif" border="1"/> from
+<a href="http://plastercity.com/ears.html">plastercity.com</a>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern collection="welie" patternID="tree" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Navigation Tree</name>
+<author>Martijn van Welie</author>
+<aka>
+	<pattern-link type="is-alias" patternID="Closable_Panels" collection="tidwell" label="Closable Panels"/>
+</aka>
+<problem>The user needs to find an item in the main navigation
+</problem>
+
+
+<context>Part of <pattern-link type="is-contained-by" patternID="main-navigation"/>. Alternative to <pattern-link type="not-related" patternID="tree"/>
+</context>
+
+<illustration><img src="images/autocomplete-google.png"/><br/>From 
+<a href="http://labs.google.com/suggest">Google Suggest</a>
+</illustration>
+
+<pattlet>Vertically stack sections and open up one at the time while collapsing the other sections
+</pattlet>
+
+
+<solution>tbw
+	- Animation
+	- Keboard navigation
+	- Timing
+	
+</solution>
+
+<rationale>tbw
+</rationale>
+
+<example>At the <a href="http://www.kandiqueen.com">Kandiqueen website</a>, bla...:<br/><img src="images/autocomplete-klm.png"/>
+
+http://www.oft.state.ny.us/services/telecom/index.htm
+
+</example>
+
+<uses>
+</uses>
+<code-links>
+	<a href="http://www.hedgerwow.com/360/mwd/accordion/demo.php">DHTML Accordion Menu 2.0</a>
+	<a href="http://ajax.asp.net/ajaxtoolkit/Accordion/Accordion.aspx">ASP.NET: Accordion Sample</a><br/>
+	<a href="http://labs.adobe.com/technologies/spry/samples/accordion/AccordionSample.html">Spry: Accordion Sample</a><br/>
+	
+</code-links>
+<implementation>tbw
+</implementation>
+<literature><a href="http://weblogs.macromedia.com/khoyt/archives/2007/02/thoughts_on_acc.cfm">Kevin Hoyt: Thoughts on Accordion Usability</a>
+	
+</literature>
+</pattern>

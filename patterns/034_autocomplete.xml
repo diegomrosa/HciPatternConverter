@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="autocomplete" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Autocomplete</name>
+<author>Martijn van Welie</author>
+<aka>
+	<pattern-link type="not-related" patternID="autocomplete" collection="yahoo" label="Auto Complete"/>
+</aka>
+<problem>The user wants to enter a label that is part of a large set
+</problem>
+
+
+<context>Naturally, autocomplete is always part of a <pattern-link type="is-contained-by" patternID="forms"/>. Usually as part of a <pattern-link type="is-contained-by" patternID="search"/> or web-based email editors. It is also often used by Airline booking pages where the destination needs to be selected. In all cases, the set of possible values and the potential values can help the user to do their task quicker.
+</context>
+
+<illustration><img src="images/autocomplete-google.png"/><br/>From 
+<a href="http://labs.google.com/suggest">Google Suggest</a>
+</illustration>
+
+<pattlet>Suggest possible label names as users are typing
+</pattlet>
+
+
+<solution>As soon as the users have entered the first character, the application starts creating matches with the whole set. Those matches are then directly shown underneath the edit box. The user can select the desired value once it has been spotted by using the cursor and enter keys.
+</solution>
+
+<rationale>Instead of having to rely on memory entirely, autocomplete helps users to locate the desired item in less steps than would be needed to enter the entire label.
+</rationale>
+
+<example>At the <a href="http://www.klm.com">KLM website</a>, autocomplete is used when having to select the destination of a flight:<br/><img src="images/autocomplete-klm.png"/>
+</example>
+
+<uses>
+</uses>
+<code-links>
+	<a href="http://developer.yahoo.com/yui/autocomplete/index.html">YUI: Autocomplete Control</a>
+</code-links>
+<implementation>There are various technical approaches to implement auto complete. When the set is not very large such as the case of flight destinations, the entire set can be embedded in the page code. But for very large sets such as in the Google Suggest example, server communication using AJAX is the common solution.
+</implementation>
+<references>
+</references>
+</pattern>

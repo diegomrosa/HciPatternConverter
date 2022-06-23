@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="sitemap-footer" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Footer sitemap</name>
+<author>Martijn van Welie</author>
+<problem>The users need to find a specific page
+</problem>
+
+<illustration>
+<img src="images/sitemap-footer-apple.jpg" border="1"/><br/>
+From <a href="http://www.apple.com/mac/">www.apple.com/</a>
+<br/>
+</illustration>
+
+<context>On any site with at least 2 levels of content it. In particular when the site is medium-sized so that there are locations that user ma often want to get to.</context>
+
+<pattlet>Show a set of categorized links in the footer of every page
+</pattlet>
+
+<solution>Add a small version of a <pattern-link type="generalization" patternID="sitemap"/> to the <pattern-link type="is-contained-by" patternID="footer-bar"/>.  It does not have to be a sitemap exactly. It could also be an alternative set of categorized links, like LinkedIn is doing. It allows for a different organization than the main site's structure. Can be also combined with <pattern-link type="not-related" patternID="crumbs"/> just like Apple is doing.
+</solution>
+
+<rationale>The footer of every page is an area that is normally not heavily used. By putting sets of useful links in there users that have scrolled down the page can quickly move on to where-ever they have to go to. In addition, if it is not a literal sitemap but shortcuts instead they can be used to provide shortcuts to often used placed, regardless of where they are in the sitemap. In a way, the footer sitemap is similar to having a <pattern-link type="is-alternative" patternID="shortcut-box"/> on every page.</rationale>
+
+<example>
+At <a href="http://www.iht.com">IHT.com</a> they use it as a sitemap in miniature. 
+<img src="images/sitemap-footer-iht.jpg"/><br/><br/>
+At <a href="http://www.linkedin.com">LinkedIn</a> a totally different set of links is used.
+<img src="images/sitemap-footer-linkedin.jpg"/>
+</example>
+
+<impact></impact>
+
+<literature>
+<a href="http://www.webword.com/reports/sitemap.html">A Sitemap on Every Page</a><br/>
+<a href="http://www.flickr.com/photos/factoryjoe/sets/72157594487444992/">A collection of footer screenshots</a><br/>
+</literature>
+</pattern>

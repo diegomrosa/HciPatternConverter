@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern collection="welie" patternID="repeated-menu" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Repeated Menu</name>
+<author>Martijn van Welie</author>
+<problem>Users need to access the main navigation
+</problem>
+
+<illustration>
+<img src="images/repeated-menu-ex.gif" border="1"/><br/>
+From <a href="http://www.minvws.nl/">www.minvws.nl</a>
+<br/>
+</illustration>
+
+<context>This pattern is often used together with top (horizontal) navigation. Web pages are frequently more than one "view" long and users will need to scroll down to see the entire page. In such cases, the main navigation is likely to be out of sight. This pattern makes the main navigation accessible again. Users use different browser-windows sizes so that scrolling cannot always be avoided. Users may know what the main navigation looks like because they have already seen it. When users have scrolled down the main navigation is out of sight
+</context>
+
+<pattlet>Repeat the main navigation or the bottom of the page 
+</pattlet>
+
+<solution>Provide a simple bar with the same elements as the main navigation menu. However, make it simple, preferably just text links in a smaller font size.
+</solution>
+
+<rationale>Allows users to access the navigation after scrolling. There is no need to go back to the top because the navigation is within immediate reach. By presenting it in a different way, the users know that it is not the main navigation but a secondary feature for their convenience.
+</rationale>
+
+<example>At the Planet Internet site (www.planet.nl) the top navigation starts with:<br/>
+<img src="images/top-nav.png"/><br/>
+At the bottom of the page the main navigation menu is repeated in a more simple way:<br/>
+<img src="images/bottom-nav.png"/></example>
+
+<uses>
+<a href="http://www.planet.nl">www.planet.nl</a>
+<a href="http://www.minvws.nl">www.minvws.nl</a>
+</uses>
+
+<references>Alternative for the <a href="top.html">Top</a> pattern, can also be integrated with <a href="meta-navigation.html">Meta Navigation</a> and contact information.
+</references>
+</pattern>

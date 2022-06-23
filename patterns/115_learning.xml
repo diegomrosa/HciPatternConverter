@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="learning" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Learning</name>
+<author>Martijn van Welie</author>
+<problem>Users need to learn about a new product or site, as well as how to use a product or site
+</problem>
+
+
+<context>Your site is not fully self-explanatory, probably because it consists of a lot of pages or because users can actually do complex things on your site such as purchasing goods or managing a set of objects. The learning experience is mainly for the newcomers of your site or people that are not yet fully acquainted with the product the site deals with. When users arrive at your site for the first time they need to get started and learn how to move around on the site. Returning users may need help on specific issues that will broaden their overall usage of the product.<br/>
+<br/>
+Learning must be seen as a wide ranging user experience. Learning experiences can be part of a marketing driven <pattern-link type="is-contained-by" patternID="campaign-site"/> where users learn about a new product, but also a true <a href="e-learning">E-learning Environment</a> for a product training or <a href="#">University site</a>. For most other types of sites, there is usually less explicit learning experience and is not really more that making sure users can start using the site and find information back easily.
+</context>
+
+<illustration><img src="#" border="1"/><br/>From
+<a href="http://www.matrox.com">www.matrox.com</a><br/>
+</illustration>
+
+<pattlet>Construct a learning experience from the basic learning tasks that is in line with your audience and site
+</pattlet>
+
+
+<solution>The basic basic learning tasks that are part of any learning experience are the following, in order of importance:
+<ol>
+<li><b>Telling people about it.</b> For hot or new things. Use <pattern-link type="is-contained-by" patternID="campaign-site"/> or a <pattern-link type="contains" patternID="newsletter"/> or <a href="#">Tips of the day</a></li>
+
+<li><b>Showing people how it works.</b> Use demos such as a <a href="contains">Guided Tour</a> or <a href="contains">Animated Example</a></li>
+
+<li><b>Explaining and showing combined.</b> Using a <a href="#">Tutorial</a> or simply an <a href="#">Online Help</a> (question mark with overlaid explanation...)</li>
+
+<li><b>Trying it yourself.</b> Allow people to experience it without getting 'hurt'. Free timed subscriptions, guest accounts, or playing with the product using a <pattern-link type="contains" patternID="vpd"/> etc.</li>
+
+<li><b>Answering questions or assisting people.</b> Use <a href="">Frequently Asked Questions (FAQ)</a> list or a <pattern-link type="contains" patternID="help-wizard"/> or any <pattern-link type="contains" patternID="wizard"/> in general.</li>
+
+<li><b>Resonate with other learners.</b> If users don't have enough with the information on the site itself, they can turn to a community that is related to the site or topic. See <pattern-link type="contains" patternID="community"/></li>
+
+<li><b>Assessment.</b> Using <a href="#">Poll</a> or <a href="#">Quiz/Contest</a>, or a <a href="#">Game</a> to assess the learning experience and perhaps to add some <pattern-link type="contains" patternID="fun"/>.</li>
+
+</ol>
+
+<b>Matching the users and site purpose</b><br/>
+For every target users and site purpose you'll need to construct a specific learning experience. You will always need to support the task of 'telling people about it' but whether or not you need all of the others depends on you users and your site. When users are informed of new products it is good to 'show them how it works' and to let them 'try the product'. When they may still have questions left, you could offer 'provide assistance' or 'resonate with others' to sort out their needs. In case of true e-learning environments you may want to include 'assessment' features that allow users to monitor their progress in learning and even to make it fun to learn!
+<br/><br/>
+<b>Explicit and implicit learning</b><br/>
+The learning experience does not have to follow a "lecture format". Learning can be a subconscious activity that takes place by using different elements on a site. People have different learning styles and you may need to support a range of learning styles on your site. Learning goals, from a site perspective it is 'preach what you want your users to know'. From a user perspective it is 'helping me to do what I want or learning about a topic related to it'. For returning or 'learning' visitors, create mechanisms to let them find back information quickly, for example by allowing them to 'clip' interesting articles to their own <pattern-link type="contains" patternID="favourites"/>.
+<br/>
+
+
+</solution>
+
+<rationale><a href="http://www.ncsu.edu/felder-public/ILSpage.html">Learning styles</a><br/>
+<a href="http://www.merlot.org/Home.po">Merlot</a>
+</rationale>
+
+<example><img src="#"/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern collection="welie" patternID="accordion" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Accordion</name>
+<author>Martijn van Welie</author>
+<aka>
+<pattern-link type="is-alias" patternID="Closable_Panels" collection="tidwell" label="Closable Panels"/><br/>
+Collapsible Panels
+</aka>
+<problem>The user needs to find an item in the main navigation
+</problem>
+
+
+<context>Accordions are often used as part of <pattern-link type="is-contained-by" patternID="main-navigation"/> or subnavigation.  If used for navigation it is conceptually equivalent to <pattern-link type="is-alternative" patternID="tabbing"/>. Alternative to <pattern-link type="is-alternative" patternID="tree"/>. Although accordions are often used as part of a <pattern-link type="not-related" patternID="wizard"/> I strongly recommend against it since it is worse than regular implementations from a usability point of view. Accordions can be a good way to implement a <pattern-link type="is-contained-by" patternID="faq"/> where it opens up each question. Another good use would be to manage settings. The number of panels should be small, e.g. &lt; 10.
+</context>
+
+<illustration><img src="images/accordion-aspnet.png"/><br/>From 
+<a href="http://ajax.asp.net/ajaxtoolkit/Accordion/Accordion.aspx">ASP net</a>
+</illustration>
+
+<pattlet>Stack panels vertically or horizontally and open up one panel at the time while collapsing the other panels
+</pattlet>
+
+
+<solution>Many different variations of the Accordions exisit, both vertical ones and horizontal ones but the crucial aspects of the implementation are:<br/>
+<ul>
+<li>Only 1 panel is open at one time. <br/>If more than 1 panel is allowed to be opened it becomes like <pattern-link type="is-alias" patternID="Closable_Panels" collection="tidwell" label="Closable Panels"/> or <pattern-link type="is-alternative" patternID="tree"/>.</li>
+<li>Users can select other panels by clicking on the panel header</li>
+</ul>
+The vertical opening panels are usually for display sub-menu items, while horizontal opening panels are suitable for large content areas.
+
+When implementing the accordion it is important to get the following aspects right:
+<ul>
+<li>Animate the opening of panels so that users get feedback about what is happening. The animation should be subtle which means that it should last no more than 250ms</li>
+<li>Allow navigation using the keyboard up and down keys</li>
+<li>Highlight the current panel so the user can distinguish open panel headers form closed panel headers</li>
+<li>Make sure the total size of the accordion can grow or shrink in size. Some implementations fix the heigt of each panel which leads to undesirable situations when panels contain only little content.</li>
+</ul>
+</solution>
+
+<rationale>An accordion is useful for compressing many elements in a compact space. The elements can be properties, questions or simply navigation items. The downside is, of course, that most items get hidden which may not be very desirable when you use accordions for main navigation. Accordions originate from Macromedia applications such as Dreamweaver where they were first used. <br/><br/>
+
+The vertical ones are quite common although they do not always animate nicely. The horizontal ones like the one used in the Xbox 360 is far less used. It is not the best solution from a classic usability perspective but it can add to the fun element of the user experience.
+</rationale>
+
+<example>At the <a href="http://www.donnabodyvision.com/">Donna's body vison</a>, an accordian is used for displaying subnavigation without requiring a page-reload:<br/>
+<img src="images/accordion-donnabodyvision.png"/><br/>
+At <a href="http://www.pixellab.co.uk">Pixellab</a> a small accordion is used to display several recent projects in a very small area: <br/>
+<img src="images/accordion-pixellab.png"/><br/>
+At <a href="http://danielrichards.biz/">Daniel Richards</a> a horizontal accordion is used to give the site a non-conventional feel:<br/>
+<img src="images/accordion-danielrichards.png"/><br/>
+The XBox 360 interface also uses a horizontal accordion:<br/>
+<img src="images/accordion-xbox360.jpg"/>
+
+</example>
+
+<uses>
+Outlook web access
+http://www.rrallen.com/
+
+</uses>
+<code-links>
+<a href="http://www.hedgerwow.com/360/mwd/accordion/demo.php">DHTML Accordion Menu 2.0</a>
+<a href="http://ajax.asp.net/ajaxtoolkit/Accordion/Accordion.aspx">ASP.NET: Accordion Sample</a><br/>
+<a href="http://labs.adobe.com/technologies/spry/samples/accordion/AccordionSample.html">Spry: Accordion Sample</a><br/>
+
+</code-links>
+<implementation>Accordion implementations can be found in nearly every AJAX toolkit: YUI, ASP.NET, Rico, Spry
+</implementation>
+<literature><a href="http://weblogs.macromedia.com/khoyt/archives/2007/02/thoughts_on_acc.cfm">Kevin Hoyt: Thoughts on Accordion Usability</a>
+
+</literature>
+</pattern>

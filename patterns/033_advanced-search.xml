@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="advanced-search" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Advanced Search</name>
+<author>Martijn van Welie</author>
+
+<illustration>
+<img src="images/google-adv-search.png" border="1"/>
+From <a href="http://www.google.com">www.google.com</a>
+<br/>
+</illustration>
+
+<problem>Users need to find a specific item in a large collection of items.
+</problem>
+
+<context>Information rich sites such as a <pattern-link type="is-contained-by" patternID="commerce"/>, <pattern-link type="is-contained-by" patternID="multinational"/>, or <pattern-link type="is-contained-by" patternID="portals"/> contain so much information that users may not always be successful enough with a normal <pattern-link type="specialization" patternID="search"/>. This patterns builds on the <pattern-link type="specialization" patternID="search"/> pattern by adding some adding more search options. Advanced search is
+intended for intermediate to expert users that need full control over the search engine so that they can be more successful in achieving their goals. Such users typically have more than
+superficial knowledge about the items they are searching for. They may know the type of items and are set to search for a specific item they know or may not know exists.
+</context>
+
+<pattlet>Offer a special advanced search function with extended term matching,
+scoping and output options.
+</pattlet>
+
+
+<solution>
+The advanced search usually co-exists with normal <pattern-link type="specialization" patternID="search"/> or as part of a <pattern-link type="contains" patternID="searcharea"/>. The search function is extended in three areas:<br/>
+<br/>
+1. <b>More control over term matching.</b><br/>
+This kind of functionality controls how the combined list of search terms is
+interpreted by the search engine. Typically this includes AND/OR functionality
+together with exclusion functionality. When the search engine supports AND/OR
+functionality, use "match all terms" and "match any term" instead of AND and OR
+operators in the text field. People often make mistakes using boolean logic so it is better avoided. Additionally, AND/OR in the keywords list could be supported for expert users but then additional <pattern-link type="contains" patternID="search-tips"/> are needed to inform
+the users about the possibilities.<br/>
+<br/>
+2. <b>Scoping.</b><br/>
+Scoping is concerned with which items can be found and which cannot be found. Scoping limits the possible <pattern-link type="contains" patternID="search-results"/> by defining the conditions that a results must meet. For example, results from a particular <i>sub-site, item types (articles, video,
+audio...),</i> or <i>item properties (title, date, location, size,
+author...)</i>. Scoping is what makes users really powerful because it allows them to search for elements that are specific for the site.<br/>
+<br/>
+3. <b>More output control.</b>
+This allows users to control the way the <pattern-link type="contains" patternID="search-results"/> are presented. Aspects such as
+sorting or <pattern-link type="not-related" patternID="paging"/> sizes can be
+controlled.<br/>
+<br/>
+Visually, the design follows the order above. A general layout is as
+follows:<br/><br/>
+<img src="images/adv-search-wf.png" border="1"/>
+ <br/>
+<br/>
+Also consider allowing users to search within the search results so that they can drill down further. This can be done by adding a link 'search within results' on the results page and allowing the users to add new keywords.
+</solution>
+
+<rationale>The advanced functions give the users control of many aspects of the
+search. This requires additional knowledge of the data that is available and it
+is hence only for experienced users. Many users have problems using the AND and
+OR operators so it is easier the offer the type of match as an option (all
+terms, any term, etc).
+</rationale>
+
+<example>Alltheweb uses nice filtering rules for elaborate scoping together
+with some more output control:
+<br/><img src="images/alltheweb-adv-search.png" border="1"/>
+
+</example>
+
+<uses><a href="http://www.google.com">www.google.com</a>;
+<a href="http://www.alltheweb.com">www.alltheweb.com</a>;
+<a href="http://www.zdnet.com">www.zdnet.com</a>;</uses>
+
+<references>Often this pattern is used together with <a
+href="search.html">Search</a>. When the advanced search is used, consider a
+<a href="searcharea.html">Search Area</a> pattern to group several
+kinds of search functionality.
+</references>
+</pattern>

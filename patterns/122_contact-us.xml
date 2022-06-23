@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="contact-us" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name></name>
+<author>Martijn van Welie</author>
+<problem>Users need to get in contact with the 'real people' or the organization that is behind the site.
+</problem>
+
+
+<context>This pattern applies to virtually every <pattern-link type="is-contained-by" patternID="commerce"/> or <pattern-link type="is-contained-by" patternID="corporate"/>. Users can have several reasons for wanting to get in contact with the 'site', i.e. the company or organization running the site. While <pattern-link type="is-contained-by" patternID="shopping"/> they may need advice or help with a certain product or they may have questions regarding their orders, payment or return policy. In other cases, users may simply be looking for a telephone number in order to get in contact for other purposes. In a 'brick and mortar' store, customers can easily go and talk to an employee but this is more difficult for websites. A site needs other ways of allowing users to contact them.<br/>
+<br/>
+A secondary reason for providing contact information is to appear more trustworthy, by being open and honest about who you are and how you can be reached. Especially when transactions must be done on the site, it is important that users feel comfortable doing the transactions because they know how to get in touch if they need to.
+</context>
+
+<illustration><img src="images/contact-aarp.gif" border="1"/><br/>From
+<a href="http://www.aarppharmacy.com/tpl_contactus.asp">www.aarppharmacy.com</a><br/>
+</illustration>
+
+<pattlet>Provide a special page that tells users how to get in touch with the organization
+</pattlet>
+
+
+<solution>The 'Contact Page' must be easily accessible from any page in the site. The most obvious places are at the top of the page as part of the <pattern-link type="contains" patternID="meta-navigation"/> or at the bottom as part of the <pattern-link type="contains" patternID="footer-bar"/>. The label for the link is usually simply 'Contact Us'. At certain occasions, it may be useful to provide a link to the 'Contact Page' when users are before or in the middle of a transaction.<br/>
+<br/>
+The information provided on the 'Contact Page' should contain at least the postal address of the company and its possible subsidiaries, opening hours, e-mail address(es) and phone and fax number(s). When stating phone and fax numbers, the company should also state whether they are toll-free or not, as well as operating hours. Web retailers may additionally offer functionalities such as a store locator, which allows users to track for example the closest offline outlet to her/his residence, or additional communicative features like voice over IP, online chats with sales representatives or request forms where customers can leave their phone number to be called back at a specified point in time, etc. In some EU countries, e.g. in Austria, there are also laws governing the minimum amount of contact information to be shown on the web-site which have to be complied by the online company. <br/>
+<br/>
+When users are accessing the 'Contact Page' they will have a reason for needing to get in contact with the site. The 'Contact Page' is therefore also a good place to link to other useful functionalities such as a <pattern-link type="contains" patternID="sitemap"/>, a <pattern-link type="contains" patternID="faq"/> or a Policy Section, disclaiming warranties, data protection, etc.) or <pattern-link type="contains" patternID="search"/>. <br/>
+<br/>
+The 'Contact Page' can also be part of a large section 'About Us' where additional information is provided about the corporation, customer service, policies, and even job opportunities. In such cases, there will be a 'About Us' link present on every page, rather than a 'Contact Us' link.
+</solution>
+
+<rationale>Users do not want to be bothered with troublesome search for contact information. They immediately want to know how they can get in touch with the people behind the web-site and under which terms and conditions. Placing the link to the 'Contact Page' at the top or bottom of the page makes it easily accessible and always present without being too intrusive.
+</rationale>
+
+<example>This example from www.marriott.com show how the 'Contact Us' link is placed in the <pattern-link type="contains" patternID="meta-navigation"/>:<br/> <img src="images/contact-marriott.gif" border="1"/><br/><br/>
+Apple places the 'Contact Us' link at the bottom of the page in the <pattern-link type="contains" patternID="footer-bar"/>:<br/>
+<img src="images/contact-apple.gif" border="1"/><br/><br/>
+Following the link at Apple will lead to an extensive overview of contact possibilities:<br/>
+<img src="images/contact-apple2.gif" border="1"/><br/>
+
+</example>
+
+<uses><a href="http://www.dell.com/us/en/gen/contact.htm">www.dell.com</a>;
+<a href="http://www.ftd.com/350/custserv/contact.epl">www.ftd.com</a>;
+<a href="http://shopping.discovery.com">www.discovery.com</a>;
+<a href="http://www.ambrosiawine.com/ambrosia2/aboutUs/contactUs.asp">www.ambrosiawine.com</a>;
+<a href="http://www.intel.com">www.intel.com</a>;
+</uses>
+
+<literature>
+This pattern is largely based (with permission) on a paper by Kaluscha and Grabner-Kraeuter, <a href="http://hillside.net/europlop/papers/WorkshopC/C9_Kaluscha+.pdf">"towards a pattern language for consumer trust in electronic commerce"</a>
+</literature>
+</pattern>

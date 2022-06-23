@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="article-page" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Article Page</name>
+<author>Martijn van Welie</author>
+<problem>Users need to read a reasonable amount of text
+</problem>
+
+
+<context>You are designing a <pattern-link type="is-contained-by" patternID="news-site"/>, <pattern-link type="is-contained-by" patternID="portals"/> or similar site, where users come to read stuff. What users are reading are 'articles' and not longer stories that you may find in online brochure or dossier.
+</context>
+
+<illustration><img src="images/article-bbc.gif" border="1"/><br/>From
+<a href="http://news.bbc.co.uk/">news.bbc.co.uk</a><br/>
+</illustration>
+
+<pattlet>Present the article in a consistent and structured format, and place it in the center of the page.
+</pattlet>
+
+
+<solution>Every article page you may encounter will have a slightly different format but most of them share these basic elements:
+<ol>
+<li>Header, in a large font size and preferable not spanning more than one line</li>
+<li>Publication date, in a small font size</li>
+<li>Photograph with caption, half or the column width or the entire width.</li>
+<li>Introduction text, which often serves as sort of a summary as well</li>
+<li>Body text, the real content of the article</li>
+<li>Links to related articles, either external or internal articles</li>
+</ol>
+
+Use the entire content area for placing the article so that the article in on the <pattern-link type="contains" patternID="center-stage"/>. Article pages often use a 3-column layout for the page where the left column contains the site navigation, the middle contains the article and the right column displays related materials/promotions. An Article page should use <pattern-link type="contains" patternID="liquid-layout"/> so that the article area grows as the browser window get larger.<br/>
+<br/>
+After the body text, there may be a 'local' <pattern-link type="contains" patternID="footer-bar"/> with a <pattern-link type="contains" patternID="send-to-friend"/> or link to a <pattern-link type="contains" patternID="printable-pages"/>. Alternatively, such a bar can also be put at the top of the article as well. In some cases, an article may span multiple pages and needs <pattern-link type="contains" patternID="paging"/>. Only use it when there is special content such as a high-resolution image on the second page, otherwise it is best to keep article pages on 1 page. On some sites, it is also possible to add a page to a list of <pattern-link type="contains" patternID="favourites"/> so that users can easily find them back later.<br/>
+<br/>
+In order to make the site a bit more interactive, sites with article pages also allow people to react on the article. That way a sort of small <pattern-link type="contains" patternID="forum"/> will arise with the comments being displayed at the bottom of the page.
+</solution>
+
+<rationale>The article deserves the space and actually needs the space for readability reasons. The rest of the links above and below the article belong to the article and are in easy reach.
+</rationale>
+
+<example>This is how CNN does it:<br/><img src="images/article-cnn.png" border="1"/>
+</example>
+
+<uses><a href="http://news.bbc.co.uk/">news.bbc.co.uk</a><br/>
+<a href="http://www.cnn.com">www.cnn.com</a><br/>
+<a href="http://www.iht.com">www.iht.com</a><br/>
+</uses>
+
+<references>
+</references>
+</pattern>

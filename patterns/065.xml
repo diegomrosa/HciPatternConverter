@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="product-advisor" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Product Advisor</name>
+<author>Martijn van Welie, Paul McInerney</author>
+<problem>Users want advice on selecting the best product for them among a set of products
+</problem>
+
+
+<context>The site has products for sale, either online or offline. The set of available products is typically medium to large sized e.g. 15 or more products, so that selecting the appropriate product becomes non-trivial. Users can range from novice to expert users.
+</context>
+
+<illustration><img src="images/ubs-advisor.gif" border="1"/><br/>From 
+<a href="http://www.ubs.com">www.ubs.com</a><br/> 
+</illustration>
+
+<pattlet>Advise users on product based on constraints, preferences and needs users have
+</pattlet>
+
+
+<solution>The basic task flow is as follows:<br/>
+
+1. Describe needs, what is it you want to do?<br/>
+2. Describe preferences, what should it have?<br/>
+3. Describe constraints, what should be taken into account?<br/>
+4. Receive recommendations<br/>
+5. Revise needs, preferences, or constraints if necessary<br/>
+6. Act on recommendation<br/>
+
+<img src="images/advisor-wf.png" align="middle" border="0"/><br/>
+
+The structure of the Advisor is an adapted <pattern-link type="specialization" patternID="wizard"/>. The advisor has a limited set of steps in which the users gives all inputs grouped by topic/aspect. The final step is where the recommendations are given in a similar way as normal search results are given. Optionally, an other step may be added to buy the selected product or mail more information about the product.<br/>
+<br/>
+In the first steps of the advisor the users give input by setting one or more of the available options. This can be quite complicated and require high expertise of users. Which options are presented in a particular step can depend on previous choices. When options do not depend on each other <pattern-link type="contains" patternID="tabbing"/> can be used. Otherwise a more step-based design must be used where the users can see all steps at all times. When the results are given, users should be able to go back and revise their decisions in order to do a what-if analysis. <br/>
+<br/>
+When displaying results it is important to create a high level of trust in the actual advice. Giving a percentage is one way of doing that e.g. 100 percent could mean that it complies with all your preferences. Other possibilities is to make it visible how the decision was reached e.g. using a matrix with the possible options.
+</solution>
+
+<rationale>Advising goes like a conversation where the advisor asks several questions before giving advice.
+</rationale>
+
+<example>This advisor from <a href="http://www.ni.com/advisor/">National Instruments</a> even allows users to save their recommendation, print it or get a contract for the selected product:<br/> <img src="images/ni-advisor.gif" border="1"/><br/>
+
+<a href="http://www.gore-tex.co.uk/advisor/index.cfm">Goretex</a> has a very simple advisor where products are select by purpose: <br/><img src="images/goretex-advisor.png" border="1"/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

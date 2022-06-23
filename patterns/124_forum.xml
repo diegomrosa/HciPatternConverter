@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="forum" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Forum</name>
+<author>Martijn van Welie</author>
+<problem>Users want to discuss a certain topic or react on a particular piece of content on the site
+</problem>
+
+
+<context>You are designing a <pattern-link type="is-contained-by" patternID="community"/> or other site for which you are interested in <pattern-link type="is-contained-by" patternID="community-building"/>. Many people can be tied into a site when there is ample opportunity to interact with the site. Such interaction with a site, or its content in particular can also be found on <pattern-link type="is-contained-by" patternID="news-site"/> or on a <pattern-link type="is-contained-by" patternID="article-page"/>.
+</context>
+
+<illustration><img src="images/forum-esato.gif" border="1"/><br/>From
+<a href="http://www.esato.com/board/">www.esato.com/board</a><br/>
+</illustration>
+
+
+<pattlet>Create a list of topics and allow users to place comments on the topic
+</pattlet>
+
+<solution>A forum is literally a discussions place. It is based on discussion topics and their comments. A forum starts with an overview page of all the running discussions. For each discussion it must be stated how many comments have been place, and when the last comment was placed. When a discussion is selected the discussion page shows the following elements: the topic/statement, functionality to add a comment, functionality to navigate between the comments and of course the comments themselves. Often there are also <pattern-link type="contains" patternID="crumbs"/> so you can see which subcategory of discussions they are in and can easily jump back to other discussion. Each comment consists of a text-body and some optional attributes like "name", date and sequence number. When more and more comments are placed a <pattern-link type="contains" patternID="paging"/> mechanism is used to browse the opinions. The list of comments starts with the first comment that was added and goes on vertically with the successive comments.<br/>
+<br/>
+When users regularly visit a forum they need to get a feeling of 'what is going on'. Which messages have been added lately, which discussion topics are new and who has posted which comment? In order to facilitate these goals, the following functionality is useful:
+<ul>
+<li>Provide ways to show what is going on: 'new posts', or 'last 24 hours posts'.</li>
+<li> allow people to complete a <pattern-link type="contains" patternID="registration"/> so that when they <pattern-link type="contains" patternID="login"/> they can have their own nickname, avatar and so on. This allows users to personalize their own appearance and makes searching for specific articles easier.</li>
+<li>A forum must have an <pattern-link type="contains" patternID="advanced-search"/> to find specific articles.</li>
+</ul>
+</solution>
+
+<rationale>A forum is one of the oldest know community elements. Putting all comments on one page makes it easier to read than, opposed to "threading" them.
+</rationale>
+
+<example><img src="images/forum-leasecompare.png" border="1"/><br/>
+</example>
+
+<uses>
+<a href="http://community.cnn.com/">CNN Messageboards</a><br/>
+<a href="http://www.leasecompare.com/">www.leasecompare.com</a>
+</uses>
+
+</pattern>

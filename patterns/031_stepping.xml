@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern collection="welie" patternID="stepping" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Stepping</name>
+<author>Martijn van Welie</author>
+<problem>Users need to view/act on a lineair ordered set of items.
+</problem>
+
+
+<context>Users need to navigate a linear order list of objects. Objects can be images, <pattern-link type="contains" patternID="search-results"/> or a number of tasks that are part of a <pattern-link type="contains" patternID="shopping-cart"/> or a <pattern-link type="contains" patternID="booking"/>. When the number of objects is large, Stepping works as a secondary navigation aid, for example as part of <pattern-link type="is-alternative" patternID="paging"/>. In other situations such as in a <pattern-link type="is-contained-by" patternID="wizard"/>, stepping is actually the main task navigation.
+</context>
+
+<illustration><img src="images/stepping-fieldmuseum-small.gif" border="1"/><br/>From 
+<a href="http://www.fmnh.org/research_collections/anthropology/anthro_sites/boone/gal_jp_archer.html">www.fmnh.org</a><br/> 
+</illustration>
+
+<pattlet>Allow users to go to the next and previous task or object by clicking on 'next' or 'previous' links
+</pattlet>
+
+
+<solution>The 'next' link takes the users to the next item in the sequence while the 'previous' link takes them on step back. Place a 'next' and 'previous' link close to the object it belongs to, preferable above the object so that users do not have to risk to scroll to them. Make sure the next/previous links are always present in the same place so that users that are clicking through a list do not have to move the mouse-pointer. The 'previous' link is placed on the left, and the next link on the right, at least for western cultures. <br/>
+<br/>
+Naturally, the 'next' or 'previous' link is only present when there actually is a next/previous item. So if the user starts at the beginning, there is no 'previous' link and there should not be a 'next' link at the end of the list. The labels 'next' and 'previous' can be extended with a further specification of what there is to find next, e.g "next image", "next page" etc.<br/>
+<br/>
+Think about using a thumbnail image when using stepping as part of an <pattern-link type="is-contained-by" patternID="image-browsing"/>. Consider using <pattern-link type="contains" patternID="action-button"/> when the users is navigating through an important task where the next and previous links need more attention than usual. <br/>
+</solution>
+
+<rationale>Stepping is one of the most basic ways to navigate. It enforces the linearity by using the labels next and previous. Combining a thumbnail image with a navigation link gives the users information where they are going to before actually doing so. Both longer link labels and including a thumbnail lead to an <pattern-link type="contains" patternID="enlarged-clickarea"/>, hence making it easier to select them.
+</rationale>
+
+<example>At <a href="http://www.esto.com/">www.esto.com</a>, images can be browsed using stepping. The links are always in the same fixed position allowing easy repeated clicking. <br/><img src="images/stepping-esto-small.gif"/><br/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

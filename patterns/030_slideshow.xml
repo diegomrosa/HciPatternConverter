@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern collection="welie" patternID="slideshow" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Slideshow</name>
+<author>Martijn van Welie</author>
+<aka>Photo viewer</aka>
+<problem>The user wants to view a series of images/photos
+</problem>
+
+
+<context>A slideshow is typically used on photo sharing sites such as <a href="http://www.flickr.com">Flickr</a> or <a href="http://picasaweb.google.com">Picasaweb</a>
+</context>
+
+<illustration><img src="images/slideshow-picasaweb.png" border="1"/><br/>From 
+<a href="http://picasaweb.google.com">picasaweb.google.com</a><br/> 
+</illustration>
+
+<pattlet>Show each image for some seconds and provide controls to manually navigate back and forward, pause/resume and stop/return
+</pattlet>
+
+
+<solution>Usually the screen-estate is maximized for the photos and only a minimal representation of the required controls are used. The controls must be placed either at the top of the photo or below it. 
+<br/><br/>
+Make sure the following aspects are covered:
+<ul>
+<li>The controls should fade out in time if they are placed over the image</li>
+<li>The time between the photos must be configurable</li>
+<li>The user must be able to exit the slideshow mode</li>
+<li>Use a nice transition between photos! It make it a lot nicer...</li>
+<li>Consider adding captions for the image title or comments</li>
+</ul>
+In some cases it may also be useful to show a bunch of thumbnails and highlight the one that is currently shown. That way the user knows better what to expect. However, this reduces the 'immersive experience'...
+</solution>
+
+<rationale>Slideshow are very common even in everyday live. The user doesn't have to do much and basically she can sit back and enjoy the show. The controls are only there for going back in case you missed something or pausing it when you are interrupted.
+</rationale>
+
+<example><img src="images/slideshow-pro.png"/>
+</example>
+
+<uses>
+</uses>
+
+<code-links>
+<a href="http://smoothgallery.jondesign.net/what/">JonDesign's Smoothgallery</a><br/>
+<a href="http://www.electricprism.com/aeron/slideshow/">Slideshow using Mootools</a><br/>
+<a href="http://www.slideshowpro.net/">Slideshow Pro (Flash)</a><br/>
+</code-links>
+
+<references>
+</references>
+</pattern>

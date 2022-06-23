@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="news-site" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>News Site</name>
+<author>Martijn van Welie</author>
+<problem>Users need to stay informed of the latest news
+</problem>
+
+
+<context>The site provides daily news and updates.
+</context>
+
+<illustration><img src="images/cnn-site.gif" border="1"/><br/>From
+<a href="http://www.cnn.com">www.cnn.com</a><br/>
+</illustration>
+
+<pattlet>Create a site with categorized articles that are accessible via headlines
+</pattlet>
+
+
+<solution>A news site is based on news articles that have been categorized into sections. The front-page shows a collection of headlines from all categories and usually there is one 'featured' article. <pattern-link type="contains" patternID="teaser-menu"/> show the latest headlines in a section with the possibility to see all headlines in that category. The featured article has an image and a short paragraph of text directly readable. When users click on the headlines they get to see the entire news article. The site uses a main navigation that lists all the categories as the main items. In some cases there may also be a 'secondary' navigation for access to video news, columns or special features. Weather, stocks and traffic info are usually displayed in one 'box' on the home page.<br/>
+<br/>
+The news articles themselves are usually one piece of text and can contain images. Below or besides the article there may be links to related articles such as article about the same subject. Often there is also the possibility to comment on the article. The comments are available on a separate page.<br/>
+<br/>
+In order to make the site more interactive, visitors can participate in a daily <pattern-link type="contains" patternID="poll"/> or personalize the news display after <pattern-link type="contains" patternID="login"/>. Logging in may also be necessary if the site offers premium content for paying visitors. A <pattern-link type="contains" patternID="content-lock"/> is then used to indicate which items are accessible for all visitors and which for paying visitors. Other common features include the possibility to subscribe to a <pattern-link type="contains" patternID="newsletter"/> and search the site using a <pattern-link type="contains" patternID="searcharea"/>. A <pattern-link type="contains" patternID="footer-bar"/> is always used for legal notices. <pattern-link type="contains" patternID="outgoing-links"/> are used for links to other sites.
+
+</solution>
+
+<rationale>A news site is a 'newspaper online'. The extensive use of headlines makes it easy to scan whether the article is interesting or not. A feature article is targeted at most visitors and can therefore contain more text. The other features such as a poll and forum make it more fun for people to use the site and express their opinions. The search and newsletter allow for other use of the same material.
+</rationale>
+
+<example><img src="images/cnet-news.gif" border="1"/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

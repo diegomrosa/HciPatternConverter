@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="corporate" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Corporate Site</name>
+<author>Martijn van Welie</author>
+<problem>A company wants to market themselves online for existing and future clients.
+</problem>
+
+<illustration><img src="images/corporate-ex1.png" border="1"/>
+<br/>
+From <a href="http://www.ideo.com">www.ideo.com</a>
+<br/>
+</illustration>
+
+<context>The company is small to medium sized. The company is aiming for a modest presence for basic communication and marketing purposes. If the company also does part of their business using their corporate site, it can be combined with an <pattern-link type="generalization" patternID="commerce"/> or <pattern-link type="generalization" patternID="service"/>.
+</context>
+
+<pattlet>Structure the site based on the primary questions of potential visitors.
+</pattlet>
+
+<solution>Corporate sites are actually more like marketing material and they need to answer some basic questions that visitors may have such as:
+<ul>
+<li>What does the company do?</li>
+<li>What are the company's products or services?</li>
+<li>How does the company work?</li>
+<li>Which other clients does the company have?</li>
+<li>How can I get in contact with the company? How do I get to their office?</li>
+<li>Who is working in the company?</li>
+</ul>
+
+Use these questions to build the main sections of the site, e.g. sections such as "About Us", "Our Products", "Contact", "Clients", "Methods", "People". Horizontal navigation such as a <pattern-link type="contains" patternID="doubletab"/> can easily accommodate such sections. Visitors may also be returning visitors or looking for some specific information not covered by the questions above. Therefore, secondary important items that are often placed as <pattern-link type="contains" patternID="meta-navigation"/>, are formed by:
+
+<ul>
+<li>Latest news about the company</li>
+<li>Press releases</li>
+<li>Customer support</li>
+<li>Job opportunities</li>
+<li>Search</li>
+</ul>
+
+In terms of visual design a Corporate site should follow the branding of all other existing branded material. The company logo and colors should be used in the site as the main assets. However, since many visuals may not have been designed for online use, the assets may need to be modified and optimized.<br/>
+<br/>
+The home page of the corporate site has an important function in establishing the corporate identity and the first impression on visitors. The home-page must make it clear what kind of company this is, whether they sell books, make printers, or sell lingerie. The use of a pay-off or slogan and/or images may help to communicate this.<br/>
+<br/>
+Many companies will have an international audience. Therefore, place a <pattern-link type="contains" patternID="language-selector"/> on every page of the site, you never know how someone got the site.
+</solution>
+
+<rationale>The corporate site is based on the most often needed information about companies. Some information is already present on the home-page and other information is easily accessible in one of the sections belonging to the questions. Most visitors will therefore find what they are looking for in a minimum amount of clicks.
+</rationale>
+
+<example>The corporate site of consultancy firm <a href="http://www.kpmg.nl">KPMG</a> covers all their activities which apply to several industries:
+<br/>
+<img src="images/corporate-ex2.gif" border="1"/>
+<br/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

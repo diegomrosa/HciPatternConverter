@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="store-locator" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Store Locator</name>
+<author>Martijn van Welie</author>
+<problem>Users need to find a (physical) store close to a specific location 
+</problem>
+
+
+<context>You are designing a site for an organization that has physical stores associated with it. It does not have to be a 'store' but could also be a different department or office of that organization. Typically you find a store locator on <pattern-link type="is-contained-by" patternID="commerce"/>, <pattern-link type="is-contained-by" patternID="corporate"/>, <pattern-link type="is-contained-by" patternID="automotive"/> or <pattern-link type="is-contained-by" patternID="museum"/>. Using a store locator requires that there are a large number of stores to be found, otherwise it is better to simply list the stores.
+</context>
+
+<illustration><img src="images/store-locator-gap-small.gif" border="1"/><br/>From 
+<a href="http://www.gap.com">www.gap.com</a><br/> 
+</illustration>
+
+<pattlet>Allow users to 'search' for a store and show the results on a map
+</pattlet>
+
+
+<solution>A store locator is a specific sort of <pattern-link type="specialization" patternID="advanced-search"/> where you are specifically looking for stores, probably in a certain area. Therefore, the basic steps in the process become:
+
+Two steps:
+<ol>
+<li>Set the (partial) destination location</li>
+<li>Set search options, basically a filter on the possible results</li>
+<li>Activate the search engine</li>
+<li>Show a map with the results marked along with the textual addresses of the results</li>
+<li>Search again if the results are not satisfactory</li>
+</ol>
+
+Displaying the <pattern-link type="contains" patternID="search-results"/> is usually done using a <pattern-link type="contains" patternID="map-navigator"/> with the store marked as the points of interest. Details about the location of the stores are displayed in text next to the map. The search interface part is also preferably displayed again so that users can adjust their query easily and run a new search.
+</solution>
+
+<rationale>This pattern is a special version of the advanced search where users can only look for locations. This affects the search interface part and the way results are displayed.
+</rationale>
+
+<example>At <a href="http://www.bn.com">Barnes and Noble</a> users are offered a lot of search options:<br/><img src="images/store-locator-bn2-small.gif" border="1"/><br/><br/>
+The list of results is displayed above the map itself:<br/>
+<img src="images/store-locator-bn-small.gif" border="1"/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

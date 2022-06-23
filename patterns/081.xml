@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="hotlist" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Hotlist</name>
+<author>Martijn van Welie</author>
+<problem>Users need may not know what item to select from a large set of items.
+</problem>
+
+<illustration>
+<img src="images/hotlist-amazon.png" border="1"/><br/>
+From <a href="http://www.amazon.com">www.amazon.com</a>
+<br/>
+</illustration>
+
+<context>The users have a large set of items to choose from, typical tens or even hundreds of items. The items are too numerous to "investigate" one by one and the users have no particular preference. Typically the site is used by many other users so that the popularity of the item becomes an interesting property of the item. Users may not want to browse for an item. Users are interested in the most popular items. Popular items may be interesting for many users. 
+</context>
+
+<pattlet>Show a hot-list of most popular items
+</pattlet>
+
+<solution>Present a short list of 5 to 10 items with the most popular items. Each item is clickable an leads to the action that normally is associated with that action. The list should be immediately in view and numbered from 1 to the last item with the most popular one at the top of the list. The list is labeled "Hot X" or "Top X","Most popular X".<br/>
+<img src="images/hotlist-wf.png"/>
+
+</solution>
+
+<rationale>The host-list gives the users the possibility to see without any effort what the most popular items are. Since the number of items in the hot-list is very small and presented in a straightforward way, the list is easy to scan and comprehend. The hot-list gives users the possibility to immediately get what they came for.
+</rationale>
+
+<example>Hot-list can also be extended with action buttons, e.g. for pre-listening ring-tones. <br/><img src="images/hotlist-rt.gif"/>
+</example>
+
+<uses><a href="http://www.club.nokia.com">www.club.nokia.com</a>;
+<a href="http://www.amazon.com">www.amazon.com</a>
+<a href="http://www.musical-ringtones.com">www.musical-ringtones.com</a>
+</uses>
+
+<references>
+</references>
+</pattern>

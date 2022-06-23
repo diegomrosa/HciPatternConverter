@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="country-selector" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Country Selector</name>
+<author>Martijn van Welie</author>
+<problem>Users need to go from a global site to a country-specific website
+</problem>
+
+
+<context>Not to be confused with the <pattern-link type="not-related" patternID="language-selector"/>...typical for <pattern-link type="is-contained-by" patternID="multinational"/>
+</context>
+
+<illustration><img src="images/country-sony.png" border="1"/><br/>From 
+<a href="http://www.sonyericsson.com">www.sonyericsson.com</a><br/> 
+</illustration>
+
+<pattlet>Place a language, and region, selector on the home-page.
+</pattlet>
+
+
+<solution>Use a pulldown if there is not so much space for the language selector. Otherwise list them so that users can select the appropriate country directly. List the countries alphabetically.
+</solution>
+
+<rationale>Sometimes the international site functions as a proxy to the country sites. If that is the only purpose a link listing is the clearest solution that provides one click access. If the international site contains other information such as corporate information, the language selector can become just a boxed pulldown that is one of the page elements.
+</rationale>
+
+<example>This example is taken from <a href="http://www.vodafone.com">www.vodafone.com</a> where the corporate site functions as a proxy to the country sites:<br/><img src="images/country-vodafone.png" border="1"/><br/>
+At the site of <a href="http://www.ikea.com">Ikea</a> all countries are simply listed so that users can immediately select the approriate country:<br/><img src="images/country-ikea.png" border="1"/><br/>Nike:<br/><img src="images/country-nike.gif" border="1"/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

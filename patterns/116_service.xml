@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="service" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Service Site</name>
+<author>Martijn van Welie</author>
+<problem>Users need help with a product and turn to the site for assistence
+</problem>
+
+<illustration>
+<img src="images/assistence-hp-small.png" border="1"/><br/>
+From <a href="http://www.hp.com">www.hp.com</a>
+<br/>
+</illustration>
+
+<context>Users have a product that they bought either on a <pattern-link type="is-contained-by" patternID="commerce"/> or off-line. They have some kind of problem with it and they turn to the site for help because that is where they bought it, or because it is the site of the manufacturer. User may be looking for something particular such as a driver update, order status, a manual, or pricing. Alternatively, they may have a more general, or unknown, problem and need support.
+</context>
+
+
+<pattlet>Create a support section and back it up with additional searching facilities
+</pattlet>
+
+
+<solution>Users are seeking assistance. Therefore the experience they are looking for is one that is 'helpful', 'clean' and 'straight to the point'. It is not appropriate to bother users with irrelevant commercial offers while they are seeking assistance. The site must be very <b>effective</b> for their visitors.
+<br/><br/>
+<b>A support section</b><br/>
+Although the site may have an organization based on topic, audience, or any other principle, it may be wise to add a 'support section'. It can be part of the <pattern-link type="contains" patternID="main-navigation"/> or conveniently put in the <pattern-link type="contains" patternID="meta-navigation"/>. Often such as section can be called 'Support', 'Customer Service' or 'Help' but in other cases it can be called differently. <br/>
+<br/>
+The support section can contain several items. Sometimes it is appropriate to select the product users need help with which then leads users to a kind of <pattern-link type="contains" patternID="product-page"/> where instead of trying to market to product, support information is given. Often there is a <pattern-link type="contains" patternID="faq"/> or <pattern-link type="contains" patternID="help-wizard"/>. Once users are on the product level, they go into a sort of <pattern-link type="contains" patternID="information-experience"/> experience.
+<br/><br/>
+<b>Additional searching facilities</b><br/>
+When there is a lot of support information, users will need additional search facilities. An <pattern-link type="contains" patternID="search"/> or <pattern-link type="contains" patternID="advanced-search"/> is then needed.
+
+</solution>
+
+<rationale>
+</rationale>
+
+<example><img src="images/assistence-amazon.gif"/><br/>
+<a href="http://www.amazon.co.uk">www.amazon.co.uk</a>
+<br/>
+<img src="images/assistence-sears-small.png" border="1"/><br/>
+<a href="http://www.sears.com">www.sears.com</a>
+
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

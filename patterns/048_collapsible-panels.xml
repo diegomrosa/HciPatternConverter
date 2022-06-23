@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="collapsible-panels" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Collapsible Panels</name>
+<aka><pattern-link type="is-alias" patternID="Closable_Panels" collection="tidwell" label="Closable Panels"/> </aka>
+<author>Martijn van Welie</author>
+<problem>Users need to access information or functionality but they only need in under certain (temporal) circumstances
+</problem>
+
+
+<context>When a lot of data or a lot of functionality is available, users typically only need a certain subset at any given moment. In order to keep the screen clean, it is preferred to show only the core information or functionality, and hide the rest but make it available on demand. Hence, Collapsible Panels are often used in a <pattern-link type="is-contained-by" patternID="application"/>. If <pattern-link type="not-related" patternID="tabbing"/> are used the amount of screenspace will typically be large which may lead to awkward pages. 
+</context>
+
+<illustration><img src="images/collapsible-panels-philips.png" border="1"/><br/>From 
+<a href="http://www.philips.co.uk">www.philips.co.uk</a><br/> 
+</illustration>
+
+<pattlet>Create panels that can be opened or closed independently of each other
+</pattlet>
+
+
+<solution>Stack several panels on top of each other and give each panel a label. The label should be clickable and toggles between the expanded and collapsed states of the panel. In order to make this behavior clear to the users, an arrow pointing to the right (collapsed state) or down (expanded state) can be used. The arrows are commonly used in Mac OS X and many Adobe applications so they may be somewhat familiar to users. Alternatively, double arrows up or down, or plus and minus symbols, are sometimes used as well. Use a transition animation if possible to give users feeback of the expanding/collapsing process.
+</solution>
+
+<rationale>Basically Collapsible Panels are similar to a <pattern-link type="is-alternative" patternID="accordion"/> but now with the possibility to keep entire sections open. Whereas <pattern-link type="is-alternative" patternID="details-on-demand"/> shows only information regarding one item, Collapsible Panels can be seen as an extension to hide and show larger chunks of information or functionality. Collapsible Panels are very space efficient as they are no larger than they have to be. When the number of panels you have is low, consider <pattern-link type="not-related" patternID="tabbing"/> but that may be less space-efficient. When used in the main navigation, Collapsible Panels become nearly identical to <pattern-link type="is-alternative" patternID="tree"/> but then with only 1 level.
+<br/><br/>
+The main downside of Collapsible Panels is that they are not that common and may confuse less experienced users. They are common in desktop applications such as in Adobe CS3 but in web applications they are less common. Another issues is deciding what the default state of each panel should be since some may be expanded and others collapsed. Deciding on this issue requires good insight into your users' needs.
+</rationale>
+
+<example><img src="images/collapsible-panels-google.png"/>Google uses Collapsible Panels on their iGoogle pages.  
+</example>
+
+<code-links>
+<a href="http://labs.adobe.com/technologies/spry/articles/collapse_panel/">Spry Widget (Adobe)</a><br/>
+<a href="http://www.kleenecode.net/2008/03/01/valid-and-accessible-collapsible-panels-with-scriptaculous/">Collapsible Panel using Scriptaculous</a><br/>
+<a href="http://www.asp.net/AJAX/AjaxControlToolkit/Samples/CollapsiblePanel/CollapsiblePanel.aspx">Implementation in ASP.NET</a><br/>
+<a href="http://lab.arc90.com/2008/03/collapsiblepanel.php#example">Implementation in Flex</a><br/>
+</code-links>
+</pattern>
