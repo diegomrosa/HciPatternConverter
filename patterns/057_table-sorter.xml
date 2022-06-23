@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="table-sorter" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Table Sorter</name>
+<author>Martijn van Welie</author>
+<problem>Users need to search or scan a complex table for values that interest them
+</problem>
+
+
+<context>Users are viewing a large table, possible spanning multiple pages, that they must scan for interesting values. There are several meaningful possibilities for sorting the table and users may be more effective if they can dynamically change the column that is used for sorting the values on. Typically, the table contains <pattern-link type="is-contained-by" patternID="search-results"/> but it can also be that a <pattern-link type="is-contained-by" patternID="list-builder"/> has been used, e.g. for displaying the inbox in a web-based email application.
+</context>
+
+<illustration><img src="images/table-sorter-realestatejournal.png" border="1"/><br/>From 
+<a href="http://www.realestatejournal.com/">http://www.realestatejournal.com/</a><br/> 
+</illustration>
+
+<pattlet>Allow users to change the sorting order of the table items by clicking on a column header
+</pattlet>
+
+
+<solution>As users click on the column label, the table is sorted by that column. Another click reverses the order, which can be visualized using an up- or down-wards pointing arrow. Make sure it is visible which columns can be clicked on and which one is active now.
+</solution>
+
+<rationale>Many users will already know this type of behavior from standard windows applications. It is a very direct way to control sorting in tables, i.e. just one click.
+</rationale>
+
+<example>Example from a web-based email client:<br/><br/>
+<img src="images/sortable-table-imp-small.gif" border="1"/><br/><br/>
+Example from E-bay:<br/><br/>
+<img src="images/column-filter-ebay.gif" border="1"/><br/>
+
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

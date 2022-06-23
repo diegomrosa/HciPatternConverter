@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="language-selector" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Language Selector</name>
+<author>Martijn van Welie</author>
+<problem>Users need to select their prefered language
+</problem>
+
+<illustration>
+<img src="images/copernic-lang-sel.png" border="1"/><br/>
+From <a href="http://www.copernic.com">www.copernic.com</a>
+<br/>
+</illustration>
+
+<context>If a website offers different content for each particular country, the site is localized. Hence, language is often one of the things that are localized. Users must be able to recognize their language name. Users might be able to read more than one language
+</context>
+
+<pattlet>Ask the language spelled in the specific language
+</pattlet>
+
+<solution>List all the available languages in their own spelling such as "Deutsch", "English", "Italiano" or "Nederlands". If possible, list them all so that selection can happen in one click. Otherwise consider a combobox. Do not use any label for the language selector, just provide the names of the language. Place the list of language in the upper part of the window and show it on every page of the site.
+<br/>
+NOTE: Do not use flags to present languages! They do not uniquely define languages and can be very offending in some countries! Flags represent countries and not languages.
+</solution>
+
+<rationale>Presenting the language in native spelling makes sure that the target group can read their own language name. 
+Providing a label would not make sense: if the users can read it they do not have to change the language, otherwise a label they do not understand does not tell them anything. The language selector must be available on all pages of the site so that visitors that have not entered the site via the home-page can also switch language.</rationale>
+
+<example>The Speednames site offers so many languages that it even consumes a prominent position on the homepage.<br/><img src="images/language-selector.png"/>
+</example>
+
+<uses><a href="http://www.copernic.com">www.copernic.com</a>;
+<a href="http://www.speednames.com">www.speednames.com</a>
+</uses>
+
+<references>
+</references>
+</pattern>

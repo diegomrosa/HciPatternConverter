@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="center-stage" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+
+<name>Center Stage</name>
+<author>Jenifer Tidwell and Martijn van Welie</author>
+<problem>Users need to know where to find the important things in relation to all the things on the page
+</problem>
+
+
+<context>You are any particular page on a site but especially on crowded pages such as a <pattern-link type="is-contained-by" patternID="homepage"/>. A web page is presenting information to the user and the users must easily be able to see what the important things are on the page and which other things are of less importance. A Center Stage gives users a primary area of focus. 
+
+</context>
+
+<illustration><img src="images/centerstage-guggenheim.gif" border="1"/><br/>From 
+<a href="http://www.guggenheim.com/the_building.html">www.guggenheim.com</a><br/> 
+</illustration>
+
+<pattlet>Create a large "center stage" that dominates on the page
+</pattlet>
+
+
+<solution>
+The center stage is the place where the most important things happen. For <pattern-link type="is-contained-by"  patternID="application"/> the stage is taken by the objects that are work on. For most other site types, it will be the real content. A center stage allows users to focus on one thing in particular, the most important thing on the page. That means that the center stage is also by far the largest area of the page. Usually at least 50% of the page width is for the center stage. If your page has a multi-column layout, the center-stage is usually the middle and widest column<br/>
+<br/>
+The center stage is usually colored with the most neutral color in the color scheme, i.e. white or a soft color. The color should contrast with other areas such a local navigation or sections with related stuff that go at the sides. A center stage is recognizable even without being able to read the screen.<br/>
+<br/>
+Content on the center stage is usually displayed in a larger font or it has images besides the text. The Center Stage is the 'top' of the visual hierarchy of the page.
+</solution>
+
+<rationale>The user's eye should be guided immediately to the start of the most-important information (or task), rather than wandering over the page in confusion. An unambiguous central entity "anchors" their attention. Just as the lead sentence in a news article establishes the subject matter and purpose of the article, so the entity in center stage establishes the purpose of the UI. Once they have recognized it, they will use it as such.
+</rationale>
+
+<example>Even on crowded a <pattern-link type="is-contained-by"  patternID="product-page"/> a Center Stage helps to give some focus on the most important information. In this case the center-stage is in the right-hand column and stops directly after the main message.<br/><img src="images/centerstage-adobe-small.gif" border="1"/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>
+

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="help-wizard" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Help Wizard</name>
+<author>Martijn van Welie</author>
+<problem>Users need help on a certain topic related to site or when they need to find a specific page in the site.
+</problem>
+
+
+<context>Users need to help on a topic they don't know too much about and they cannot find the information they need by any other way. Typically for site that provide product/service support.<br/>
+<br/>
+Alternatively, it can also be used as a more 'guided' version of <pattern-link type="generalization" patternID="advanced-search"/>. On  large informative sites with hundreds of pages, it can be beneficial for novice users to get some help.. Such sites will already have complex navigation systems, probably including <pattern-link type="generalization" patternID="advanced-search"/>, <pattern-link type="is-alternative" patternID="sitemap"/> or <pattern-link type="is-alternative" patternID="site-index"/>. In such cases, the Help Wizard can provide some focused and guided searching.
+</context>
+
+<illustration><img src="images/helpwiz-sprint-small.png" border="1"/><br/>From 
+<a href="http://csb.sprint.com/home/local/techSupport/help_wiz_intro.html">www.sprint.com</a><br/> 
+</illustration>
+
+<pattlet>Use a wizard to identify the topic and set the scope for which the users need help. Then show the possible results in the last step.
+</pattlet>
+
+
+<solution>A Help Wizard is a <pattern-link type="is-contained-by" patternID="wizard"/> where the users first have to specify what it is they need to know/have/find. Once the topic and scope has been set, the possible solutions/results/files are being presented in the last step. The results are given in a similar way as <pattern-link type="contains" patternID="search-results"/> are given. The main difference is that the number op results should be very limited so that <pattern-link type="not-related" patternID="paging"/> is not needed. <br/>
+<br/>
+The actual design of the <pattern-link type="is-contained-by" patternID="wizard"/> comes on two flavors: a) using multiple screens with next/previous links b) all options numbered in one screen. It depends on the number of options per step you have as well as the amount or screen estate available.
+</solution>
+
+<rationale>A Help Wizard is not the same a Search. The Help Wizard only covers a small range of topics and is therefore short and focused. It is almost like a drilling down in a small about of hierarchical information.
+</rationale>
+
+<example><img src="images/helpwiz-surveyor.png" border="1"/>
+And one example where everything is done in one screen....
+<img src="images/helpwiz-ontrack.png" border="1"/>
+</example>
+
+<uses>www.surveyor.com; www.sprint.com; www.ontrack.com
+</uses>
+
+<references>
+</references>
+</pattern>

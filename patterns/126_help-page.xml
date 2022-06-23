@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="help-page" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Help Page</name>
+<author>Guiseppe Vella, Martijn van Welie</author>
+<problem>Users may have trouble finding what they need on the site or they are experiencing problems with one of the site's functionalities.
+</problem>
+
+<illustration>
+<img src="images/help-page-nytimes.jpg" border="1"/><br/>
+From <a href="http://www.nytimes.com/membercenter/sitehelp.html">www.nytimes.com/</a>
+<br/>
+</illustration>
+
+<context>On complex site such as <pattern-link type="is-contained-by" patternID="application"/> or <pattern-link type="is-contained-by" patternID="commerce"/> where users can have to go through a <pattern-link type="is-contained-by" patternID="registration"/> process, or place orders, or do some other complex task users may experience problems and get stuck. Basically, the site must provide a service and the help page should assist users when they have trouble using the service.</context>
+
+<pattlet>Place a link on every page to the Help page where users find help with the most common problems
+</pattlet>
+
+<solution>Add a 'Help' link to the <pattern-link type="contains" patternID="footer-bar"/> or in the <pattern-link type="contains" patternID="meta-navigation"/>. On the Help page itself provide answers to the most common problems users have with the site. This can be done in various ways and depends on the typical problems users encounter with the site. For example if you have a member section you may have user with problems remembering their username or passwords. When bookings can be done people may have questions about canceling or changing their booking. The help page can provide categorized help per topic or refer to other tools such as an <pattern-link type="contains" patternID="faq"/> or a <pattern-link type="contains" patternID="contact-us"/>.
+<br/><br/>
+This type of help is 'generic' and is not a replacement for contextual help that may appear in any particular section or during a particular process. Nonetheless. it may still be possible detecting where the user came from and try to guess what the user user might be having problems with.
+</solution>
+
+<rationale>The footer is a good place to place a link to a help page because then it is always available. On the other hand it is also slightly invisible at the same time. In order for this pattern to work well it is important that the issues the Help page addresses really are problems users have. Therefore use information from the customer support center, emails and any other relevant resource to determine what people are having problems with and provide help on them.</rationale>
+
+<example>
+<a href="http://www.cnn.com/help/">Help at CNN</a> basically sends people to their Contact page or FAQ<br/>
+<img src="images/help-page-cnn.jpg"/><br/><br/>
+The <a href="http://www.expedia.com/daily/service/default.asp?rfrr=-940">Customer service page at Expedia</a> provides a very extensive list of problems and possible solutions.
+<img src="images/help-page-expedia.jpg"/>
+</example>
+
+<literature>
+</literature>
+</pattern>

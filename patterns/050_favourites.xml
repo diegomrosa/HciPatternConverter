@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="favourites" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Collector</name>
+<author>Martijn van Welie</author>
+<problem>Users need to temporarily gather a set of items for later use
+</problem>
+
+<illustration><img src="images/yahoo-favourites.png" border="1"/>
+<br/>
+From <a href="http://www.yahoo.com">www.yahoo.com</a>
+<br/>
+</illustration>
+
+<context>In many sites users encounter 'objects' that they will later again read, view, or use in general. For example, in a <pattern-link type="is-contained-by" patternID="commerce"/> users view products which they will put in their <pattern-link type="not-related" patternID="shopping-cart"/> so that they may purchase them or throw them out of the cart again. A 'wish list' is another temporary storage for products. For other type of sites such as <pattern-link type="is-contained-by" patternID="news-site"/> users may gather articles based on headlines and read the collected articles afterwards. Often a 'favorites/bookmarks' list is part of a <pattern-link type="is-contained-by" patternID="my-site"/>. Collecting items can also be used for a <pattern-link type="not-related" patternID="comparison"/> or any other situation where the task consists of 'collect and take action on the collection'. 
+<br/><br/>
+Users must be able to quickly access their 'collection' and independently of the task at had. Users must be able to add items as they find them and they must be able to manipulate their gathered items.
+</context>
+
+<pattlet>Allow users to build their list of items by selecting the items as they are viewing them. Place a link to the collected items list on every page in the site.
+</pattlet>
+
+
+<solution>Place a link 'add/save to list/cart/clippings/...' on pages with items of interest. Typically such a link is present on a <pattern-link type="not-related" patternID="article-page"/> or <pattern-link type="not-related" patternID="product-page"/>. Provide some subtle feedback that the item has been added to the set of items. For example, by showing the number of items in the set being updated. Alternatively, show the updated list of items. 
+<br/><br/>
+The set of items is accessible from any location in the site. It is hence usually part of the <pattern-link type="is-contained-by" patternID="meta-navigation"/>. Selecting the list shows the set either on a new page or in an overlaid section. The list itself is just a very basic <pattern-link type="not-related" patternID="view"/>. Although the set of items is only intended to gather few items, users need some basic functionality for deleting all or some items. Provide functionality in the area of the list itself, for instance using simplified <pattern-link type="contains" patternID="list-builder"/> pattern.
+</solution>
+
+<rationale>Temporarily collecting items is something we do all the time in our daily life. The collector provides a simple mechanism that allows for a small number of items to be gathered for later use. By making it accessible on every page it truly becomes a handy 'cart' to put stuff in.
+</rationale>
+
+<example>
+The International Herald Tribune site makes different use of a favorites list. Here users can click on the icon next to an article to "clip" the article. By going to the "clippings" section in the top bar, users can manage their selected articles.<br/>
+<img src="images/favourites-example-iht.png" border="1"/>
+<br/><br/>
+At CNet, articles can be 'saved' and are directly accessible again in a pull down list<br/>
+<img src="images/collector-cnet.png" border="1"/>
+<br/>
+
+
+</example>
+
+
+<references>
+</references>
+</pattern>

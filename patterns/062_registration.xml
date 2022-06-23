@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="registration" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Registration</name>
+<author>Martijn van Welie</author>
+<problem>The users repeatedly need to (re)enter a large amount of personal data
+</problem>
+
+<illustration>
+<img src="images/register-ebay-small.gif" border="1"/><br/>
+From <a href="http://www.ebay.com">www.ebay.com</a>
+<br/>
+</illustration>
+
+<context>On many sites there is a clear benefit of offering personalized services. When large amounts of data have to be entered on each returning visit, there is a clear benefit of being able to store and retrieve that data. In other cases, information about the user's preferences or history of actions can help to provide a better service, e.g. when offering <a href="#">Product Recommendations</a>.
+</context>
+
+<pattlet>Offer users to possibility to store their personal information for later use
+</pattlet>
+
+
+<solution>Users should be offered the possibility to register either at their own initiative or at a moment where it is appropriate, e.g. when starting or completing a checkout process from a <pattern-link type="not-related" patternID="shopping-cart"/>. When users take the initiative they must be able to find the registration procedure at a <pattern-link type="is-contained-by" patternID="login"/> page.<br/>
+<br/>
+The registration process itself is essentially a <pattern-link type="specialization" patternID="wizard"/> where users complete a <pattern-link type="contains" patternID="forms"/> in one or more steps. It is very important that the absolute minimum of data is mandatory for users to fill in. Often sites ask all sorts of personal details such as phone numbers while that information is in no way related to the purpose of the site. Asking more than is needed for the site will lead to frustration on the user's side and cause fake data to be entered.<br/>
+<br/>
+In order to create the credibility that registration is beneficial for the end-user, provide the benefits of registering and tell users about your privacy policy. Also provide information about how to un-register.<br/>
+<br/>
+When the registration process has been successfully completed by the user, the users is taken back to the place where the registration was started. In some cases, the user will actually be logged in after the registration. Another, more secure, approach is one where the users receive an email with a confirmation-link that activates the account.
+</solution>
+
+<rationale>Users should never be forced to register, at least not from a usability perspective. If users decide to give personal information anyway, the registration procedure does not require much additional effort. The benefits will be clear and the users are relieved from the burden of re-entering the same information on future visits.
+</rationale>
+
+<example>Another example taken from <a href="http://www.clubnokia.com">www.clubnokia.com</a><br/><img src="images/wizard-cn.gif" border="1"/>
+</example>
+
+<impact></impact>
+
+<uses>
+</uses>
+</pattern>

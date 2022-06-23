@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern collection="welie" patternID="main-navigation" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Main Navigation</name>
+<author>Martijn van Welie</author>
+<problem>Users need to know where they can find what they are looking for.
+</problem>
+
+
+<context>All sites need some form of main navigation.
+</context>
+
+<illustration><img src="images/main-navigation-apple-small.png" border="1"/><br/>From 
+<a href="http://www.apple.com">www.apple.com</a><br/> 
+</illustration>
+
+<pattlet>Place an always visible menu at a fixed position on the page. Support this main menu with additional navigation tools.
+</pattlet>
+
+
+<solution>There are dozens of ways to design the main navigation for your site. However, the most common ones are the <b>Horizontal Menu</b> and <b>Vertical Menu</b> or <b>Inverted L Menu</b>. The choice for a particular navigation system must be based on the information architecture for the site. When chosing a navigation type its benefits and its limitations must be balanced with the constraints on the information architecture, other page elements and visual constraints. <br/>
+<br/>
+
+<b>Horizontal Menu</b><br/>
+A horizontal menu usually consists of a horizontal bar with several clickable items placed at the top of the page. The navigation stays unchanged when browsing through the site and it is present on every page. The currently selected item is usually highlighted is some way: by making the text label bold or by changing the back- and foreground colors. If the information structure has several levels, consecutive levels can be placed underneath the previous level, showing the cascading path down the hierarchy. If you have 2 levels you get what is also known as a <pattern-link type="specialization" patternID="doubletab"/><br/>
+<img src="images/main-nav-wf2.png" border="0"/><br/>
+In relation to the information structure, it is important to realize that top navigation has some important limitations:<br/>
+<ul>
+<li>The maximum number of items is 6 to 8 items depending on the average word length, the font size and browser size you are designing for. If you expect the number of items to grow over time, keep in mind that you cannot expand very much. If you really have to, you have to re-organize the information structure so that it fits again. However, this might be conflicting in your intention to provide a goal-optimized information structure.</li>
+<li>The number of levels that you can show is limited to 2 or 3. Since each level is placed underneath the previous level, a lot of vertical space is used that pushes down the content area. So if you envision 3 levels, you need to reserve vertical "white space" for the navigation to expand.</li>
+</ul>
+Another important aspect to notice is that all items of the first level are always visible while only one set of the level 2 items is visible. When a third level is added great care should be taken that the navigation remains visually "clear" and appealing. A common addition when 3 or 4 levels are used, is to include a <pattern-link type="contains" patternID="crumbs"/> to show where the user is in the information structure. However, the bottom line is that you should think about using a more elaborate navigation scheme when you need to show 3 or 4 levels.<br/>
+<br/>
+One of the main advantages of top navigation is the fact it does not consume vertical space and thereby maximizes the width of the content area. Often the content area itself is split up in a main content area and a column with related information. This is even recommendable since text is more readable when the column is not too wide, leaving space for the second column.<br/>
+<br/>
+
+<b>Vertical Menu</b><br/>
+An other often used navigation scheme is to used left navigation, sometimes also called vertical navigation. When left navigation is used, the page is split in at least 2 columns where the left column is used to place the navigation. Several forms are often used: (A) showing only level 1, (B) showing level 1 and expanding level 2 when selected, and (C) showing level 2 grouped by a non-clickable level 1 heading.<br/>
+<img src="images/main-nav-wf1.png" border="0"/><br/>
+If type A is used, subsequent levels must be shown in an additional way, for example using <pattern-link type="contains" patternID="crumbs"/>. Type B shows the second level although only one level 2 section is shown at one time. A variation on type B is the use of <pattern-link type="is-alternative" patternID="fly-out-menu"/> to display level 2 items. Type C is the only one that shows all level 1 and level 2 items at the same time.<br/>
+<br/>
+Left navigation has two main disadvantages:
+<ul>
+<li>Depending on the type, navigation items are pushed down the page, which leads to more scrolling. This may cause several level 1 items to become invisible unless scrolling is used.</li>
+<li>When an item 'under the fold' is selected, the highlighted item is not visible because it is under the fold. This situation requires other means of telling the user what the current selection is.</li>
+</ul>
+The advantages of left navigation are stemming from the fact that the navigation is vertical. First of all, it scales well because as many items can be added as is desirable, limited by the fold of course; the page will just get longer. Second, the content can be placed at the top of the page, whereas top navigation may push down the content.<br/>
+<br/>
+A minor issue concerns headings in the content. In left navigation the headings can be placed at the top of the content area which is also the top of the page. In top navigation, the heading will have to be placed underneath the navigation itself. It often looks visually less appealing because the same words appear directly on top of each other. This becomes worse when 2 or more levels are shown in the top navigation.
+<br/><br/>
+<b>Inverted L Menu</b><br/>
+
+In practice, the main navigation must deal with levels 3 and 4 in the information structure. Usually it is more 'attractive' to use a combination of horizontal and vertical navigation. Horizontal navigation can be used for the level 1 items while vertical navigation is used for level 2 and 3 items.
+<img src="images/main-nav-wf3.png" border="0"/><br/>
+<br/>
+It is also possible to use left navigation for the first level and then proceed with top navigation, although this is rarely used. Starting with top navigation is often a better choice; typically the number of items of the first level is small while it usually expands on lower levels.<br/>
+<br/>
+What is essential for a top-left navigation, is the type of left navigation. Considering the limitations of left navigation it may still be problematic to show enough items. If so, consider a more rigorous approach such as <pattern-link type="specialization" patternID="split-navigation"/>. For level 4 navigation, the variations that are possible for either horizontal or vertical navigation can also be applied.
+Inverted L navigation is one of the more flexible navigation schemes and is hence also useful if a site has sub-sites. The horizontal navigation can be used to access the independent sub-sites while each sub-site uses left navigation locally.<br/>
+<br/>
+<b>Other menu systems</b><br/>
+There are many more possible menu systems. Some are variations on the horizontal or vertical menu, e.g. <pattern-link type="is-alternative" patternID="fly-out-menu"/> or <pattern-link type="is-alternative" patternID="combined-menu"/>. Others are more image oriented or suitable for very specific cases e.g. <pattern-link type="specialization" patternID="scrolling-menu"/>,  <pattern-link type="specialization" patternID="doormat"/>, <pattern-link type="specialization" patternID="faceted-navigation"/> or <pattern-link type="specialization" patternID="minesweeping"/>.<br/>
+<br/>
+<b>Additional navigational tools</b><br/>
+The site's main navigation is almost never the only way to access the information. <pattern-link type="contains" patternID="sitemap"/>, <pattern-link type="contains" patternID="site-index"/> and search functions also allow users to reach the information. These navigational tools are supportive in the sense that they exist together with the main navigation itself. Only sites that are search engines themselves will use these supportive tools as the main navigation.<br/>
+<br/>
+The main navigation may also be supported by other tools such as a <pattern-link type="contains" patternID="repeated-menu"/> and <pattern-link type="contains" patternID="meta-navigation"/>.
+</solution>
+
+<rationale>The site's main navigation is the main way to make the information accessible for your users. The navigation helps users to go through the information structure of the site and tells them where they are and where they can go. That experience will 'educate' users about the structure of the site and help them to be more effective in their activities. Since most sites are primarily hierarchical, the navigation helps the users go up and down that hierarchy or navigating on the same level. Nonetheless, adding cross-links to the hierarchy can help to make relevant information available when it is needed, even if it is placed in another branch of the hierarchy.
+</rationale>
+
+<example>At <a href="http://www.cnn.com">www.cnn.com</a> a simple vertical menu is used:<br/>
+<img src="images/main-nav-cnn.png" border="1"/><br/><br/>
+At <a href="http://news.com.com">Cnet News</a> a nice horizontal menu is used:<br/>
+<img src="images/main-nav-cnet-small.png" border="1"/><br/><br/>
+At <a href="http://www.adobe.com">Adobe</a> a variant of an inverted L menu is used. The horizontal menu is combined with a <pattern-link type="is-alternative" patternID="fly-out-menu"/> and then followed by a simple vertical menu:<br/>
+<img src="images/main-nav-adobe-small.png" border="1"/><br/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

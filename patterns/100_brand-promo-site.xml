@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="brand-promo-site" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Branded Promo Site</name>
+<author>Martijn van Welie</author>
+
+<problem>Users want to identify themselves with a brand and enjoy the brand-experience entirely. They want to feel related to the brand and it's products and lifestyle.
+</problem>
+
+
+<context>The site belongs to a company with a strong brand that is not directly related to an online presence. For example, shoe-manufactures, soda/drinks companies, clothing, or other luxury product manufacturers. The target audience for these companies are the people who have their products and feel related to them. In addition, other visitors may be attracted because of some marketing campaign or sponsored event. The company does not need the site as a primary means of selling selling products but rather for offering an "online branded experience".
+</context>
+
+<illustration><img src="images/cocacola-brand.png" border="1"/><br/>From
+<a href="http://www.coca-cola.co.uk/index.html">www.coca-cola.co.uk/index.html</a>
+<br/>
+</illustration>
+
+<pattlet>Provide info and entertainment related to the brand
+</pattlet>
+
+
+<solution>The focus is on <pattern-link type="contains" patternID="fun"/> and not on informative, Visitors may we invited to participate in <a href="#">Online Games</a> or they can download branded items such as screensavers, wallpapers or even mp3 songs. Quite often the brand is also supported by an advertising campaign that uses posters or clips, which can also be offered for download. Other elements for the site are sponsored events, promotions, competitions or quizzes.
+<br/>
+A branded promo site is a really 'designed' site full of colours and high quality photographic material. People go to these sites to have a 'cool' experience and therefore have high expectations. Animations or clips can also be used to emphasize brand values such as 'cool', 'sporty', 'fast', 'fashionable'.
+</solution>
+
+<rationale>People visit such site not for information but to see something nice, cool, fashionable, hip etc. Strong visual elements and animations are powerful in emphasizing such feelings. This approach makes the site stand out against informative sites and give the visitors a feeling of seeing something special.
+</rationale>
+
+<example>
+This special <a href="http://bowerman.nike.com">Nike Bowerman</a> site is designed for promoting the Bowerman series of shoes. Rather focusing on the shoe itself, it stressed the values of 'being the best' and you 'motivations':<br/>
+<img src="images/nike-brand.png"/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

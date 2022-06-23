@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="purchase-process" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name></name>
+<author>Martijn van Welie</author>
+<problem>Users want to purchase an already selected product	
+</problem>
+
+
+<context>The site allows purchasing of goods, typically a <pattern-link type="is-contained-by" patternID="commerce"/> but it can also a site that happens to sell products as well such as a <pattern-link type="is-contained-by" patternID="museum"/>. A purchase can also be part of larger tasks such as a <pattern-link type="is-contained-by" patternID="booking"/>.
+</context>
+
+<illustration><img src="images/purchase-bn-small.png" border="1"/><br/>From 
+<a href="http://www.bn.com">www.bn.com</a><br/> 
+</illustration>
+
+<pattlet>Present users with the purchase steps
+</pattlet>
+
+
+<solution>In order to purchase the products in the cart they need to select the checkout action. The checkout is a five step <pattern-link type="not-related" patternID="purchase-process"/> with the following tasks:
+<ol>
+<li>Identify they client</li>
+<li>Select shipping address and special options</li>
+<li>Select payment method</li>
+<li>See overview of the entire order</li>
+<li>Confirm and place order</li>
+<li>Receive confirmation by email</li>
+</ol>
+The users can abort the checkout procedure at any step. When users retry the checkout later, they start again at the first task. Consider a <pattern-link type="contains" patternID="wizard"/> to guide the user through these tasks while minimizing the number of web pages used. However, a wizard is not always needed for just a purchase. Often sites ask for details that are not strictly necessary to process the order. In many cases, all of the order information may easily fit on one page and hence eliminating the need for a wizard.
+<br/><br/>
+
+<b>Minimize navigation and non-relevant page elements</b><br/>
+Since purchasing is a task that requires quite some focus, the standard page layout during the purchase process has to be simplified. Sub-navigation and contextual elements should not be shown. All distracting elements should be removed.
+<br/><br/>
+
+<b>User Login</b><br/>
+Many sites require users to <pattern-link type="contains" patternID="login"/> as the first step of the process. While this is convenient for returning customers because all their personal data can be re-used, it is not very nice for new users. New customers should be allowed to purchase items without creating an account. At the end of a purchase, users can be asked to <pattern-link type="contains" patternID="registration"/>. Registration can then be made very simple because all the basic data has already been captured during the purchase process, only the username and password still needs to be selected. 
+<br/><br/>
+
+<b>Confirmation by email</b><br/>
+It is important to 'give' the users something that is easily accessible after the browser has been closed. An email with the information about the purchase is like a 'receipt' for users. It should contain an order number, list of items in the order, all amount, shipping address, payment information, date of placing order. It should also contain help for users how to track they order, cancel it, or request assistance.
+</solution>
+
+<rationale>First time customers or infrequent customers are best helped with a Wizard that allows the to complete the purchase in small steps. Returning customers usually use the same shipping address and same credit-card. Therefore the process can be more efficiently done in only one overview screen with a 'purchase' button.
+</rationale>
+
+<example>At Amazon, the wizard is not shown for frequent customers who's data has been stored already. All information is shown in one screen while still allowing users to change parameters:<br/><img src="images/purchase-amazon-small.png" border="1"/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

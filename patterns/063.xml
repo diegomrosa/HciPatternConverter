@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="booking" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+
+<name>Booking</name>
+<author>Martijn van Welie</author>
+<problem>Users want to book a flight/hotel/car/....
+</problem>
+
+
+<context>Typically used in <pattern-link type="is-contained-by" patternID="travel-site"/> or <pattern-link type="is-contained-by" patternID="commerce"/>. On the <pattern-link type="is-contained-by" patternID="homepage"/> of such sites...
+</context>
+
+<illustration><img src="images/booking-expedia.gif" border="0"/><br/>From 
+<a href="http://www.expedia.com">www.expedia.com</a><br/> 
+</illustration>
+
+<pattlet>Allow users to search for the 'object' flexibly, especially concerning date/time versus prize. Then allow that to make the actual booking.
+</pattlet>
+
+
+<solution>Booking a flight/car/holidays is in structure very similar to other online purchasing or ordering activities. It consists of two high-level steps:
+<ol>
+<li>Determining the item to book/buy using a search-like process.</li>
+<li>Going through the <pattern-link type="contains" patternID="purchase-process"/> for the selected item(s).</li>
+</ol>
+
+The trickiest part of the booking is the searching and selecting of the item. In many cases, such as on a <pattern-link type="is-contained-by" patternID="travel-site"/>, you'll find a box containing some variation on <pattern-link type="specialization" patternID="advanced-search"/> on the <pattern-link type="is-contained-by" patternID="homepage"/>. See the example above from Expedia. Such a <pattern-link type="contains" patternID="forms"/> is the start of a series steps the users have to go through using a <pattern-link type="contains" patternID="wizard"/>:<br/>
+<br/>
+The basic steps are:
+<ol>
+<li><b>Initial selection</b>. Users can narrow down their preferences for dates, prices, type of fare (if applicable), sort of transport, and the number of persons.</li>
+<li><b>Perform a search in the database</b>. Users will see a <pattern-link type="contains" patternID="processing-page"/> while the system is searching because it usually takes quite long before the search is completed.</li>
+<li><b>Show the results</b>. The results are basically a special case of <pattern-link type="contains" patternID="search-results"/>. The main problem here is how to deal with the combination of dates and prizes. One approach is to search primarily on date or price as the user requests. Another approach is not ask the user the set search type first but instead to combine price and dates. Primarily the results are sorted by date but with an indication of the prices. For example, using color coding. See British Airways example below. Narrow down dates first, then prizes. There are many ways that the combination of prices and dates can be handled, for example using a <pattern-link type="contains" patternID="table-sorter"/> or calendar views with color coding. </li>
+<li><b>View selection</b>. Optionally step back. View the date, time, prize, flight-numbers etc.</li>
+<li><b>Perform the purchase</b>The rest is just a <pattern-link type="contains" patternID="purchase-process"/> just like when using a <pattern-link type="contains" patternID="shopping-cart"/></li>
+</ol>
+</solution>
+
+<rationale>The combination of price and 'fit' to the requested dates or preferences is the basis on which users have to make a decision. Primarily they want an exact fit to their request with the lowest possible price. Since that is rarely the case, they must balance the other options. How to visualize this is a difficult problem and it is not fully known what the best solution is, not yet at least.
+</rationale>
+
+<example>
+<br/><img src="images/booking-klm1.gif" border="1"/>
+<br/><img src="images/booking-klm2.gif" border="1"/>
+<br/><img src="images/booking-ba.gif" border="1"/>
+<br/><img src="images/booking-ba2.gif" border="1"/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

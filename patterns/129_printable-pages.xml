@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="printable-pages" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Printable Pages</name>
+<author>Martijn van Welie</author>
+<problem>User need to print content of the page they are viewing
+</problem>
+
+<illustration>
+<img src="images/printable-sun.gif" border="1"/><br/>
+From <a href="http://www.sun.com/">www.sun.com/</a>
+<br/>
+</illustration>
+
+<context>Printing web pages is often problematic because the pages are not designed to be printed. Consequently, parts of the page may not be printed or formatted wrongly. On sites that have a content that is likely to involve a significant amount of reading, special arrangements need to be made so that the printed page looks good. <pattern-link type="is-contained-by" patternID="news-site"/>s typically need such special arrangements for reading news articles but other content rich sites may also benefit from this. Any site that uses <pattern-link type="is-contained-by" patternID="article-page"/>s but also other special pages where users can be expected to print. e.g. pages with maps, see <pattern-link type="is-contained-by" patternID="map-navigator"/> or schedules.
+</context>
+
+<pattlet>Place a link to a printer-friendly version of the page the users are viewing next to the page content
+</pattlet>
+
+
+<solution>
+<b>A 'stripped-down' version for printing</b><br/>
+A printer-friendly version is basically a page with only the page content and not any navigation or other general elements. For example, on a <pattern-link type="is-contained-by" patternID="news-site"/>, it is the article text itself with the related links but not any navigation. The page consequently will use a different layout than the other pages on the site. Usually the entire width of the page is used, e.g. using <pattern-link type="contains" patternID="liquid-layout"/>, so that the page can be scaled appropriately in the printing process. Sometimes the printer-friendly page may also use different font-sizes or typefaces that are better suited for printing. The may also be a "print" button on that page that actual sends the page to the printer. This link simply invokes the browser's print functionality.<br/>
+<br/>
+<b>Linking to the printer-friendly page</b><br/>
+Link to such a printer-friendly page can be done using a text link or an icon link placed near the top of the article or in the <pattern-link type="contains" patternID="footer-bar"/>. Often there is also a <pattern-link type="not-related" patternID="send-to-friend"/> placed near the link to the printer-friendly page. The label of the link to the 'printer-friendly' page should NOT be 'print' but 'Printer-friendly version/page', 'Printable version/page' or something like that.
+</solution>
+
+<rationale>If you print an article, you don't want to print all the surrounding page elements. In addition, when reading an article the print-ready version is often preferred by many since it doesn't have any disturbing elements such as navigation or advertisements. Many users know that printing web pages is problematic and the 'printer-friendly' version is now a common good that is learnt by users. Some people with disabilities using assisting technology also benefit from a 'printer-friendly' page. The link must preferably be placed at the top of the of the page so that users can see it immediately. That way they don't have to scroll down and notice it there.
+</rationale>
+
+<example>
+At <a href="http://www.trolltech.com/">www.trolltech.com/</a> the link is placed in the upper-right corner of the content area:<br/><img src="images/printable-trolltech.gif" border="1"/><br/><br/>
+
+At <a href="http://www.sonyericsson.com">SonyEricsson</a>, only an icon-link is used for a printable page and located in a <pattern-link type="contains" patternID="footer-bar"/> together with other elements::<br/><img src="images/print.png" border="1"/><br/>
+<br/>
+When selecting "print article" on an <pattern-link type="is-contained-by" patternID="article-page"/> at CNN, users get a stripped version of the page with a direct print button.
+<br/>
+<img src="images/printable-pages-cnn2.png" border="1"/><br/><br/>
+At <a href="http://www.gbif.org/GBIF_org/prize/index_html">www.gbif.org</a>, a link to the printer-friendly page is at the bottom of every page.
+<img src="images/printable-gbif.gif" border="1"/><br/>
+
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

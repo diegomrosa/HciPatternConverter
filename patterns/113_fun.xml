@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="fun" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Fun</name>
+<author>Martijn van Welie</author>
+<problem>Users want to have fun or feel entertained
+</problem>
+
+
+<context>The site should not a very "serious" or highly informative character. The fact that the site is fun to visit and its content is in line with that is reflected in the site's design. Providing a fun experience is more important than providing the easiest and clearest way to access useful information, as in an <pattern-link type="not-related" patternID="information-experience"/> experience. Such sites are typically <pattern-link type="is-contained-by" patternID="brand-promo-site"/>, an <pattern-link type="is-contained-by" patternID="artist-sites"/> or a site where the topic is directly about fun or leisure e.g. cartoon-related, hobbies etc. Fun inspired elements can also appear on "serious sites" to "break" the seriousness and provide some contrast. For example, a game can appear on a <pattern-link type="is-contained-by" patternID="news-site"/>, <pattern-link type="is-contained-by" patternID="automotive"/> or a <pattern-link type="is-contained-by" patternID="corporate"/>.
+</context>
+
+<illustration><img src="images/fun-disney-small.png" border="1"/><br/>From
+<a href="http://www.disney.com">www.disney.com</a><br/>
+</illustration>
+
+<pattlet>Add challenging and surprising elements to your site, supported by additional visual fun-adding details, to create a highly interactive and visual experience.
+</pattlet>
+
+
+<solution>Making your site more fun or entertaining can be done by applying a combination of specific interactive elements and an appropriate visual style. <br/>
+<br/>
+For interactivity to be more "fun", it needs to be <i>challenging</i> or <i>surprising</i>, requiring users to <i>discover</i> how things work or behave. Users will have to learn how the site works and what it has to offer. Users may even have to improve <i>improve</i> their motor or mental skills for successful interaction. When designing of a sustained fun on a site, the site may include game elements such as <i>competing</i> against others and get <i>rewarded</i> when they reach a certain <i>goal</i>. Typical elements that have such a challenging interaction include <pattern-link type="contains" patternID="minesweeping"/>, <a href="#">Roll-overs</a> and <pattern-link type="contains" patternID="overlay-menu"/>. In both cases users need to explore or act first in order to get access to the navigation. <br/>
+<br/>
+Concerning the visual style, more fun means being positively surprised. For example by being playful, cartoon-like, round and not straight, using soft colors, black outlines and strong contrasts (no gradients). Other means include the use of metaphors, making things that are out of proportion or combinations of things that normally don't go together. Playful music and the use of animation or animated transitions may also help. The use of many visual elements will make pages download slower but that is ok as long as the visuals are good enough and worth the waiting.<br/>
+<br/>
+When looking at web design, certain elements have a more fun or entertaining aspect:<br/>
+- <pattern-link type="contains" patternID="guided-tour"/> can be a nice way to explain users how to use a particular product.<br/>
+- Interactive Games can provide some real entertainment to even otherwise serious web sites.<br/>
+
+</solution>
+
+<rationale>A crucial element in creating a highly interactive experience, is to make it challenging. This mean that interactivity is made <i>more difficult</i> than necessary. Otherwise, there would be no need for discovery and the joy of "aha, now I understand how this works!" will never occur. Of course, the fun would not be complete with a visual style that makes a positive and surprising impact on users. Using cartoon-like characters, and a playful visual style helps to create such a surprising impact.
+</rationale>
+
+<example><a href="http://www.barbie.com">www.barbie.com</a> makes use of <pattern-link type="contains" patternID="minesweeping"/> in combination with animation for a challenging home-page that also an appropriate visual style:<br/>
+<img src="images/fun-barbie-small.gif" border="1"/>
+</example>
+
+<uses><a href="http://www.lotto.nl">www.lotto.nl</a>; <a href="http://www.disney.com">www.disney.com</a>, Ini's site met image competitions.
+</uses>
+
+<references>
+</references>
+</pattern>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="case-study" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+
+<name>Case Study</name>
+<author>Martijn van Welie</author>
+<problem>Users need to know how a certain real-life problem was solved in order to decide whether the problem-solvers could do the same for them
+</problem>
+
+
+<context>Companies that offer services to other companies often have a <pattern-link type="is-contained-by" patternID="corporate"/> where they want to show and advertise there services. Showing what the company can do, how they did it and how succesful it the solution was, can be important information for site visitors that are interested in hiring the company for a particular service. The main goal is to convince the visitors that the company is capable of adequate handling the type of problems the visitor identifies with.
+</context>
+
+<illustration><img src="images/casestudy-cooper.png" border="1"/><br/>From
+<a href="http://www.cooper.com">www.cooper.com</a><br/>
+</illustration>
+
+<pattlet>Describe a case by describing the problem, the solution and the value of that solution
+</pattlet>
+
+
+<solution>A case study essentially consist of four parts:
+<ol>
+<li>The problem</li>
+<li>The approach taken and resulting solution</li>
+<li>Credible statement of the solution's adequacy</li>
+</ol>
+First the client is described followed by the problem this client needed to have solved. If the company was only one of the parties involved, it needs to be stated which part of the problem was handed to the service provider. Then the approach to achieving the solution and the solution itself is described conceptually, along with some screenshots of the solution. If possible, a link to the solution is added so that it can be tried out by the site's visitor and make it more credible as well. Finally, the value or benefit of the solution to the client and the problem is described. Preferably, this should contain evidence that the solution really solved the client's problem. If hard data cannot be provided, at least anecdotical evidence should be given, for example by placing 'quotes'.
+</solution>
+
+<rationale>If you want to show that you can handle a problem, the best way it to SHOW that you can handle it. Show that you have done it and that the solution was succesful. Seeing is believing for many of us...
+</rationale>
+
+<example>This example is taken from <a href="http://www.oyster.com">www.oyster.com</a> which is a UK based design firm. All elements of a case study come back in a daring design that involves horizontal scrolling to read the entire case-study: <img src="images/casestudy-oyster-small.gif" border="1"/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

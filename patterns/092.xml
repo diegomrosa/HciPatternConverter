@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="zebra-table" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+
+<name>Zebra Table</name>
+<author>Martijn van Welie</author>
+<problem>Users need to read or scan a table in search of particular information
+</problem>
+
+
+<context>Typically, an overview of items is given because of a <pattern-link type="is-contained-by" patternID="search"/> or <pattern-link type="is-contained-by" patternID="list-builder"/>. The table can be quite complex and have several columns which makes it hard to see which items belong to the same row.
+</context>
+
+<illustration><img src="images/table-planet.png" border="1"/><br/>From 
+<a href="http://www.planet.nl">www.planet.nl</a><br/> 
+</illustration>
+
+<pattlet>Use alternating row colours for making the table more readable.
+</pattlet>
+
+
+<solution>Use two colors of low saturation, e.g. white and a very light shade of an other color, that are only slightly different. Color each row of the table by alternating these two colors. The effect can be enforced by adding another horizontal line using a dark color.
+</solution>
+
+<rationale>The row color elimates the need of table borders and make it easy for the eye to read a row. In a vertical sense, the colors make it easier to 'catch' an item because it is on either one of the colors.
+</rationale>
+
+<example>Another example from CNN: <br/><img src="images/table-cnn.png"/>
+</example>
+
+<uses>
+</uses>
+<code-links>
+<a href="http://www.alistapart.com/articles/zebratables/">Listapart on Zebra Tables</a><br/>
+</code-links>
+<references>
+</references>
+</pattern>

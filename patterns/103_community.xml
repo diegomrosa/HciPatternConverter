@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="community" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Community Site</name>
+<author>Martijn van Welie</author>
+<problem>People with common concerns or interest want to act as a group for themselves and for others.
+</problem>
+
+<illustration><img src="images/comm-ex.png" border="1"/><br/>From
+<a href="http://www.ccccan.org">www.ccccan.org</a>
+<br/>
+</illustration>
+
+<context>There is a group of people that wants to reach out to others, share information and offer help. The group needs to make itself known and what it does.
+</context>
+
+
+<pattlet>Create a simple site offering information about the topic and the group.
+</pattlet>
+
+
+<solution>In community site, being somebody and being able to share thoughts with others is crucial. A discussion forum, chatrooms and mail services are often found elements of a community site. Background information (documents, links), events, contact information,
+
+Some community sites have developed as <pattern-link type="is-alternative" patternID="news-site"/> since they are mainly there to give the latest updates about a topic. The topic is more important than to make the group in the foreground.
+
+Such site are often very simple and without any christmas decoration. The site is not there to be beautiful, it must be clear and to the point.
+
+Typical menu items:
+- Resources
+- Documents
+- Contact Us
+- Events
+- What do we do
+</solution>
+
+<rationale>A community is for the people and by the people. People want to make themselves known and tell others how they are related to the topic.
+</rationale>
+
+<example><a href="http://www.hrnow.org/">http://www.hrnow.org/</a>
+<img src="images/human-rights-ex.png"/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

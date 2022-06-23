@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern collection="welie" patternID="overlay-menu" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Overlay Menu</name>
+<author>Martijn van Welie</author>
+<problem>Users need to access the main navigation of the site
+</problem>
+
+
+<context>The site is not very complex and using the entire screen estate is important for the design of the site. Typically, the site is a site with a highly creative and artistic flavor such as an <pattern-link type="is-contained-by" patternID="artist-sites"/>. The site structure must be fairly small and does not need explicit clarification or visibility to the users. 
+</context>
+
+<illustration><img src="images/overlay-menu-nickad.jpg" border="1"/><br/>From 
+<a href="http://www.nickad.com/">www.nickad.com/</a><br/> 
+</illustration>
+
+<pattlet>Present the menu at the mouse pointer location after the users click
+</pattlet>
+
+
+<solution>The menu is closed and only a "menu" label is FOLLOWING the mouse pointer! This could be the word menu or some other kind fo visual artifact. When the user selects the "menu" it opens up at the position of the user's mouse pointer. Then a 'normal' type of <pattern-link type="contains" patternID="main-navigation"/> appears. Typically a <pattern-link type="contains" patternID="fly-out-menu"/> or a vertical/horizontal menu.
+</solution>
+
+<rationale>The idea the the navigation is not placed at a fixed location might be confusion for users at first. So it is not suitable for highly informative sites. However, the menu is always there when you need it and placed where you want it. It is an uncommon way to do the menu and that may be exactly what some sites need!
+</rationale>
+
+<example>At the <a href="http://www.manhattanloft.co.uk/mlc/">
+Manhattan Loft</a> site a similar floating 'on-click' menu is used: <img src="images/overlay-mlc.png" border="0"/><br/><br/>
+At <a href="http://www.lineto.com/">Lineto</a> a slightly different overlay menu is used. In this case, the menu is overlaid and moveable but it does not appear 'on-click' because it is always there.
+<img src="images/overlay-lineto.png" border="0"/><br/><br/>
+</example>
+
+<uses>http://www.nolimitmagic.com/restart.html
+</uses>
+
+<references>
+</references>
+</pattern>

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="campaign-site" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name></name>
+<author>Martijn van Welie</author>
+<problem>Users must be informed about a new product or campaign
+</problem>
+
+
+<context>You are introducing a new product or are you starting a temporal campaign. Typically, the site is a <pattern-link type="is-contained-by" patternID="corporate"/> or <pattern-link type="is-contained-by" patternID="multinational"/> that regularly have such launches. A campaign site complements a <pattern-link type="is-alternative" patternID="product-page"/> by taking a different thematic perspective on the product.
+</context>
+
+<illustration><img src="images/campaign-nokia2-small.png" border="1"/><br/>From
+<a href="http://www.nokia.com">www.nokia.com</a><br/>
+</illustration>
+
+<pattlet>Create small thematic site that markets a product in a different way than simply listing its features
+</pattlet>
+
+
+<solution>The most important aspect of a campaign site is that it has a 'theme'. Usually there is already a <pattern-link type="is-alternative" patternID="product-page"/> that lists the product's features and functionality. Often theme's focus on the <b>use of the product</b> or tie in with some 'lifestyle' aspects of the product, relating explicitly to its target audience. For example in the example above, Nokia is emphasizing the fact that this particular phone can be used in all weather conditions. An other approach is to use a 'game' as part of the campaign site. The game is that again related to an aspect of using the product.
+<br/>
+<br/>
+Campaign sites are often shown in a pop-up in order to emphasize its 'specialness' and take the user out of the normal site's context. Campaign sites are often highly appealing in terms of graphical design and are hence often made in Flash.
+</solution>
+
+<rationale>A <pattern-link type="is-alternative" patternID="product-page"/> is often a bit too boring for marketing a product at its launch. A campaign site makes users focus on a mini-site in a funny and highly visual way. Because it focuses on the use of the product rather than the features it is a powerful way to explain why people need the product.
+</rationale>
+
+<example>When Vodafone introduced UMTS the used this campaign site that showed how users would experience UMTS if they had it.<br/>
+<img src="images/campaign-umts-small.png" border="1"/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

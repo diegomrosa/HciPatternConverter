@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="view" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>View</name>
+<author>Martijn van Welie</author>
+<problem>Users need to manage a collection of objects
+</problem>
+
+
+<context>Typically used in a <pattern-link type="is-contained-by" patternID="application"/> in which 'Views' are the main elements. Users need to manage objects such as emails, bank accounts,  stocks, orders and so on. 
+</context>
+
+<illustration><img src="images/view-hotmail.gif" border="1"/><br/>From 
+<a href="http://www.hotmail.com">www.hotmail.com</a><br/> 
+</illustration>
+
+<pattlet>Create an overview of objects that together is meaningful to users
+</pattlet>
+
+
+<solution>A view usually is an overview of a set of objects, e.g. email messages, orders, appointments, products, image, . When views are editable, they may take the form of a <pattern-link type="contains" patternID="list-builder"/> or a list of thumbnails or a custom-designed overview. Views usually contain 'abbreviated' description of the objects themselves. These descriptions are usually clickable which results in a detailed view of the object. Closing the detailed view takes users back to the view itself. Views are typically placed in the <pattern-link type="is-contained-by" patternID="center-stage"/> of the page. When views are very large, some form of <pattern-link type="contains" patternID="paging"/> or <pattern-link type="contains" patternID="stepping"/> can be used. Switching from one view to another is done using the <pattern-link type="is-contained-by" patternID="main-navigation"/>.<br/>
+<br/>
+<img src="images/view-wf.gif" border="0"/><br/>
+Typical behavior with forms consists of 'view-edit-return'. The user selects an item in the view and edits the detailed description using a <pattern-link type="is-contained-by" patternID="forms"/> and/or a <pattern-link type="is-contained-by" patternID="wizard"/>. Once the editing is completed, the users is presented with the view again.
+</solution>
+
+<rationale>A view is sort of a 'safe place' from which all kinds of 'management' functionality can be used. It gives users the overview they need and it is obvious how users can access the management functionality.
+</rationale>
+
+<example>At <a href="http://www.vodafone.nl">www.vodafone.nl</a> can manage a collection of MMS-es. An overview is given from which users can 'copy', 'move', 'view', or 'delete' MMS-es.<br/><img src="images/view-mmsalbum.gif" border="1"/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

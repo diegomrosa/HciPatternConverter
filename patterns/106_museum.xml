@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="museum" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+
+<name>Museum Site</name>
+
+<author>Bob Klaasse</author>
+
+<problem>Users need information about a museum for the purpose of visiting it, getting information about the collection of the museum, or getting information about other activities of the museum.
+</problem>
+
+
+<context>You are designing a website for a museum. A site for a museum mainly acts as 'brochure' for the museum by giving all sorts of information which primarily is supposed to attract people to visiting the 'physical' museum. The main experience is one of <pattern-link type="contains" patternID="information-experience"/> that focusses on informing visitors. Secondary goals may involve raising funds or provide membership functionality, a first step to creating a <pattern-link type="contains" patternID="community-building"/> experience. Currently most museum websites are not 'virtual' museums and usually stick to being an online 'brochure'. Nonetheless, this pattern also generally applies to a 'virtual' museum.<br/><br/>
+The target audience for a museum website is first of all formed by potential visitors. Other audiences are educators, students, investors, donators, curators, and researchers.
+</context>
+
+<illustration><img src="images/museum-guggenheim-small.gif" border="1"/><br/>From
+<a href="http://www.guggenheim.com">www.guggenheim.com</a><br/>
+</illustration>
+
+<pattlet>Create an informative site focussing on the museum main collection, activities and visitor information. Complement the site by offering online ticket sales, memberships and online shop.
+</pattlet>
+
+
+<solution>
+
+<b>User tasks</b><br/>
+There is a variety of user tasks that a museum site needs to support. These typically include:
+<ul>
+<li>browsing the collection and getting detailed information per item (Collection)</li>
+<li>obtain information about coming events. (Calendar)</li>
+<li>obtain information about current exhibitions. (Exhibitions)</li>
+<li>obtain information about possible educational activities. (Education)</li>
+<li>obtain general visiting information such as address, opening hours, and ticket pricing (General Information)</li>
+<li>obtain information about research done by the museum. (Science)</li>
+<li>to buy items at the online shop. (Shop)</li>
+</ul>
+
+These user tasks are mostly relevant as <b>pre-visiting</b> activities while some are more relevant as <b>post-visiting</b> activities e.g. the shop and publications. <br/><br/>
+
+<b>Typical site sections</b><br/>
+Museum sites are quite standard and have a very high degree of similarity. Most sites offer the following sections:
+<ul>
+<li><b>Collection.</b><br/>
+ The collection is the main asset of the museum and most be prominently featured on the site. This section of the website has two functions:
+ <ol>
+ <li>Inform the user about <b>which pieces</b> the museum has in collection.</li>
+ <li>Let the user <b>observe</b> (a part of) the collection. Images and description is the minimum a museum must show. Better though, is to present items using a <pattern-link type="contains" patternID="vpd"/> possibly in combination with a virtual tour  through the museum.
+
+ </li>
+ </ol>
+ <br/>
+A common way to present these two needs is to let the visitor make use of an <pattern-link type="contains" patternID="advanced-search"/>
+to find a particular piece. The user gets the <pattern-link type="contains" patternID="search-results"/> as a combination of <pattern-link type="contains" patternID="thumbnail"/> and short descriptions.
+ <br/> <br/>
+ </li>
+ <li><b>Calendar. </b>
+	Common events on a calendar of a museum are expositions, guided tours, lessons, courses, special days and symposia.
+	It has to be possible to get more information about events, like starting time, prices, place, and other additional information
+about these events. Next to events where a user have to pay for should be a "buy a ticket" <pattern-link type="contains" patternID="action-button"/> to link the user to the shop to buy a ticket. The calendar must inform the user about - and invite the user to - coming events in the museum. Usually a calendar is simply a listing in combination with a <pattern-link type="contains" patternID="date-selector"/>.
+
+ <br/><br/>
+ </li>
+	<li><b>Education. </b>
+	The goal of this part of the website is to provide information about the educational activities of the museum. It is also possible to offer educational material for download but only few museums do that. In such case, the user experience that is applicable here is the <pattern-link type="contains" patternID="learning"/> experience.<br/><br/>
+	Usually the section could refer to books, cd-roms and web pages about the subject of the museum.
+	The books and cd-roms could well be linked to the web shop. If the museum gives courses, workshops, lessons, tours or subject excursions, it should also be stated at this section. Also information about excursions for schools and ideas and resources for teachers and group leaders could well be placed here.
+	<br/><br/>
+	</li>
+
+<li><b>General Information. </b>
+Users who are planning a visit could find information they might want to know in advance here.
+Things like address, opening hours, ticket prices, floor plan, contact information (use a <pattern-link type="contains" patternID="contact-us"/>), acquisition, home rules, accessibility and facilities could be found here. <br/>
+<br/>
+
+</li>
+
+	<li><b>News.</b>
+	The news section could be implemented in a <pattern-link type="contains" patternID="news"/>
+	and could well be integrated in the <pattern-link type="contains" patternID="homepage"/>.
+	This section is useful to inform the visitor about new acquired pieces, expansions of the building, new exhibitions, new activities, and all other kind of recent developments of the museum. News may also include press releases.
+	<br/><br/>
+	</li>
+
+<li><b>Science.</b>
+If applicable here must be given information about research, conservation and restoration and the library.
+An <pattern-link type="contains" patternID="advanced-search"/> is needed to search through the online library catalogue (if present).
+<br/><br/>
+</li>
+
+<li><b>Shop.</b>
+	Visitors might want to buy museum-related things online, basically to buy 'souvenirs'. Usually there is an online 'shop' which is effectively an <pattern-link type="contains" patternID="commerce"/> within the museum website. The user experience that is applicable here is the <pattern-link type="contains" patternID="shopping"/>.<br/>
+<br/>
+	A museum shop differs from the standard e-commerce site in the way that a museum shop sells museum-related artifacts and most of the time has fewer things to offer. Most of the times, the museum has outsourced the shop to external parties.
+<br/>
+<br/>
+</li>
+
+<li><b>Visitors comments</b>
+	Although museums are very much part of our community and culture, only rarely are visitors allowed to share comments about the museum online. For example, using a <pattern-link type="contains" patternID="guestbook"/> users could tell about what they liked or did not like and what they would recommend others to do. Unfortunately, most museum sites are still very 'closed'.
+	<br/>
+	 </li>
+
+</ul>
+
+</solution>
+
+<rationale>The most important functions of a museum website are the attraction of visitors and the selling of artifacts.
+It is also important to put information about the collection into the archives so that interested people could obtain that information.
+</rationale>
+
+<example>
+<img src="images/museum-louvre-small.gif" border="1"/><br/>From
+<a href="http://www.louvre.fr/">www.louvre.fr/</a><br/> <br/>
+<img src="images/museum-rijks-small.gif" border="1"/><br/>From
+<a href="http://www.rijksmuseum.nl">www.rijksmuseum.nl</a><br/>
+</example>
+
+<uses>
+<a href="http://www.rijksmuseum.nl">www.rijksmuseum.nl</a><br/>
+<a href="http://www.vangoghmuseum.nl">www.vangoghmuseum.nl</a><br/>
+<a href="http://www.iwm.org.uk">www.iwm.org.uk/</a><br/>
+<a href="http://www.guggenheim.org">www.guggenheim.org</a><br/>
+<a href="http://www.macba.es">www.macba.es/</a><br/>
+<a href="http://www.stedelijk.nl">www.stedelijk.nl/</a><br/>
+<a href="http://www.hermitagemuseum.org">www.hermitagemuseum.org/</a><br/>
+<a href="http://www.tate.org.uk">www.tate.org.uk/</a><br/>
+<a href="http://www.nationalgallery.org.uk">www.nationalgallery.org.uk/</a><br/>
+<a href="http://www.scheepvaartmuseum.nl">www.scheepvaartmuseum.nl/</a><br/>
+<a href="http://www.louvre.fr">www.louvre.fr/</a><br/>
+<a href="http://www.amnh.org">www.amnh.org/</a><br/>
+<a href="http://www.ammi.org">www.ammi.org/</a><br/>
+<a href="http://www.nmafa.si.edu">www.nmafa.si.edu/</a><br/>
+<a href="http://www.computerhistory.org">www.computerhistory.org/
+</a><br/>
+
+</uses>
+
+<references>
+</references>
+</pattern>

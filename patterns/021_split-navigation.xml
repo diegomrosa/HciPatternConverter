@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern collection="welie" patternID="split-navigation" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Split Navigation</name>
+<author>Gijs de Ridder</author>
+<problem>The users need to navigate a hierarchical structure 
+</problem>
+
+<principle>
+</principle>
+
+<context>Hierarchal structure that consists of 4 levels, content on levels 2-4. Split navigation is a variation of <pattern-link type="is-alternative" patternID="directory"/>. It's important to quickly switch between pages on levels 3 and 4. There is no need to quickly switch between pages on levels 1 and 2. No content on level 1
+</context>
+
+<pattlet>Break up the hierarchy in two separate page layouts
+</pattlet>
+
+<solution>The hierarchy is broken up in a <i>start</i> page and a <i>topic</i> page. 
+The start-page contains levels 1 and 2 (links) of the hierarchy. By clicking a 
+link, one can navigate directly to a level 2 topic page. This "topic page" 
+contains an index with levels 3 and 4. All textual information is shown on 
+this topic page. Users can switch between pages on levels 3 and 4 by 
+clicking on the index links. Additionally, <pattern-link type="contains" patternID="crumbs"/> are used to give feedback about the structure and to go back to the first page.
+<br/><br/>
+Start page
+<br/>
+<img src="images/4-level-example1.gif"/>
+<br/>
+Topic Page
+<br/>
+<img src="images/4-level-example2.gif"/>
+</solution>
+
+<rationale>By breaking up the hierarchy in two page layout the first level is basically chopped off after the first selection. The result is a 3 level page that is easy to navigate. The bread crumb allows the users to go back to the first page.
+</rationale>
+
+<example><img src="images/monsterboard-4-level.png"/><br/>
+This example from the monsterboard shows the Topic page complete with bread crumb.
+</example>
+
+<impact/>
+
+<uses><a href="http://www.monsterboard.nl">www.monsterboard.nl</a>
+</uses>
+<references>This pattern uses the <a href="crumbs.html">Bread Crumb</a> pattern.
+</references>
+</pattern>

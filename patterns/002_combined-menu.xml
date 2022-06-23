@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern collection="welie" patternID="combined-menu" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Header-less Menu</name>
+
+<author>Martijn van Welie</author>
+
+<problem>Users need to access the main sections of the site
+</problem>
+
+<illustration><img src="images/emerce.png" border="1"/><br/>From 
+<a href="http://www.emerce.nl">www.emerce.nl</a> 
+<br/></illustration><br/>
+
+<context>The information 
+structure of the site has two or more parts. The main part serves the primary 
+purpose of the site. The other parts are more or less independent of the main 
+part and serve a secondary purpose. The main part typically has too many 
+sections for a horizontal menu and must therefore be displayed vertically. Most 
+users will need to see the main part first. </context>
+
+<pattlet>Combine menus in a vertical menu using different visual 
+clues instead of headers 
+</pattlet>
+
+
+<solution>The main part is placed at the top and has an accent visually so that 
+it is perceived as the main part of the site. The other parts have a modest 
+appearance so that they do not compete for attention with the main part. 
+<br/> <img src="images/combined-ex.png"/> <br/><a href="wireframes/combined-menu.ppt">&gt; open wireframe &lt;</a></solution>
+
+<rationale>Since the main part contains many items, it should be displayed
+vertically. This rules out a horizontal menu for the remaining parts so they
+must be displayed vertically as well. The vertical order and the visual design
+are important to communicate the differences in importance. An important
+advantage is the fact that no separate headings are needed for the parts.
+</rationale>
+
+<example>This example from the Financieel Dagblad site shows two sections. <br/>
+<img src="images/fd.png"/>
+</example>
+
+<uses>
+<a href="http://www.fd.nl">www.fd.nl</a>;
+</uses>
+
+<references>Consider a combination of horizontal menu and a right-hand vertical
+menu when the main section is small.
+</references>
+</pattern>

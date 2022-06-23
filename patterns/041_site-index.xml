@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="site-index" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Site Index</name>
+<author>Martijn van Welie</author>
+<problem>Users need to find a specific page
+</problem>
+
+<illustration>
+<img src="images/siteindex-sun.gif" border="1"/><br/>
+From <a href="http://www.sun.com/siteindex/">www.sun.com/</a>
+<br/>
+</illustration>
+
+
+<context>A large website with search and main navigation. Typically for beginning users that are not very familiar with the information architecture of the web site. Such sites typically have other ways to access the information such as main navigation or search box. There may be too many pages to show in one page and pages may be related by topic.
+</context>
+
+<pattlet>Show all pages in an alphabetical index or by topic.
+</pattlet>
+
+
+<solution>All pages are shown per character. Depending on the number of items per character, <pattern-link type="contains" patternID="tabbing"/> is used to browse the index. More there are several pages that share a common topic, put the topic in the index and place the pages under them. 
+Use two columns if you page template allows it. It should because you don't need your normal navigation bars anymore....
+</solution>
+
+<rationale>Using an index the users can look for a keyword and go directly to the page. This way the user does not have to understand the information architecture of the site.
+By grouping pages under topics, users get the possibility to search by "topic".</rationale>
+
+<example>This nice example from the Adobe website shows a clear hierarchical index. In addition there are links to other search related functions such as the search function and the sitemap.<br/><img src="images/adobe-index.png" border="1"/><br/>
+<img src="images/index-peoplesoft-small.png" border="1"/>
+
+
+</example>
+
+<uses><a href="http://www.adobe.com">www.adobe.com</a>; <a href="http://www.sun.com">www.sun.com</a>
+</uses>
+
+<references>
+</references>
+</pattern>

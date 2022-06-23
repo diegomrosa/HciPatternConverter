@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="application" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Web-based Application</name>
+<author>Martijn van Welie</author>
+<problem>Users need to perform complex tasks on a web site
+</problem>
+
+
+<context>The site is for 'doing' things rather than finding information. Users can perform complex tasks such as reading and writing emails, placing orders, managing a bank-account. In most cases there are 'objects' involved that belong to the users which the users need to create, change, delete or update. A web-based application is an application that could just as well be a normal application. It now just runs in a web browser.
+</context>
+
+<illustration><img src="images/app-outlook-small.png" border="1"/><br/>Microsoft Outlook Web Access<br/>
+</illustration>
+
+<pattlet>Structure the site around 'views' and allow users to work inside views
+</pattlet>
+
+
+<solution>Web-based applications are based on <pattern-link type="contains"  patternID="view"/>s for showing the objects and <pattern-link type="contains"  patternID="forms"/> for changing them. The view provides a "safe" place where the users always return to after doing something using a <pattern-link type="contains"  patternID="forms"/> or <pattern-link type="contains"  patternID="wizard"/>. The views are usually lists or tables that allow the display of information to be controlled. For example, using a <pattern-link type="contains"  patternID="table-sorter"/> or <pattern-link type="contains"  patternID="column-filter"/>. When tables are being used, consider <pattern-link type="contains" patternID="zebra-table"/> for making them better scannable. In applications such as a Content Management System, Tree controls are also widely used.<br/>
+<br/>
+Web-based applications are often personal and therefore require users to <pattern-link type="contains" patternID="login"/>. The information shown and the functionality that is accessible will depend on the user's identity or 'role'. That also means that not every users will see the same views or data per view. In some cases, users can use a demo account to see what the application looks like before commencing <pattern-link type="contains"  patternID="registration"/>.<br/>
+<br/>
+Since web-based applications can be quite complex there is often help information or a <pattern-link type="contains"  patternID="faq"/> as part of <pattern-link type="contains"  patternID="meta-navigation"/>. Other elements in the meta navigation are often 'logout', 'home', 'feedback' and so on.
+<br/>
+<br/>
+A web-based application usually has a simple navigation mechanism that allows users to switch between views. A simple horizontal/vertical menu or <pattern-link type="contains"  patternID="doubletab"/> will usually suffice. The views are labeled based on the objects rather than the actions. The actions will be present in the view itself. However, in practice, some actions such as "compose email" are so important that they will be part of the navigation as well.
+</solution>
+
+<rationale>Views contain the objects of interest and the view should therefore also be label according to the objects rather than the actions. Structuring the web-based application mainly on views makes it easy for users to understand what they can do and how to interact with it.
+</rationale>
+
+<example>This is an example of a Dutch online banking application. A simple horizontal menu with <pattern-link type="contains"  patternID="fly-out-menu"/> is used. The main actions are done using <pattern-link type="contains"  patternID="forms"/> such as this one:<br/><img src="images/app-girotel-small.png" border="1"/><br/>
+<br/>
+This example is from OpenCMS, an open source CMS. It uses many types of views that each show a different aspect of the website:<br/>
+<img src="images/app-opencms-small.gif" border="1"/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

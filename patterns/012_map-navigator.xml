@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern collection="welie" patternID="map-navigator" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Map Navigator</name>
+<author>Martijn van Welie</author>
+<problem>Users need to find a location of choice on a map
+</problem>
+
+
+<context>The site has the possibility to search for a 'special location'. For example, a <pattern-link type="is-contained-by" patternID="corporate"/> or <pattern-link type="is-contained-by" patternID="commerce"/> may have <pattern-link type="is-contained-by" patternID="store-locator"/> to allow users to find a physical store. In other cases such as a website that allows people to find arbitrary destinations, users will see their <pattern-link type="is-contained-by" patternID="search-results"/> a positions on a map. 
+</context>
+
+<illustration><img src="images/map-navigator-se.gif" border="0"/><br/>From 
+<a href="http://www.sonyericsson.com">www.sonyericsson.com</a><br/> 
+</illustration>
+
+<pattlet>Show a map with the points of interest and provide navigation links in all corners
+</pattlet>
+
+
+<solution>The map is displayed with the points of interest (poi's) in the center of the image. Mark different poi's using different flags or colors and provide a legend explaining them. If there is only one poi, provide the exact details of that poi. When there are multiple poi's, <pattern-link type="contains" patternID="minesweeping"/> can be used to display details of the poi as the user moves the mouse over it.<br/>
+<br/>
+Users can move their 'window' on the map by selecting any of the navigation links in the corners. The page will reload and show a slightly different portion of the map. Add zooming and indicate the scale of the map. Many people may want to print the map so that they can take it with them, so a <pattern-link type="contains" patternID="printable-pages"/> must be available.  
+</solution>
+
+<rationale>We know maps from the real world and we are comfortable with seeing them on the web. The navigation features are not ideal on the web since it requires reloading of the page but this will not lead to usability problems.
+</rationale>
+
+<example><img src="images/map-navigator-lokatienet-small.gif"/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

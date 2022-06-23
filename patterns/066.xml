@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="product-configurator" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Product Configurator</name>
+<author>Martijn van Welie</author>
+<problem>Users want to configure the product they may intend to buy
+</problem>
+
+
+<context>You want users to get more enthusiastic about a product by letting them 'control' the product and kind of 'personalize' it.
+</context>
+
+<illustration><img src="images/shoe-configurator.gif" border="1"/><br/>From 
+<a href="http://www.nike.com">www.nike.com</a><br/> 
+</illustration>
+
+<pattlet>Allow users to configure a product using a direct and visual version of the configured product
+</pattlet>
+
+
+<solution>Configuring is usually done is several steps because there may be several aspect of the product that can be configured, e.g. the color, material, writings, wheels etc. The product configurator is therefore a <pattern-link type="specialization" patternID="wizard"/> where every configurable aspect of the product is handled in a single step. Additionally there may be a 'buy' or 'order' step that leads to some additional steps for the wizard. Since the steps of the process are usually not dependent on each other, <pattern-link type="contains" patternID="tabbing"/> can also be used to set each aspect instead of using a Wizard.<br/>
+<br/>
+The product configurator is a highly interactive concept where users can visually configure the product. Every time users make a change they should immediately see the results. Usually the users start with a base-configuration that can be changed.
+</solution>
+
+<rationale>The product configurator allows people to 'play' with a product and literally 'see' the different options. This way they can see the product as-is, a preview of the product they may want to order.
+</rationale>
+
+<example>At the <a href="http://www3.us.porsche.com/isapi/english/usa/models/carconfigurator/default.asp">Porsche US site</a> potential customers can configure their 'ideal' Porsche. The model, exterior color, cabriolet tops, interior color, and equipment can be changed while the two images show the currently selected configuration.<br/><img src="images/porsche-car-configurator.png" border="1"/>
+</example>
+
+<uses>Shoe sites, car sites, etc.
+</uses>
+
+<references>
+</references>
+</pattern>

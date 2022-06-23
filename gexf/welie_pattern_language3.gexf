@@ -1,0 +1,3961 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gexf xmlns="http://www.gexf.net/1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.3" xsi:schemaLocation="http://www.gexf.net/1.3 http://www.gexf.net/1.3/gexf.xsd">
+  <meta lastmodifieddate="2022-06-23">
+    <creator>Andrea Gnecco, Christian Mattjie, Diego Rosa, and Sofia Apuzzo</creator>
+    <description>A graph description for the Welie pattern language.</description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="0" title="number" type="integer"/>
+      <attribute id="1" title="id" type="string"/>
+      <attribute id="2" title="name" type="string"/>
+      <attribute id="3" title="group" type="string"/>
+      <attribute id="4" title="category" type="string"/>
+      <attribute id="5" title="collection" type="string"/>
+    </attributes>
+    <attributes class="edge" mode="static">
+      <attribute id="0" title="number" type="integer"/>
+      <attribute id="1" title="type" type="string"/>
+    </attributes>
+    <nodes>
+      <node id="accordion" label="Accordion">
+        <attvalues>
+          <attvalue for="0" value="1"/>
+          <attvalue for="1" value="accordion"/>
+          <attvalue for="2" value="Accordion"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Navigating around"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="combined-menu" label="Headerless Menu">
+        <attvalues>
+          <attvalue for="0" value="2"/>
+          <attvalue for="1" value="combined-menu"/>
+          <attvalue for="2" value="Headerless Menu"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Navigating around"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="crumbs" label="Breadcrumbs">
+        <attvalues>
+          <attvalue for="0" value="3"/>
+          <attvalue for="1" value="crumbs"/>
+          <attvalue for="2" value="Breadcrumbs"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Navigating around"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="directory" label="Directory Navigation">
+        <attvalues>
+          <attvalue for="0" value="4"/>
+          <attvalue for="1" value="directory"/>
+          <attvalue for="2" value="Directory Navigation"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Navigating around"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="doormat" label="Doormat Navigation">
+        <attvalues>
+          <attvalue for="0" value="5"/>
+          <attvalue for="1" value="doormat"/>
+          <attvalue for="2" value="Doormat Navigation"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Navigating around"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="doubletab" label="Double Tab Navigation">
+        <attvalues>
+          <attvalue for="0" value="6"/>
+          <attvalue for="1" value="doubletab"/>
+          <attvalue for="2" value="Double Tab Navigation"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Navigating around"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="faceted-navigation" label="Faceted Navigation">
+        <attvalues>
+          <attvalue for="0" value="7"/>
+          <attvalue for="1" value="faceted-navigation"/>
+          <attvalue for="2" value="Faceted Navigation"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Navigating around"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="fly-out-menu" label="Fly-out Menu">
+        <attvalues>
+          <attvalue for="0" value="8"/>
+          <attvalue for="1" value="fly-out-menu"/>
+          <attvalue for="2" value="Fly-out Menu"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Navigating around"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="home" label="Home Link">
+        <attvalues>
+          <attvalue for="0" value="9"/>
+          <attvalue for="1" value="home"/>
+          <attvalue for="2" value="Home Link"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Navigating around"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="image-menu" label="Icon Menu">
+        <attvalues>
+          <attvalue for="0" value="10"/>
+          <attvalue for="1" value="image-menu"/>
+          <attvalue for="2" value="Icon Menu"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Navigating around"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="main-navigation" label="Main Navigation">
+        <attvalues>
+          <attvalue for="0" value="11"/>
+          <attvalue for="1" value="main-navigation"/>
+          <attvalue for="2" value="Main Navigation"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Navigating around"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="map-navigator" label="Map Navigator">
+        <attvalues>
+          <attvalue for="0" value="12"/>
+          <attvalue for="1" value="map-navigator"/>
+          <attvalue for="2" value="Map Navigator"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Navigating around"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="meta-navigation" label="Meta Navigation">
+        <attvalues>
+          <attvalue for="0" value="13"/>
+          <attvalue for="1" value="meta-navigation"/>
+          <attvalue for="2" value="Meta Navigation"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Navigating around"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="minesweeping" label="Minesweeping">
+        <attvalues>
+          <attvalue for="0" value="14"/>
+          <attvalue for="1" value="minesweeping"/>
+          <attvalue for="2" value="Minesweeping"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Navigating around"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="navigator" label="Panning Navigator">
+        <attvalues>
+          <attvalue for="0" value="15"/>
+          <attvalue for="1" value="navigator"/>
+          <attvalue for="2" value="Panning Navigator"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Navigating around"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="overlay-menu" label="Overlay Menu">
+        <attvalues>
+          <attvalue for="0" value="16"/>
+          <attvalue for="1" value="overlay-menu"/>
+          <attvalue for="2" value="Overlay Menu"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Navigating around"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="repeated-menu" label="Repeated Menu">
+        <attvalues>
+          <attvalue for="0" value="17"/>
+          <attvalue for="1" value="repeated-menu"/>
+          <attvalue for="2" value="Repeated Menu"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Navigating around"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="retractable-menu" label="Retractable Menu">
+        <attvalues>
+          <attvalue for="0" value="18"/>
+          <attvalue for="1" value="retractable-menu"/>
+          <attvalue for="2" value="Retractable Menu"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Navigating around"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="scrolling-menu" label="Scrolling Menu">
+        <attvalues>
+          <attvalue for="0" value="19"/>
+          <attvalue for="1" value="scrolling-menu"/>
+          <attvalue for="2" value="Scrolling Menu"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Navigating around"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="shortcut-box" label="Shortcut Box">
+        <attvalues>
+          <attvalue for="0" value="20"/>
+          <attvalue for="1" value="shortcut-box"/>
+          <attvalue for="2" value="Shortcut Box"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Navigating around"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="split-navigation" label="Split Navigation">
+        <attvalues>
+          <attvalue for="0" value="21"/>
+          <attvalue for="1" value="split-navigation"/>
+          <attvalue for="2" value="Split Navigation"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Navigating around"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="teaser-menu" label="Teaser Menu">
+        <attvalues>
+          <attvalue for="0" value="22"/>
+          <attvalue for="1" value="teaser-menu"/>
+          <attvalue for="2" value="Teaser Menu"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Navigating around"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="top" label="To-the-top Link">
+        <attvalues>
+          <attvalue for="0" value="23"/>
+          <attvalue for="1" value="top"/>
+          <attvalue for="2" value="To-the-top Link"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Navigating around"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="trail-menu" label="Trail Menu">
+        <attvalues>
+          <attvalue for="0" value="24"/>
+          <attvalue for="1" value="trail-menu"/>
+          <attvalue for="2" value="Trail Menu"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Navigating around"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="tree" label="Navigation Tree">
+        <attvalues>
+          <attvalue for="0" value="25"/>
+          <attvalue for="1" value="tree"/>
+          <attvalue for="2" value="Navigation Tree"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Navigating around"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="action-button" label="Action Button">
+        <attvalues>
+          <attvalue for="0" value="26"/>
+          <attvalue for="1" value="action-button"/>
+          <attvalue for="2" value="Action Button"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Basic interactions"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="guided-tour" label="Guided Tour">
+        <attvalues>
+          <attvalue for="0" value="27"/>
+          <attvalue for="1" value="guided-tour"/>
+          <attvalue for="2" value="Guided Tour"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Basic interactions"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="paging" label="Paging">
+        <attvalues>
+          <attvalue for="0" value="28"/>
+          <attvalue for="1" value="paging"/>
+          <attvalue for="2" value="Paging"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Basic interactions"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="pulldown-button" label="Pulldown Button">
+        <attvalues>
+          <attvalue for="0" value="29"/>
+          <attvalue for="1" value="pulldown-button"/>
+          <attvalue for="2" value="Pulldown Button"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Basic interactions"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="slideshow" label="Slideshow">
+        <attvalues>
+          <attvalue for="0" value="30"/>
+          <attvalue for="1" value="slideshow"/>
+          <attvalue for="2" value="Slideshow"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Basic interactions"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="stepping" label="Stepping">
+        <attvalues>
+          <attvalue for="0" value="31"/>
+          <attvalue for="1" value="stepping"/>
+          <attvalue for="2" value="Stepping"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Basic interactions"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="wizard" label="Wizard">
+        <attvalues>
+          <attvalue for="0" value="32"/>
+          <attvalue for="1" value="wizard"/>
+          <attvalue for="2" value="Wizard"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Basic interactions"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="advanced-search" label="Advanced Search">
+        <attvalues>
+          <attvalue for="0" value="33"/>
+          <attvalue for="1" value="advanced-search"/>
+          <attvalue for="2" value="Advanced Search"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Searching"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="autocomplete" label="Autocomplete">
+        <attvalues>
+          <attvalue for="0" value="34"/>
+          <attvalue for="1" value="autocomplete"/>
+          <attvalue for="2" value="Autocomplete"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Searching"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="faq" label="Frequently Asked Questions (FAQ)">
+        <attvalues>
+          <attvalue for="0" value="35"/>
+          <attvalue for="1" value="faq"/>
+          <attvalue for="2" value="Frequently Asked Questions (FAQ)"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Searching"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="help-wizard" label="Help Wizard">
+        <attvalues>
+          <attvalue for="0" value="36"/>
+          <attvalue for="1" value="help-wizard"/>
+          <attvalue for="2" value="Help Wizard"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Searching"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="search" label="Search Box">
+        <attvalues>
+          <attvalue for="0" value="37"/>
+          <attvalue for="1" value="search"/>
+          <attvalue for="2" value="Search Box"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Searching"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="searcharea" label="Search Area">
+        <attvalues>
+          <attvalue for="0" value="38"/>
+          <attvalue for="1" value="searcharea"/>
+          <attvalue for="2" value="Search Area"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Searching"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="search-results" label="Search Results">
+        <attvalues>
+          <attvalue for="0" value="39"/>
+          <attvalue for="1" value="search-results"/>
+          <attvalue for="2" value="Search Results"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Searching"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="search-tips" label="Search Tips">
+        <attvalues>
+          <attvalue for="0" value="40"/>
+          <attvalue for="1" value="search-tips"/>
+          <attvalue for="2" value="Search Tips"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Searching"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="site-index" label="Site Index">
+        <attvalues>
+          <attvalue for="0" value="41"/>
+          <attvalue for="1" value="site-index"/>
+          <attvalue for="2" value="Site Index"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Searching"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="sitemap" label="Site Map">
+        <attvalues>
+          <attvalue for="0" value="42"/>
+          <attvalue for="1" value="sitemap"/>
+          <attvalue for="2" value="Site Map"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Searching"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="sitemap-footer" label="Footer Sitemap">
+        <attvalues>
+          <attvalue for="0" value="43"/>
+          <attvalue for="1" value="sitemap-footer"/>
+          <attvalue for="2" value="Footer Sitemap"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Searching"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="tag-cloud" label="Tag Cloud">
+        <attvalues>
+          <attvalue for="0" value="44"/>
+          <attvalue for="1" value="tag-cloud"/>
+          <attvalue for="2" value="Tag Cloud"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Searching"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="topic-pages" label="Topic Pages">
+        <attvalues>
+          <attvalue for="0" value="45"/>
+          <attvalue for="1" value="topic-pages"/>
+          <attvalue for="2" value="Topic Pages"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Searching"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="carrousel" label="Carrousel">
+        <attvalues>
+          <attvalue for="0" value="46"/>
+          <attvalue for="1" value="carrousel"/>
+          <attvalue for="2" value="Carrousel"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Dealing with data"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="column-filter" label="Table Filter">
+        <attvalues>
+          <attvalue for="0" value="47"/>
+          <attvalue for="1" value="column-filter"/>
+          <attvalue for="2" value="Table Filter"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Dealing with data"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="collapsible-panels" label="Collapsible Panels">
+        <attvalues>
+          <attvalue for="0" value="48"/>
+          <attvalue for="1" value="collapsible-panels"/>
+          <attvalue for="2" value="Collapsible Panels"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Dealing with data"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="details-on-demand" label="Details On Demand">
+        <attvalues>
+          <attvalue for="0" value="49"/>
+          <attvalue for="1" value="details-on-demand"/>
+          <attvalue for="2" value="Details On Demand"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Dealing with data"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="favourites" label="Collector">
+        <attvalues>
+          <attvalue for="0" value="50"/>
+          <attvalue for="1" value="favourites"/>
+          <attvalue for="2" value="Collector"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Dealing with data"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="inplace-replacement" label="Inplace replacement">
+        <attvalues>
+          <attvalue for="0" value="51"/>
+          <attvalue for="1" value="inplace-replacement"/>
+          <attvalue for="2" value="Inplace replacement"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Dealing with data"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="list-builder" label="List Builder">
+        <attvalues>
+          <attvalue for="0" value="52"/>
+          <attvalue for="1" value="list-builder"/>
+          <attvalue for="2" value="List Builder"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Dealing with data"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="list-entry-view" label="List Entry View">
+        <attvalues>
+          <attvalue for="0" value="53"/>
+          <attvalue for="1" value="list-entry-view"/>
+          <attvalue for="2" value="List Entry View"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Dealing with data"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="overview-detail" label="Overview by Detail">
+        <attvalues>
+          <attvalue for="0" value="54"/>
+          <attvalue for="1" value="overview-detail"/>
+          <attvalue for="2" value="Overview by Detail"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Dealing with data"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="parts-selector" label="Parts Selector">
+        <attvalues>
+          <attvalue for="0" value="55"/>
+          <attvalue for="1" value="parts-selector"/>
+          <attvalue for="2" value="Parts Selector"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Dealing with data"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="tabbing" label="Tabs">
+        <attvalues>
+          <attvalue for="0" value="56"/>
+          <attvalue for="1" value="tabbing"/>
+          <attvalue for="2" value="Tabs"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Dealing with data"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="table-sorter" label="Table Sorter">
+        <attvalues>
+          <attvalue for="0" value="57"/>
+          <attvalue for="1" value="table-sorter"/>
+          <attvalue for="2" value="Table Sorter"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Dealing with data"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="thumbnail" label="Thumbnail">
+        <attvalues>
+          <attvalue for="0" value="58"/>
+          <attvalue for="1" value="thumbnail"/>
+          <attvalue for="2" value="Thumbnail"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Dealing with data"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="view" label="View">
+        <attvalues>
+          <attvalue for="0" value="59"/>
+          <attvalue for="1" value="view"/>
+          <attvalue for="2" value="View"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Dealing with data"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="customization-window" label="Customizable Window">
+        <attvalues>
+          <attvalue for="0" value="60"/>
+          <attvalue for="1" value="customization-window"/>
+          <attvalue for="2" value="Customizable Window"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Personalizing"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="login" label="Login">
+        <attvalues>
+          <attvalue for="0" value="61"/>
+          <attvalue for="1" value="login"/>
+          <attvalue for="2" value="Login"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Personalizing"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="registration" label="Registration">
+        <attvalues>
+          <attvalue for="0" value="62"/>
+          <attvalue for="1" value="registration"/>
+          <attvalue for="2" value="Registration"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Personalizing"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="booking" label="Booking">
+        <attvalues>
+          <attvalue for="0" value="63"/>
+          <attvalue for="1" value="booking"/>
+          <attvalue for="2" value="Booking"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Shopping"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="comparison" label="Product Comparison">
+        <attvalues>
+          <attvalue for="0" value="64"/>
+          <attvalue for="1" value="comparison"/>
+          <attvalue for="2" value="Product Comparison"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Shopping"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="product-advisor" label="Product Advisor">
+        <attvalues>
+          <attvalue for="0" value="65"/>
+          <attvalue for="1" value="product-advisor"/>
+          <attvalue for="2" value="Product Advisor"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Shopping"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="product-configurator" label="Product Configurator">
+        <attvalues>
+          <attvalue for="0" value="66"/>
+          <attvalue for="1" value="product-configurator"/>
+          <attvalue for="2" value="Product Configurator"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Shopping"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="purchase-process" label="Purchase Process">
+        <attvalues>
+          <attvalue for="0" value="67"/>
+          <attvalue for="1" value="purchase-process"/>
+          <attvalue for="2" value="Purchase Process"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Shopping"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="shopping-cart" label="Shopping Cart">
+        <attvalues>
+          <attvalue for="0" value="68"/>
+          <attvalue for="1" value="shopping-cart"/>
+          <attvalue for="2" value="Shopping Cart"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Shopping"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="store-locator" label="Store Locator">
+        <attvalues>
+          <attvalue for="0" value="69"/>
+          <attvalue for="1" value="store-locator"/>
+          <attvalue for="2" value="Store Locator"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Shopping"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="testimonials" label="Testimonials">
+        <attvalues>
+          <attvalue for="0" value="70"/>
+          <attvalue for="1" value="testimonials"/>
+          <attvalue for="2" value="Testimonials"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Shopping"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="vpd" label="Virtual Product Display">
+        <attvalues>
+          <attvalue for="0" value="71"/>
+          <attvalue for="1" value="vpd"/>
+          <attvalue for="2" value="Virtual Product Display"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Shopping"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="country-selector" label="Country Selector">
+        <attvalues>
+          <attvalue for="0" value="72"/>
+          <attvalue for="1" value="country-selector"/>
+          <attvalue for="2" value="Country Selector"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Making choices"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="date-selector" label="Date Selector">
+        <attvalues>
+          <attvalue for="0" value="73"/>
+          <attvalue for="1" value="date-selector"/>
+          <attvalue for="2" value="Date Selector"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Making choices"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="language-selector" label="Language Selector">
+        <attvalues>
+          <attvalue for="0" value="74"/>
+          <attvalue for="1" value="language-selector"/>
+          <attvalue for="2" value="Language Selector"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Making choices"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="poll" label="Poll">
+        <attvalues>
+          <attvalue for="0" value="75"/>
+          <attvalue for="1" value="poll"/>
+          <attvalue for="2" value="Poll"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Making choices"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="rating" label="Rating">
+        <attvalues>
+          <attvalue for="0" value="76"/>
+          <attvalue for="1" value="rating"/>
+          <attvalue for="2" value="Rating"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Making choices"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="comment-box" label="Comment Box">
+        <attvalues>
+          <attvalue for="0" value="77"/>
+          <attvalue for="1" value="comment-box"/>
+          <attvalue for="2" value="Comment Box"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Giving input"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="format" label="Constraint Input">
+        <attvalues>
+          <attvalue for="0" value="78"/>
+          <attvalue for="1" value="format"/>
+          <attvalue for="2" value="Constraint Input"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Giving input"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="forms" label="Form">
+        <attvalues>
+          <attvalue for="0" value="79"/>
+          <attvalue for="1" value="forms"/>
+          <attvalue for="2" value="Form"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Giving input"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="footer-bar" label="Footer Bar">
+        <attvalues>
+          <attvalue for="0" value="80"/>
+          <attvalue for="1" value="footer-bar"/>
+          <attvalue for="2" value="Footer Bar"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Drawing attention"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="hotlist" label="Hotlist">
+        <attvalues>
+          <attvalue for="0" value="81"/>
+          <attvalue for="1" value="hotlist"/>
+          <attvalue for="2" value="Hotlist"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Drawing attention"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="news" label="News Box">
+        <attvalues>
+          <attvalue for="0" value="82"/>
+          <attvalue for="1" value="news"/>
+          <attvalue for="2" value="News Box"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Drawing attention"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="news-ticker" label="News Ticker">
+        <attvalues>
+          <attvalue for="0" value="83"/>
+          <attvalue for="1" value="news-ticker"/>
+          <attvalue for="2" value="News Ticker"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Drawing attention"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="send-to-friend" label="Send-a-Friend Link">
+        <attvalues>
+          <attvalue for="0" value="84"/>
+          <attvalue for="1" value="send-to-friend"/>
+          <attvalue for="2" value="Send-a-Friend Link"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Drawing attention"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="captcha" label="Captcha">
+        <attvalues>
+          <attvalue for="0" value="85"/>
+          <attvalue for="1" value="captcha"/>
+          <attvalue for="2" value="Captcha"/>
+          <attvalue for="3" value="Application needs"/>
+          <attvalue for="4" value="Drawing attention"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="center-stage" label="Center Stage">
+        <attvalues>
+          <attvalue for="0" value="86"/>
+          <attvalue for="1" value="center-stage"/>
+          <attvalue for="2" value="Center Stage"/>
+          <attvalue for="3" value="Application needs"/>
+          <attvalue for="4" value="Drawing attention"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="color-coded-section" label="Color Coded Section">
+        <attvalues>
+          <attvalue for="0" value="87"/>
+          <attvalue for="1" value="color-coded-section"/>
+          <attvalue for="2" value="Color Coded Section"/>
+          <attvalue for="3" value="Application needs"/>
+          <attvalue for="4" value="Drawing attention"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="content-lock" label="Premium Content Lock">
+        <attvalues>
+          <attvalue for="0" value="88"/>
+          <attvalue for="1" value="content-lock"/>
+          <attvalue for="2" value="Premium Content Lock"/>
+          <attvalue for="3" value="Application needs"/>
+          <attvalue for="4" value="Drawing attention"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="grid-based-layout" label="Grid-based Layout">
+        <attvalues>
+          <attvalue for="0" value="89"/>
+          <attvalue for="1" value="grid-based-layout"/>
+          <attvalue for="2" value="Grid-based Layout"/>
+          <attvalue for="3" value="Application needs"/>
+          <attvalue for="4" value="Drawing attention"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="liquid-layout" label="Liquid Layout">
+        <attvalues>
+          <attvalue for="0" value="90"/>
+          <attvalue for="1" value="liquid-layout"/>
+          <attvalue for="2" value="Liquid Layout"/>
+          <attvalue for="3" value="Application needs"/>
+          <attvalue for="4" value="Drawing attention"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="outgoing-links" label="Outgoing Links">
+        <attvalues>
+          <attvalue for="0" value="91"/>
+          <attvalue for="1" value="outgoing-links"/>
+          <attvalue for="2" value="Outgoing Links"/>
+          <attvalue for="3" value="Application needs"/>
+          <attvalue for="4" value="Drawing attention"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="zebra-table" label="Alternating Row Colors">
+        <attvalues>
+          <attvalue for="0" value="92"/>
+          <attvalue for="1" value="zebra-table"/>
+          <attvalue for="2" value="Alternating Row Colors"/>
+          <attvalue for="3" value="Application needs"/>
+          <attvalue for="4" value="Drawing attention"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="input-error" label="Input Error Message">
+        <attvalues>
+          <attvalue for="0" value="93"/>
+          <attvalue for="1" value="input-error"/>
+          <attvalue for="2" value="Input Error Message"/>
+          <attvalue for="3" value="Application needs"/>
+          <attvalue for="4" value="Feedback"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="processing-page" label="Processing Page">
+        <attvalues>
+          <attvalue for="0" value="94"/>
+          <attvalue for="1" value="processing-page"/>
+          <attvalue for="2" value="Processing Page"/>
+          <attvalue for="3" value="Application needs"/>
+          <attvalue for="4" value="Feedback"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="enlarged-clickarea" label="Enlarged Clickarea">
+        <attvalues>
+          <attvalue for="0" value="95"/>
+          <attvalue for="1" value="enlarged-clickarea"/>
+          <attvalue for="2" value="Enlarged Clickarea"/>
+          <attvalue for="3" value="Application needs"/>
+          <attvalue for="4" value="Simplifying interaction"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="font-enlarger" label="Font Enlarger">
+        <attvalues>
+          <attvalue for="0" value="96"/>
+          <attvalue for="1" value="font-enlarger"/>
+          <attvalue for="2" value="Font Enlarger"/>
+          <attvalue for="3" value="Application needs"/>
+          <attvalue for="4" value="Simplifying interaction"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="application" label="Web-based Application">
+        <attvalues>
+          <attvalue for="0" value="97"/>
+          <attvalue for="1" value="application"/>
+          <attvalue for="2" value="Web-based Application"/>
+          <attvalue for="3" value="Context of design"/>
+          <attvalue for="4" value="Site types"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="artist-sites" label="Artist Site">
+        <attvalues>
+          <attvalue for="0" value="98"/>
+          <attvalue for="1" value="artist-sites"/>
+          <attvalue for="2" value="Artist Site"/>
+          <attvalue for="3" value="Context of design"/>
+          <attvalue for="4" value="Site types"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="automotive" label="Automotive Site">
+        <attvalues>
+          <attvalue for="0" value="99"/>
+          <attvalue for="1" value="automotive"/>
+          <attvalue for="2" value="Automotive Site"/>
+          <attvalue for="3" value="Context of design"/>
+          <attvalue for="4" value="Site types"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="brand-promo-site" label="Branded Promotion Site">
+        <attvalues>
+          <attvalue for="0" value="100"/>
+          <attvalue for="1" value="brand-promo-site"/>
+          <attvalue for="2" value="Branded Promotion Site"/>
+          <attvalue for="3" value="Context of design"/>
+          <attvalue for="4" value="Site types"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="campaign-site" label="Campaign Site">
+        <attvalues>
+          <attvalue for="0" value="101"/>
+          <attvalue for="1" value="campaign-site"/>
+          <attvalue for="2" value="Campaign Site"/>
+          <attvalue for="3" value="Context of design"/>
+          <attvalue for="4" value="Site types"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="commerce" label="E-commerce Site">
+        <attvalues>
+          <attvalue for="0" value="102"/>
+          <attvalue for="1" value="commerce"/>
+          <attvalue for="2" value="E-commerce Site"/>
+          <attvalue for="3" value="Context of design"/>
+          <attvalue for="4" value="Site types"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="community" label="Community Site">
+        <attvalues>
+          <attvalue for="0" value="103"/>
+          <attvalue for="1" value="community"/>
+          <attvalue for="2" value="Community Site"/>
+          <attvalue for="3" value="Context of design"/>
+          <attvalue for="4" value="Site types"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="corporate" label="Corporate Site">
+        <attvalues>
+          <attvalue for="0" value="104"/>
+          <attvalue for="1" value="corporate"/>
+          <attvalue for="2" value="Corporate Site"/>
+          <attvalue for="3" value="Context of design"/>
+          <attvalue for="4" value="Site types"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="multinational" label="Multinational Site">
+        <attvalues>
+          <attvalue for="0" value="105"/>
+          <attvalue for="1" value="multinational"/>
+          <attvalue for="2" value="Multinational Site"/>
+          <attvalue for="3" value="Context of design"/>
+          <attvalue for="4" value="Site types"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="museum" label="Museum Site">
+        <attvalues>
+          <attvalue for="0" value="106"/>
+          <attvalue for="1" value="museum"/>
+          <attvalue for="2" value="Museum Site"/>
+          <attvalue for="3" value="Context of design"/>
+          <attvalue for="4" value="Site types"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="my-site" label="Personalized 'My' Site">
+        <attvalues>
+          <attvalue for="0" value="107"/>
+          <attvalue for="1" value="my-site"/>
+          <attvalue for="2" value="Personalized 'My' Site"/>
+          <attvalue for="3" value="Context of design"/>
+          <attvalue for="4" value="Site types"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="news-site" label="News Site">
+        <attvalues>
+          <attvalue for="0" value="108"/>
+          <attvalue for="1" value="news-site"/>
+          <attvalue for="2" value="News Site"/>
+          <attvalue for="3" value="Context of design"/>
+          <attvalue for="4" value="Site types"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="portals" label="Portal Site">
+        <attvalues>
+          <attvalue for="0" value="109"/>
+          <attvalue for="1" value="portals"/>
+          <attvalue for="2" value="Portal Site"/>
+          <attvalue for="3" value="Context of design"/>
+          <attvalue for="4" value="Site types"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="travel-site" label="Travel Site">
+        <attvalues>
+          <attvalue for="0" value="110"/>
+          <attvalue for="1" value="travel-site"/>
+          <attvalue for="2" value="Travel Site"/>
+          <attvalue for="3" value="Context of design"/>
+          <attvalue for="4" value="Site types"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="community-building" label="Community Building">
+        <attvalues>
+          <attvalue for="0" value="111"/>
+          <attvalue for="1" value="community-building"/>
+          <attvalue for="2" value="Community Building"/>
+          <attvalue for="3" value="Context of design"/>
+          <attvalue for="4" value="Experiences"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="creating" label="Information Management">
+        <attvalues>
+          <attvalue for="0" value="112"/>
+          <attvalue for="1" value="creating"/>
+          <attvalue for="2" value="Information Management"/>
+          <attvalue for="3" value="Context of design"/>
+          <attvalue for="4" value="Experiences"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="fun" label="Fun">
+        <attvalues>
+          <attvalue for="0" value="113"/>
+          <attvalue for="1" value="fun"/>
+          <attvalue for="2" value="Fun"/>
+          <attvalue for="3" value="Context of design"/>
+          <attvalue for="4" value="Experiences"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="information-experience" label="Information Seeking">
+        <attvalues>
+          <attvalue for="0" value="114"/>
+          <attvalue for="1" value="information-experience"/>
+          <attvalue for="2" value="Information Seeking"/>
+          <attvalue for="3" value="Context of design"/>
+          <attvalue for="4" value="Experiences"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="learning" label="Learning">
+        <attvalues>
+          <attvalue for="0" value="115"/>
+          <attvalue for="1" value="learning"/>
+          <attvalue for="2" value="Learning"/>
+          <attvalue for="3" value="Context of design"/>
+          <attvalue for="4" value="Experiences"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="service" label="Assistence">
+        <attvalues>
+          <attvalue for="0" value="116"/>
+          <attvalue for="1" value="service"/>
+          <attvalue for="2" value="Assistence"/>
+          <attvalue for="3" value="Context of design"/>
+          <attvalue for="4" value="Experiences"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="shopping" label="Shopping">
+        <attvalues>
+          <attvalue for="0" value="117"/>
+          <attvalue for="1" value="shopping"/>
+          <attvalue for="2" value="Shopping"/>
+          <attvalue for="3" value="Context of design"/>
+          <attvalue for="4" value="Experiences"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="storytelling" label="Story Telling">
+        <attvalues>
+          <attvalue for="0" value="118"/>
+          <attvalue for="1" value="storytelling"/>
+          <attvalue for="2" value="Story Telling"/>
+          <attvalue for="3" value="Context of design"/>
+          <attvalue for="4" value="Experiences"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="article-page" label="Article Page">
+        <attvalues>
+          <attvalue for="0" value="119"/>
+          <attvalue for="1" value="article-page"/>
+          <attvalue for="2" value="Article Page"/>
+          <attvalue for="3" value="Context of design"/>
+          <attvalue for="4" value="Page types"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="blog" label="Blog Page">
+        <attvalues>
+          <attvalue for="0" value="120"/>
+          <attvalue for="1" value="blog"/>
+          <attvalue for="2" value="Blog Page"/>
+          <attvalue for="3" value="Context of design"/>
+          <attvalue for="4" value="Page types"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="case-study" label="Case Study">
+        <attvalues>
+          <attvalue for="0" value="121"/>
+          <attvalue for="1" value="case-study"/>
+          <attvalue for="2" value="Case Study"/>
+          <attvalue for="3" value="Context of design"/>
+          <attvalue for="4" value="Page types"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="contact-us" label="Contact Page">
+        <attvalues>
+          <attvalue for="0" value="122"/>
+          <attvalue for="1" value="contact-us"/>
+          <attvalue for="2" value="Contact Page"/>
+          <attvalue for="3" value="Context of design"/>
+          <attvalue for="4" value="Page types"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="event-calendar" label="Event Calendar">
+        <attvalues>
+          <attvalue for="0" value="123"/>
+          <attvalue for="1" value="event-calendar"/>
+          <attvalue for="2" value="Event Calendar"/>
+          <attvalue for="3" value="Context of design"/>
+          <attvalue for="4" value="Page types"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="forum" label="Forum">
+        <attvalues>
+          <attvalue for="0" value="124"/>
+          <attvalue for="1" value="forum"/>
+          <attvalue for="2" value="Forum"/>
+          <attvalue for="3" value="Context of design"/>
+          <attvalue for="4" value="Page types"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="guestbook" label="Guest Book">
+        <attvalues>
+          <attvalue for="0" value="125"/>
+          <attvalue for="1" value="guestbook"/>
+          <attvalue for="2" value="Guest Book"/>
+          <attvalue for="3" value="Context of design"/>
+          <attvalue for="4" value="Page types"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="help-page" label="Help Page">
+        <attvalues>
+          <attvalue for="0" value="126"/>
+          <attvalue for="1" value="help-page"/>
+          <attvalue for="2" value="Help Page"/>
+          <attvalue for="3" value="Context of design"/>
+          <attvalue for="4" value="Page types"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="homepage" label="Homepage">
+        <attvalues>
+          <attvalue for="0" value="127"/>
+          <attvalue for="1" value="homepage"/>
+          <attvalue for="2" value="Homepage"/>
+          <attvalue for="3" value="Context of design"/>
+          <attvalue for="4" value="Page types"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="newsletter" label="Newsletter">
+        <attvalues>
+          <attvalue for="0" value="128"/>
+          <attvalue for="1" value="newsletter"/>
+          <attvalue for="2" value="Newsletter"/>
+          <attvalue for="3" value="Context of design"/>
+          <attvalue for="4" value="Page types"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="printable-pages" label="Printer-friendly Page">
+        <attvalues>
+          <attvalue for="0" value="129"/>
+          <attvalue for="1" value="printable-pages"/>
+          <attvalue for="2" value="Printer-friendly Page"/>
+          <attvalue for="3" value="Context of design"/>
+          <attvalue for="4" value="Page types"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="product-page" label="Product Page">
+        <attvalues>
+          <attvalue for="0" value="130"/>
+          <attvalue for="1" value="product-page"/>
+          <attvalue for="2" value="Product Page"/>
+          <attvalue for="3" value="Context of design"/>
+          <attvalue for="4" value="Page types"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="tutorial" label="Tutorial">
+        <attvalues>
+          <attvalue for="0" value="131"/>
+          <attvalue for="1" value="tutorial"/>
+          <attvalue for="2" value="Tutorial"/>
+          <attvalue for="3" value="Context of design"/>
+          <attvalue for="4" value="Page types"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+      <node id="image-browsing" label="Image Browser">
+        <attvalues>
+          <attvalue for="0" value="132"/>
+          <attvalue for="1" value="image-browsing"/>
+          <attvalue for="2" value="Image Browser"/>
+          <attvalue for="3" value="User needs"/>
+          <attvalue for="4" value="Navigating around"/>
+          <attvalue for="5" value="welie"/>
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="1001" kind="contains" source="main-navigation" target="accordion" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1001"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1002" kind="is-alternative" source="accordion" target="tabbing" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1002"/>
+          <attvalue for="1" value="is-alternative"/>
+        </attvalues>
+      </edge>
+      <edge id="1003" kind="is-alternative" source="accordion" target="tree" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1003"/>
+          <attvalue for="1" value="is-alternative"/>
+        </attvalues>
+      </edge>
+      <edge id="1005" kind="contains" source="faq" target="accordion" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1005"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1009" kind="contains" source="commerce" target="crumbs" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1009"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1010" kind="contains" source="portals" target="crumbs" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1010"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1011" kind="contains" source="corporate" target="crumbs" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1011"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1012" kind="contains" source="main-navigation" target="crumbs" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1012"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1014" kind="contains" source="crumbs" target="fly-out-menu" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1014"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1015" kind="contains" source="homepage" target="doormat" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1015"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1016" kind="contains" source="corporate" target="doormat" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1016"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1017" kind="contains" source="information-experience" target="doormat" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1017"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1018" kind="is-alternative" source="faceted-navigation" target="advanced-search" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1018"/>
+          <attvalue for="1" value="is-alternative"/>
+        </attvalues>
+      </edge>
+      <edge id="1019" kind="specialization" source="directory" target="faceted-navigation" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1019"/>
+          <attvalue for="1" value="specialization"/>
+        </attvalues>
+      </edge>
+      <edge id="1020" kind="specialization" source="faceted-navigation" target="advanced-search" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1020"/>
+          <attvalue for="1" value="specialization"/>
+        </attvalues>
+      </edge>
+      <edge id="1022" kind="contains" source="faceted-navigation" target="search-results" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1022"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1023" kind="contains" source="faceted-navigation" target="comparison" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1023"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1024" kind="contains" source="faceted-navigation" target="favourites" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1024"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1025" kind="is-alternative" source="fly-out-menu" target="directory" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1025"/>
+          <attvalue for="1" value="is-alternative"/>
+        </attvalues>
+      </edge>
+      <edge id="1026" kind="contains" source="fly-out-menu" target="crumbs" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1026"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1027" kind="specialization" source="main-navigation" target="doubletab" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1027"/>
+          <attvalue for="1" value="specialization"/>
+        </attvalues>
+      </edge>
+      <edge id="1030" kind="is-alternative" source="main-navigation" target="fly-out-menu" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1030"/>
+          <attvalue for="1" value="is-alternative"/>
+        </attvalues>
+      </edge>
+      <edge id="1031" kind="specialization" source="main-navigation" target="split-navigation" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1031"/>
+          <attvalue for="1" value="specialization"/>
+        </attvalues>
+      </edge>
+      <edge id="1033" kind="is-alternative" source="main-navigation" target="combined-menu" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1033"/>
+          <attvalue for="1" value="is-alternative"/>
+        </attvalues>
+      </edge>
+      <edge id="1034" kind="specialization" source="main-navigation" target="scrolling-menu" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1034"/>
+          <attvalue for="1" value="specialization"/>
+        </attvalues>
+      </edge>
+      <edge id="1035" kind="specialization" source="main-navigation" target="doormat" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1035"/>
+          <attvalue for="1" value="specialization"/>
+        </attvalues>
+      </edge>
+      <edge id="1036" kind="specialization" source="main-navigation" target="faceted-navigation" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1036"/>
+          <attvalue for="1" value="specialization"/>
+        </attvalues>
+      </edge>
+      <edge id="1037" kind="specialization" source="main-navigation" target="minesweeping" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1037"/>
+          <attvalue for="1" value="specialization"/>
+        </attvalues>
+      </edge>
+      <edge id="1038" kind="contains" source="main-navigation" target="sitemap" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1038"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1039" kind="contains" source="main-navigation" target="site-index" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1039"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1040" kind="contains" source="main-navigation" target="repeated-menu" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1040"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1041" kind="contains" source="main-navigation" target="meta-navigation" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1041"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1043" kind="contains" source="corporate" target="map-navigator" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1043"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1044" kind="contains" source="commerce" target="map-navigator" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1044"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1045" kind="contains" source="store-locator" target="map-navigator" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1045"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1046" kind="contains" source="search-results" target="map-navigator" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1046"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1047" kind="contains" source="map-navigator" target="minesweeping" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1047"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1048" kind="contains" source="map-navigator" target="printable-pages" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1048"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1049" kind="contains" source="meta-navigation" target="home" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1049"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1050" kind="contains" source="meta-navigation" target="search" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1050"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1051" kind="contains" source="meta-navigation" target="sitemap" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1051"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1052" kind="contains" source="minesweeping" target="fun" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1052"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1054" kind="contains" source="product-page" target="navigator" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1054"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1055" kind="contains" source="case-study" target="navigator" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1055"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1056" kind="contains" source="artist-sites" target="overlay-menu" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1056"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1057" kind="contains" source="overlay-menu" target="main-navigation" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1057"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1058" kind="contains" source="overlay-menu" target="fly-out-menu" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1058"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1059" kind="is-alternative" source="retractable-menu" target="main-navigation" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1059"/>
+          <attvalue for="1" value="is-alternative"/>
+        </attvalues>
+      </edge>
+      <edge id="1060" kind="is-alternative" source="retractable-menu" target="trail-menu" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1060"/>
+          <attvalue for="1" value="is-alternative"/>
+        </attvalues>
+      </edge>
+      <edge id="1061" kind="is-alternative" source="retractable-menu" target="fly-out-menu" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1061"/>
+          <attvalue for="1" value="is-alternative"/>
+        </attvalues>
+      </edge>
+      <edge id="1062" kind="contains" source="liquid-layout" target="retractable-menu" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1062"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1064" kind="is-alternative" source="retractable-menu" target="overlay-menu" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1064"/>
+          <attvalue for="1" value="is-alternative"/>
+        </attvalues>
+      </edge>
+      <edge id="1065" kind="is-alternative" source="split-navigation" target="directory" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1065"/>
+          <attvalue for="1" value="is-alternative"/>
+        </attvalues>
+      </edge>
+      <edge id="1066" kind="contains" source="split-navigation" target="crumbs" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1066"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1067" kind="contains" source="faq" target="top" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1067"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1068" kind="is-alternative" source="top" target="repeated-menu" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1068"/>
+          <attvalue for="1" value="is-alternative"/>
+        </attvalues>
+      </edge>
+      <edge id="1069" kind="contains" source="trail-menu" target="crumbs" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1069"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1071" kind="contains" source="trail-menu" target="fly-out-menu" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1071"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1073" kind="contains" source="main-navigation" target="tree" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1073"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1075" kind="contains" source="search" target="action-button" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1075"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1076" kind="contains" source="product-page" target="action-button" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1076"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1077" kind="contains" source="product-advisor" target="action-button" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1077"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1078" kind="contains" source="search-results" target="action-button" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1078"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1079" kind="contains" source="forms" target="action-button" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1079"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1080" kind="contains" source="list-builder" target="action-button" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1080"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1081" kind="is-alternative" source="guided-tour" target="wizard" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1081"/>
+          <attvalue for="1" value="is-alternative"/>
+        </attvalues>
+      </edge>
+      <edge id="1083" kind="contains" source="search-results" target="paging" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1083"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1084" kind="contains" source="list-builder" target="paging" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1084"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1085" kind="is-alternative" source="paging" target="stepping" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1085"/>
+          <attvalue for="1" value="is-alternative"/>
+        </attvalues>
+      </edge>
+      <edge id="1086" kind="contains" source="paging" target="enlarged-clickarea" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1086"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1087" kind="contains" source="stepping" target="search-results" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1087"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1088" kind="contains" source="stepping" target="shopping-cart" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1088"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1089" kind="contains" source="stepping" target="booking" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1089"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1090" kind="is-alternative" source="stepping" target="paging" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1090"/>
+          <attvalue for="1" value="is-alternative"/>
+        </attvalues>
+      </edge>
+      <edge id="1091" kind="contains" source="wizard" target="stepping" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1091"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1092" kind="contains" source="image-browsing" target="stepping" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1092"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1093" kind="contains" source="stepping" target="action-button" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1093"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1094" kind="contains" source="stepping" target="enlarged-clickarea" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1094"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1095" kind="contains" source="wizard" target="paging" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1095"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1096" kind="contains" source="commerce" target="advanced-search" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1096"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1097" kind="contains" source="multinational" target="advanced-search" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1097"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1098" kind="contains" source="portals" target="advanced-search" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1098"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1099" kind="specialization" source="advanced-search" target="search" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1099"/>
+          <attvalue for="1" value="specialization"/>
+        </attvalues>
+      </edge>
+      <edge id="1102" kind="contains" source="advanced-search" target="searcharea" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1102"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1103" kind="contains" source="advanced-search" target="search-tips" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1103"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1104" kind="contains" source="advanced-search" target="search-results" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1104"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1108" kind="contains" source="forms" target="autocomplete" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1108"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1109" kind="contains" source="search" target="autocomplete" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1109"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1110" kind="contains" source="commerce" target="faq" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1110"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1111" kind="contains" source="community" target="faq" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1111"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1113" kind="contains" source="meta-navigation" target="faq" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1113"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1114" kind="specialization" source="advanced-search" target="help-wizard" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1114"/>
+          <attvalue for="1" value="specialization"/>
+        </attvalues>
+      </edge>
+      <edge id="1116" kind="is-alternative" source="help-wizard" target="sitemap" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1116"/>
+          <attvalue for="1" value="is-alternative"/>
+        </attvalues>
+      </edge>
+      <edge id="1117" kind="is-alternative" source="help-wizard" target="site-index" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1117"/>
+          <attvalue for="1" value="is-alternative"/>
+        </attvalues>
+      </edge>
+      <edge id="1118" kind="contains" source="wizard" target="help-wizard" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1118"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1119" kind="contains" source="help-wizard" target="search-results" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1119"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1122" kind="contains" source="search" target="search-tips" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1122"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1124" kind="contains" source="searcharea" target="search" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1124"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1125" kind="contains" source="searcharea" target="sitemap" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1125"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1126" kind="contains" source="searcharea" target="site-index" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1126"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1127" kind="contains" source="searcharea" target="search-tips" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1127"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1128" kind="contains" source="searcharea" target="advanced-search" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1128"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1129" kind="contains" source="search" target="search-results" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1129"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1131" kind="contains" source="booking" target="search-results" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1131"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1144" kind="contains" source="search-results" target="comparison" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1144"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1146" kind="contains" source="site-index" target="tabbing" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1146"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1147" kind="specialization" source="sitemap" target="sitemap-footer" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1147"/>
+          <attvalue for="1" value="specialization"/>
+        </attvalues>
+      </edge>
+      <edge id="1148" kind="contains" source="footer-bar" target="sitemap-footer" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1148"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1150" kind="is-alternative" source="sitemap-footer" target="shortcut-box" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1150"/>
+          <attvalue for="1" value="is-alternative"/>
+        </attvalues>
+      </edge>
+      <edge id="1151" kind="contains" source="blog" target="tag-cloud" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1151"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1153" kind="contains" source="image-browsing" target="carrousel" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1153"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1155" kind="contains" source="application" target="column-filter" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1155"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1156" kind="contains" source="table-sorter" target="column-filter" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1156"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1157" kind="is-alternative" source="column-filter" target="faceted-navigation" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1157"/>
+          <attvalue for="1" value="is-alternative"/>
+        </attvalues>
+      </edge>
+      <edge id="1158" kind="contains" source="column-filter" target="paging" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1158"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1159" kind="is-alternative" source="column-filter" target="advanced-search" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1159"/>
+          <attvalue for="1" value="is-alternative"/>
+        </attvalues>
+      </edge>
+      <edge id="1161" kind="contains" source="application" target="collapsible-panels" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1161"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1163" kind="is-alternative" source="collapsible-panels" target="accordion" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1163"/>
+          <attvalue for="1" value="is-alternative"/>
+        </attvalues>
+      </edge>
+      <edge id="1164" kind="is-alternative" source="collapsible-panels" target="details-on-demand" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1164"/>
+          <attvalue for="1" value="is-alternative"/>
+        </attvalues>
+      </edge>
+      <edge id="1166" kind="is-alternative" source="collapsible-panels" target="tree" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1166"/>
+          <attvalue for="1" value="is-alternative"/>
+        </attvalues>
+      </edge>
+      <edge id="1168" kind="contains" source="commerce" target="favourites" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1168"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1170" kind="contains" source="news-site" target="favourites" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1170"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1171" kind="contains" source="my-site" target="favourites" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1171"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1175" kind="contains" source="meta-navigation" target="favourites" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1175"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1177" kind="contains" source="favourites" target="list-builder" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1177"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1178" kind="is-alternative" source="inplace-replacement" target="overview-detail" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1178"/>
+          <attvalue for="1" value="is-alternative"/>
+        </attvalues>
+      </edge>
+      <edge id="1180" kind="contains" source="application" target="overview-detail" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1180"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1181" kind="contains" source="list-builder" target="overview-detail" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1181"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1183" kind="contains" source="overview-detail" target="enlarged-clickarea" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1183"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1184" kind="contains" source="view" target="overview-detail" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1184"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1185" kind="contains" source="image-browsing" target="overview-detail" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1185"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1187" kind="contains" source="navigator" target="overview-detail" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1187"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1188" kind="contains" source="main-navigation" target="tabbing" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1188"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1189" kind="contains" source="product-page" target="tabbing" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1189"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1190" kind="contains" source="search-results" target="table-sorter" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1190"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1191" kind="contains" source="list-builder" target="table-sorter" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1191"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1192" kind="contains" source="image-browsing" target="thumbnail" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1192"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1193" kind="contains" source="application" target="view" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1193"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1194" kind="contains" source="view" target="list-builder" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1194"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1195" kind="contains" source="center-stage" target="view" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1195"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1196" kind="contains" source="view" target="paging" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1196"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1197" kind="contains" source="view" target="stepping" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1197"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1198" kind="contains" source="main-navigation" target="view" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1198"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1199" kind="contains" source="forms" target="view" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1199"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1200" kind="contains" source="wizard" target="view" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1200"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1201" kind="contains" source="my-site" target="customization-window" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1201"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1203" kind="contains" source="login" target="registration" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1203"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1204" kind="contains" source="commerce" target="login" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1204"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1205" kind="contains" source="community" target="login" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1205"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1206" kind="contains" source="application" target="login" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1206"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1207" kind="contains" source="login" target="action-button" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1207"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1210" kind="specialization" source="registration" target="wizard" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1210"/>
+          <attvalue for="1" value="specialization"/>
+        </attvalues>
+      </edge>
+      <edge id="1211" kind="contains" source="registration" target="forms" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1211"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1212" kind="contains" source="travel-site" target="booking" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1212"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1213" kind="contains" source="commerce" target="booking" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1213"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1214" kind="contains" source="homepage" target="booking" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1214"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1215" kind="contains" source="booking" target="purchase-process" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1215"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1217" kind="specialization" source="booking" target="advanced-search" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1217"/>
+          <attvalue for="1" value="specialization"/>
+        </attvalues>
+      </edge>
+      <edge id="1219" kind="contains" source="booking" target="forms" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1219"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1220" kind="contains" source="booking" target="wizard" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1220"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1221" kind="contains" source="booking" target="processing-page" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1221"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1223" kind="contains" source="booking" target="table-sorter" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1223"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1225" kind="contains" source="booking" target="shopping-cart" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1225"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1226" kind="contains" source="search" target="comparison" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1226"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1227" kind="specialization" source="product-advisor" target="wizard" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1227"/>
+          <attvalue for="1" value="specialization"/>
+        </attvalues>
+      </edge>
+      <edge id="1228" kind="contains" source="product-advisor" target="tabbing" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1228"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1229" kind="specialization" source="product-configurator" target="wizard" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1229"/>
+          <attvalue for="1" value="specialization"/>
+        </attvalues>
+      </edge>
+      <edge id="1230" kind="contains" source="product-configurator" target="tabbing" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1230"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1231" kind="contains" source="commerce" target="purchase-process" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1231"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1232" kind="contains" source="museum" target="purchase-process" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1232"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1235" kind="contains" source="purchase-process" target="wizard" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1235"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1236" kind="contains" source="purchase-process" target="login" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1236"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1237" kind="contains" source="purchase-process" target="registration" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1237"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1238" kind="specialization" source="shopping-cart" target="favourites" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1238"/>
+          <attvalue for="1" value="specialization"/>
+        </attvalues>
+      </edge>
+      <edge id="1239" kind="contains" source="commerce" target="store-locator" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1239"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1240" kind="contains" source="corporate" target="store-locator" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1240"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1241" kind="contains" source="automotive" target="store-locator" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1241"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1242" kind="contains" source="museum" target="store-locator" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1242"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1243" kind="specialization" source="store-locator" target="advanced-search" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1243"/>
+          <attvalue for="1" value="specialization"/>
+        </attvalues>
+      </edge>
+      <edge id="1244" kind="contains" source="store-locator" target="search-results" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1244"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1246" kind="contains" source="commerce" target="testimonials" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1246"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1247" kind="contains" source="shopping" target="testimonials" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1247"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1248" kind="contains" source="testimonials" target="forms" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1248"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1249" kind="contains" source="product-page" target="testimonials" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1249"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1251" kind="contains" source="testimonials" target="action-button" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1251"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1252" kind="contains" source="login" target="testimonials" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1252"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1254" kind="contains" source="search-results" target="testimonials" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1254"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1256" kind="contains" source="testimonials" target="comparison" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1256"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1257" kind="contains" source="commerce" target="vpd" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1257"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1258" kind="contains" source="museum" target="vpd" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1258"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1259" kind="contains" source="artist-sites" target="vpd" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1259"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1260" kind="contains" source="travel-site" target="vpd" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1260"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1261" kind="contains" source="shopping" target="vpd" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1261"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1263" kind="contains" source="multinational" target="country-selector" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1263"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1264" kind="contains" source="forms" target="date-selector" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1264"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1265" kind="contains" source="booking" target="date-selector" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1265"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1266" kind="contains" source="registration" target="date-selector" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1266"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1267" kind="contains" source="advanced-search" target="date-selector" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1267"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1268" kind="is-alternative" source="date-selector" target="event-calendar" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1268"/>
+          <attvalue for="1" value="is-alternative"/>
+        </attvalues>
+      </edge>
+      <edge id="1269" kind="contains" source="news-site" target="poll" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1269"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1270" kind="contains" source="community" target="poll" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1270"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1271" kind="contains" source="forum" target="poll" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1271"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1273" kind="contains" source="commerce" target="rating" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1273"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1274" kind="contains" source="product-page" target="rating" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1274"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1275" kind="contains" source="rating" target="action-button" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1275"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1276" kind="contains" source="login" target="rating" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1276"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1277" kind="contains" source="blog" target="comment-box" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1277"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1278" kind="contains" source="article-page" target="comment-box" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1278"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1279" kind="contains" source="guestbook" target="comment-box" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1279"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1280" kind="contains" source="commerce" target="comment-box" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1280"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1281" kind="contains" source="community-building" target="comment-box" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1281"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1282" kind="contains" source="comment-box" target="forms" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1282"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1283" kind="contains" source="comment-box" target="login" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1283"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1284" kind="contains" source="comment-box" target="captcha" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1284"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1285" kind="specialization" source="comment-box" target="contact-us" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1285"/>
+          <attvalue for="1" value="specialization"/>
+        </attvalues>
+      </edge>
+      <edge id="1286" kind="specialization" source="forum" target="comment-box" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1286"/>
+          <attvalue for="1" value="specialization"/>
+        </attvalues>
+      </edge>
+      <edge id="1288" kind="contains" source="advanced-search" target="forms" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1288"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1290" kind="contains" source="login" target="forms" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1290"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1291" kind="contains" source="forms" target="grid-based-layout" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1291"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1292" kind="contains" source="forms" target="format" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1292"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1293" kind="contains" source="forms" target="input-error" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1293"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1294" kind="contains" source="footer-bar" target="repeated-menu" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1294"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1295" kind="contains" source="news-site" target="news-ticker" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1295"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1296" kind="contains" source="forms" target="captcha" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1296"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1297" kind="contains" source="registration" target="captcha" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1297"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1299" kind="contains" source="blog" target="captcha" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1299"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1301" kind="contains" source="homepage" target="center-stage" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1301"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1302" kind="contains" source="application" target="center-stage" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1302"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1303" kind="contains" source="product-page" target="center-stage" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1303"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1304" kind="contains" source="commerce" target="color-coded-section" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1304"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1305" kind="contains" source="color-coded-section" target="doubletab" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1305"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1306" kind="contains" source="footer-bar" target="content-lock" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1306"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1307" kind="contains" source="news-site" target="liquid-layout" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1307"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1308" kind="contains" source="liquid-layout" target="center-stage" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1308"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1309" kind="contains" source="news-site" target="outgoing-links" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1309"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1310" kind="contains" source="portals" target="outgoing-links" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1310"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1311" kind="contains" source="blog" target="outgoing-links" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1311"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1312" kind="contains" source="footer-bar" target="outgoing-links" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1312"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1313" kind="contains" source="search" target="zebra-table" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1313"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1314" kind="contains" source="list-builder" target="zebra-table" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1314"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1316" kind="is-alternative" source="input-error" target="format" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1316"/>
+          <attvalue for="1" value="is-alternative"/>
+        </attvalues>
+      </edge>
+      <edge id="1317" kind="contains" source="travel-site" target="processing-page" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1317"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1318" kind="contains" source="application" target="processing-page" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1318"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1320" kind="contains" source="article-page" target="font-enlarger" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1320"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1322" kind="contains" source="application" target="forms" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1322"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1324" kind="contains" source="application" target="wizard" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1324"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1325" kind="contains" source="application" target="table-sorter" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1325"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1327" kind="contains" source="application" target="zebra-table" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1327"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1329" kind="contains" source="application" target="registration" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1329"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1330" kind="contains" source="application" target="faq" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1330"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1331" kind="contains" source="application" target="meta-navigation" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1331"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1332" kind="contains" source="application" target="doubletab" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1332"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1333" kind="contains" source="application" target="fly-out-menu" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1333"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1335" kind="contains" source="artist-sites" target="homepage" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1335"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1336" kind="contains" source="artist-sites" target="news" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1336"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1337" kind="contains" source="artist-sites" target="blog" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1337"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1338" kind="contains" source="artist-sites" target="image-browsing" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1338"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1339" kind="contains" source="artist-sites" target="case-study" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1339"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1340" kind="contains" source="artist-sites" target="shopping" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1340"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1341" kind="contains" source="artist-sites" target="shopping-cart" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1341"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1342" kind="contains" source="artist-sites" target="booking" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1342"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1343" kind="contains" source="artist-sites" target="zebra-table" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1343"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1345" kind="contains" source="artist-sites" target="forum" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1345"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1346" kind="specialization" source="automotive" target="multinational" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1346"/>
+          <attvalue for="1" value="specialization"/>
+        </attvalues>
+      </edge>
+      <edge id="1347" kind="contains" source="automotive" target="country-selector" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1347"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1348" kind="contains" source="automotive" target="information-experience" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1348"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1350" kind="contains" source="automotive" target="shopping" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1350"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1351" kind="contains" source="automotive" target="comparison" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1351"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1352" kind="contains" source="automotive" target="product-configurator" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1352"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1353" kind="contains" source="automotive" target="image-browsing" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1353"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1354" kind="contains" source="automotive" target="news" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1354"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1355" kind="contains" source="automotive" target="homepage" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1355"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1356" kind="contains" source="brand-promo-site" target="fun" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1356"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1357" kind="contains" source="corporate" target="campaign-site" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1357"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1358" kind="contains" source="multinational" target="campaign-site" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1358"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1359" kind="is-alternative" source="campaign-site" target="product-page" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1359"/>
+          <attvalue for="1" value="is-alternative"/>
+        </attvalues>
+      </edge>
+      <edge id="1362" kind="contains" source="commerce" target="shopping-cart" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1362"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1363" kind="contains" source="commerce" target="hotlist" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1363"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1364" kind="contains" source="commerce" target="comparison" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1364"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1367" kind="is-alternative" source="community" target="news-site" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1367"/>
+          <attvalue for="1" value="is-alternative"/>
+        </attvalues>
+      </edge>
+      <edge id="1368" kind="specialization" source="commerce" target="corporate" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1368"/>
+          <attvalue for="1" value="specialization"/>
+        </attvalues>
+      </edge>
+      <edge id="1369" kind="specialization" source="service" target="corporate" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1369"/>
+          <attvalue for="1" value="specialization"/>
+        </attvalues>
+      </edge>
+      <edge id="1370" kind="contains" source="corporate" target="doubletab" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1370"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1371" kind="contains" source="corporate" target="meta-navigation" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1371"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1372" kind="contains" source="corporate" target="language-selector" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1372"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1373" kind="contains" source="corporate" target="multinational" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1373"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1375" kind="contains" source="multinational" target="language-selector" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1375"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1376" kind="contains" source="museum" target="information-experience" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1376"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1377" kind="contains" source="museum" target="community-building" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1377"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1379" kind="contains" source="museum" target="advanced-search" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1379"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1380" kind="contains" source="museum" target="search-results" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1380"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1381" kind="contains" source="museum" target="thumbnail" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1381"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1382" kind="contains" source="museum" target="action-button" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1382"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1383" kind="contains" source="museum" target="date-selector" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1383"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1384" kind="contains" source="museum" target="learning" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1384"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1385" kind="contains" source="museum" target="contact-us" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1385"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1386" kind="contains" source="museum" target="news" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1386"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1387" kind="contains" source="museum" target="homepage" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1387"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1389" kind="contains" source="museum" target="commerce" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1389"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1390" kind="contains" source="museum" target="shopping" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1390"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1391" kind="contains" source="museum" target="guestbook" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1391"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1392" kind="contains" source="portals" target="my-site" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1392"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1394" kind="contains" source="news-site" target="teaser-menu" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1394"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1396" kind="contains" source="news-site" target="login" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1396"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1397" kind="contains" source="news-site" target="content-lock" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1397"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1398" kind="contains" source="news-site" target="newsletter" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1398"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1399" kind="contains" source="news-site" target="searcharea" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1399"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1400" kind="contains" source="news-site" target="footer-bar" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1400"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1403" kind="specialization" source="travel-site" target="commerce" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1403"/>
+          <attvalue for="1" value="specialization"/>
+        </attvalues>
+      </edge>
+      <edge id="1404" kind="contains" source="community" target="community-building" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1404"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1405" kind="contains" source="news-site" target="community-building" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1405"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1406" kind="contains" source="commerce" target="community-building" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1406"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1407" kind="contains" source="portals" target="community-building" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1407"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1408" kind="contains" source="community-building" target="forum" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1408"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1409" kind="contains" source="community-building" target="product-page" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1409"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1410" kind="contains" source="community-building" target="send-to-friend" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1410"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1411" kind="contains" source="community-building" target="poll" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1411"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1412" kind="contains" source="community-building" target="newsletter" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1412"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1414" kind="contains" source="community-building" target="my-site" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1414"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1415" kind="contains" source="creating" target="view" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1415"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1416" kind="contains" source="creating" target="list-builder" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1416"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1417" kind="contains" source="creating" target="column-filter" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1417"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1418" kind="contains" source="creating" target="center-stage" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1418"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1419" kind="contains" source="creating" target="forms" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1419"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1420" kind="contains" source="creating" target="wizard" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1420"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1422" kind="contains" source="creating" target="advanced-search" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1422"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1424" kind="contains" source="creating" target="table-sorter" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1424"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1426" kind="contains" source="creating" target="customization-window" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1426"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1429" kind="contains" source="artist-sites" target="fun" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1429"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1430" kind="contains" source="news-site" target="fun" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1430"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1431" kind="contains" source="automotive" target="fun" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1431"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1432" kind="contains" source="corporate" target="fun" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1432"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1433" kind="contains" source="fun" target="minesweeping" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1433"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1434" kind="contains" source="fun" target="overlay-menu" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1434"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1435" kind="contains" source="fun" target="guided-tour" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1435"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1438" kind="contains" source="information-experience" target="main-navigation" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1438"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1440" kind="contains" source="information-experience" target="search" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1440"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1441" kind="contains" source="information-experience" target="store-locator" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1441"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1442" kind="contains" source="information-experience" target="site-index" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1442"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1444" kind="contains" source="information-experience" target="advanced-search" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1444"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1445" kind="contains" source="information-experience" target="directory" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1445"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1447" kind="contains" source="information-experience" target="sitemap" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1447"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1448" kind="contains" source="information-experience" target="faceted-navigation" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1448"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1449" kind="contains" source="information-experience" target="topic-pages" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1449"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1450" kind="contains" source="information-experience" target="help-wizard" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1450"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1452" kind="contains" source="campaign-site" target="learning" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1452"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1454" kind="contains" source="learning" target="newsletter" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1454"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1455" kind="contains" source="learning" target="vpd" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1455"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1456" kind="contains" source="learning" target="help-wizard" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1456"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1457" kind="contains" source="learning" target="wizard" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1457"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1458" kind="contains" source="learning" target="community" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1458"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1459" kind="contains" source="learning" target="fun" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1459"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1460" kind="contains" source="learning" target="favourites" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1460"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1461" kind="contains" source="commerce" target="service" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1461"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1462" kind="contains" source="service" target="main-navigation" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1462"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1463" kind="contains" source="service" target="meta-navigation" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1463"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1464" kind="contains" source="service" target="product-page" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1464"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1465" kind="contains" source="service" target="faq" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1465"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1466" kind="contains" source="service" target="help-wizard" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1466"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1467" kind="contains" source="service" target="information-experience" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1467"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1468" kind="contains" source="service" target="search" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1468"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1469" kind="contains" source="service" target="advanced-search" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1469"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1470" kind="contains" source="commerce" target="shopping" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1470"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1471" kind="contains" source="shopping" target="hotlist" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1471"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1472" kind="contains" source="shopping" target="doubletab" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1472"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1473" kind="contains" source="shopping" target="crumbs" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1473"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1474" kind="contains" source="shopping" target="comparison" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1474"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1475" kind="contains" source="shopping" target="product-configurator" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1475"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1476" kind="contains" source="shopping" target="product-advisor" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1476"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1477" kind="contains" source="shopping" target="shopping-cart" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1477"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1478" kind="contains" source="shopping" target="send-to-friend" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1478"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1479" kind="contains" source="storytelling" target="guided-tour" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1479"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1480" kind="contains" source="news-site" target="article-page" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1480"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1481" kind="contains" source="portals" target="article-page" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1481"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1482" kind="contains" source="article-page" target="center-stage" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1482"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1483" kind="contains" source="article-page" target="liquid-layout" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1483"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1484" kind="contains" source="article-page" target="footer-bar" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1484"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1485" kind="contains" source="article-page" target="send-to-friend" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1485"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1486" kind="contains" source="article-page" target="printable-pages" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1486"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1487" kind="contains" source="article-page" target="paging" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1487"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1488" kind="contains" source="article-page" target="favourites" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1488"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1489" kind="contains" source="article-page" target="forum" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1489"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1491" kind="contains" source="corporate" target="blog" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1491"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1492" kind="contains" source="community-building" target="blog" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1492"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1493" kind="contains" source="blog" target="search" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1493"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1494" kind="contains" source="corporate" target="case-study" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1494"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1495" kind="contains" source="commerce" target="contact-us" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1495"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1496" kind="contains" source="corporate" target="contact-us" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1496"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1497" kind="contains" source="shopping" target="contact-us" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1497"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1498" kind="contains" source="contact-us" target="meta-navigation" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1498"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1499" kind="contains" source="contact-us" target="footer-bar" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1499"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1500" kind="contains" source="contact-us" target="sitemap" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1500"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1501" kind="contains" source="contact-us" target="faq" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1501"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1502" kind="contains" source="contact-us" target="search" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1502"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1505" kind="contains" source="museum" target="event-calendar" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1505"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1506" kind="contains" source="event-calendar" target="center-stage" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1506"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1507" kind="contains" source="event-calendar" target="zebra-table" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1507"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1509" kind="contains" source="event-calendar" target="send-to-friend" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1509"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1510" kind="contains" source="event-calendar" target="action-button" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1510"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1511" kind="contains" source="event-calendar" target="date-selector" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1511"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1513" kind="contains" source="event-calendar" target="advanced-search" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1513"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1515" kind="contains" source="community" target="forum" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1515"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1517" kind="contains" source="news-site" target="forum" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1517"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1519" kind="contains" source="forum" target="crumbs" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1519"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1520" kind="contains" source="forum" target="paging" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1520"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1521" kind="contains" source="forum" target="registration" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1521"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1522" kind="contains" source="forum" target="login" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1522"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1523" kind="contains" source="forum" target="advanced-search" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1523"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1524" kind="contains" source="artist-sites" target="guestbook" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1524"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1526" kind="contains" source="guestbook" target="forms" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1526"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1527" kind="contains" source="guestbook" target="paging" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1527"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1528" kind="contains" source="guestbook" target="zebra-table" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1528"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1529" kind="contains" source="guestbook" target="forum" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1529"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1530" kind="contains" source="application" target="help-page" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1530"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1531" kind="contains" source="commerce" target="help-page" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1531"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1532" kind="contains" source="registration" target="help-page" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1532"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1533" kind="contains" source="help-page" target="footer-bar" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1533"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1534" kind="contains" source="help-page" target="meta-navigation" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1534"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1535" kind="contains" source="help-page" target="faq" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1535"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1536" kind="contains" source="help-page" target="contact-us" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1536"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1537" kind="contains" source="homepage" target="meta-navigation" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1537"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1538" kind="contains" source="homepage" target="main-navigation" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1538"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1540" kind="contains" source="homepage" target="search" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1540"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1541" kind="contains" source="homepage" target="login" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1541"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1542" kind="contains" source="homepage" target="language-selector" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1542"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1543" kind="contains" source="homepage" target="country-selector" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1543"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1544" kind="contains" source="homepage" target="shortcut-box" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1544"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1545" kind="contains" source="homepage" target="news" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1545"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1546" kind="contains" source="homepage" target="case-study" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1546"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1547" kind="contains" source="news-site" target="printable-pages" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1547"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1551" kind="contains" source="printable-pages" target="liquid-layout" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1551"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1552" kind="contains" source="printable-pages" target="footer-bar" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1552"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1556" kind="contains" source="commerce" target="product-page" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1556"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1557" kind="contains" source="corporate" target="product-page" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1557"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1558" kind="contains" source="product-page" target="faq" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1558"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+      <edge id="1559" kind="contains" source="product-page" target="guided-tour" type="directed" weight="1.0">
+        <attvalues>
+          <attvalue for="0" value="1559"/>
+          <attvalue for="1" value="contains"/>
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

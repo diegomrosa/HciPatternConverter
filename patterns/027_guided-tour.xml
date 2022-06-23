@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern collection="welie" patternID="guided-tour" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Guided Tour</name>
+<author>Martijn van Welie</author>
+<problem>Users need to learn about how they can do 'something'
+</problem>
+
+
+<context>The site has uncommon features or deals with the usage of non-website related stuff. For example, when users have to learn about using a machine or performing maintenance.
+</context>
+
+<illustration><img src="images/guided-tour-orange.png" border="1"/><br/>From 
+<a href="http://www.orange.co.uk">www.orange.co.uk</a><br/> 
+</illustration>
+
+<pattlet>Show users how to do it in several interactive steps
+</pattlet>
+
+
+<solution>A guided tour is a <pattern-link type="is-alternative" patternID="wizard"/>-type of thing. The thing that is to be learned is taught is several main steps that are listed so that the users can understand this. The users can select a step and read/see all about this step. To make the learning experience even stronger, users can interact in each step and 'perform' some actions that simulate real usage.
+</solution>
+
+<rationale>This is to closest thing to having somebody sit next to you and go through a complex thing.
+</rationale>
+
+<example><img src="#"/>
+</example>
+
+<uses>http://www.palm.com/products/family.epl
+</uses>
+
+<references>
+</references>
+</pattern>

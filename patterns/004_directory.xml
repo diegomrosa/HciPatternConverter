@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern collection="welie" patternID="directory" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Directory Navigation</name>
+<author>Martijn van Welie</author>
+<problem>Users need to sect an item out of a set
+</problem>
+
+<illustration><img src="images/yahoo-ex.gif" border="1"/>
+<br/>
+From <a href="http://www.yahoo.com">www.yahoo.com</a>
+<br/>
+</illustration>
+
+<context>At least several groups of items. User may want to change between items in the same group. Users want to have an overview of what is there.
+</context>
+
+<pattlet>Sum up level 1 and 2
+</pattlet>
+
+<solution>Place all items of the second level under headings of the first level. Add the number of items present in each group. When the users have selected an item, the items of that group are shown with extra navigation at the top of the page. Users can switch to other items within the same group. Always one of the subgroups is active after a select. Should there be a breadcrumb to navigate back to the index???
+<img src="images/directory.png"/>
+<br/><a href="wireframes/directory.ppt">* view wireframe</a>
+</solution>
+
+<rationale>The directory provides overview while at the same time showing the structure of the items. By always keeping the links to items within the same group visible users can switch easily between those items. 
+</rationale>
+
+<example>This example from www.usableweb.org shows the number of items in each category.<br/>
+<img src="images/usableweb.png" border="1"/>
+</example>
+
+<uses>
+<a href="http://www.yahoo.com">www.yahoo.com</a>;
+<a href="http://www.usableweb.com">www.usableweb.com</a>;
+<a href="http://www.google.com">www.google.com</a>;
+</uses>
+
+<references>Can be part of <a href="split-navigation.html">Split Navigation</a>.
+</references>
+</pattern>

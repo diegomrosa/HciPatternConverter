@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern collection="welie" patternID="retractable-menu" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name/>
+<author>Martijn van Welie</author>
+<problem>Users need to access the navigation but they may need the screen space even more
+</problem>
+
+
+<context>When the screen space is scarce and the <pattern-link type="is-alternative" patternID="main-navigation"/> takes relatively too much space. Alternatively consider a horizontal <pattern-link type="is-alternative" patternID="trail-menu"/> in combination with <pattern-link type="is-alternative" patternID="fly-out-menu"/>.
+</context>
+
+<illustration><img src="images/retractable-nike.jpg" border="1"/><br/>From 
+<a href="http://www.nikewomen.com">www.nikewomen.com</a><br/> 
+</illustration>
+
+<pattlet>Create a menu that can be put aside and easily retrieved again.
+</pattlet>
+
+
+<solution>Implemented using dynamic html, will also require some form of <pattern-link type="is-contained-by" patternID="liquid-layout"/>.
+</solution>
+
+<rationale>This pattern mainly saves a lot of screen-space while having the menu still available. In contrast to a <pattern-link type="is-alternative" patternID="fly-out-menu"/> or <pattern-link type="is-alternative" patternID="overlay-menu"/> a retractable menu stays on the page when activated.
+</rationale>
+
+<example><img src="images/retract-sitepoint1.png" border="1"/><br/><br/>
+<img src="images/retract-sitepoint2.png" border="1"/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

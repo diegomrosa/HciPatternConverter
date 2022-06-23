@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern collection="welie" patternID="fly-out-menu" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Flyout Menu</name>
+<author>Martijn van Welie</author>
+<problem>Users need to have direct access to sub-navigation but the amount of screen estate for navigation is limited
+</problem>
+
+<illustration><img src="images/idea-menu.png" border="1"/>
+<br/>
+From <a href="http://www.idea.com">www.idea.com</a>
+</illustration>
+
+<context>For experienced users who want quick access to menu items. Typically there is a main page and all clickable items are grouped under a label. The menu items themselves do not link to a page. Space for navigation is limited, if not consider other navigation systems such as a <pattern-link type="is-alternative" patternID="directory"/>. Menu items should be found always in the same spot. The number of mouse-clicks should be minimized. No reloads of pages
+</context>
+
+<pattlet>Combine horizontal navigation with a sub-menu that flies-out when the users hovers over the main menu-item
+</pattlet>
+
+<solution>On mouse-over show the menu. The menu always directly moves up, down or right (never left) in such a way that it does not cover the other menu items. The flying-out should be instant or very quick otherwise users cannot switch quickly. Preferable combined with a <pattern-link type="contains" patternID="crumbs"/>. The fly-out menu may exist horizontally or vertically.<br/>
+<br/>
+<b>Issues with Fly-out Menus</b>
+<ul>
+<li>difficult to select if you leave the area. Make it wider that it appears so that it doesn't disappear if you are moving the mouse just a couple of pixels outside of the menu'</li>
+<li>Fly-out with submenus are not a good idea. Really hard to select (<a href="http://en.wikipedia.org/wiki/Fitts_law">Fitts law</a>)</li>
+<li>You must make it clear that it is a menu, for example by adding a down-pointing triangle next to the label</li>
+<li>Make sure they work without Javascript for accessibility reasons. Otherwise search engines cannot index your site and accessibility also suffers.</li>
+<li>Use a delay before hiding the fly-out menu again, e.g. 250ms</li>
+<li>Only use horizontal menus with vertical fly-out menus. The vertical area in which the mouse-pointer needs to be move is too small, i.e. typically 12-14px, and causes the menu to be hidden unwantedly</li>
+</ul>
+
+</solution>
+
+<rationale>Fly-out menus can work well but they may also kill usability. The actual implementation is crucial for its success. On the one hand, fly-out menus save space that may be used better for the content area of the site. But on the other hand it hides the navigation from first sight. It is a kind of 'mystery-meat navigation'. If executed well with the mentioned points address well it provides very quick access to sections in the site without cluttering up the screen estate with navigation. In particular when users 'get it' it may help them a lot. On the other hand, for one-off interactions it may cause usability issues.
+</rationale>
+
+<example>Microsoft also makes extensive use in their support sites. <br/>
+<img src="images/microsoft-fly-out.png" border="1"/>
+</example>
+
+<uses>
+</uses>
+
+<literature>
+	<a href="http://www.7nights.com/asterisk/archive/2004/03/usability-and-flyout-menus">Usability and Fly-out Menus</a><br/>
+</literature>
+
+<code-links>
+	<a href="http://www.cssplay.co.uk/menus/index.html">More menus in CSS</a><br/>
+	<a href="http://www.alistapart.com/articles/dropdowns/">A List Apart: Suckerfish Dropdowns</a><br/>
+	<a href="http://pfirsichmelba.de/artikel-scripts/suckerfish-accessible.html">Suckerfish improvements</a>
+</code-links>
+</pattern>

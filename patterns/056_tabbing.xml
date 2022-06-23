@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="tabbing" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Tabbing (MUST BE REWRITTEN)</name>
+<author>Martijn van Welie</author>
+<problem>Users need to access a particular section of the entire avaiable information
+</problem>
+
+<illustration>
+<img src="images/tabbing-ex.gif" border="1"/><br/>
+From <a href="http://www.dell.com/">www.dell.com/</a>
+<br/>
+</illustration>
+
+<context>You need to design your <pattern-link type="is-contained-by" patternID="main-navigation"/> and you are considering a horizontal menu. Tabs are a common form of main navigation for information structures up to +/- 10 items. 
+</context>
+
+<pattlet>Show a horizontal row of tabs with the section label in the tab. Highlight the currently selected tab and make all other tabs clickable.
+</pattlet>
+
+<solution>The tabs are shown high up the page and the area underneath it is connected to it visually. The information place in the tab pane belongs to the selected tab and can have its own sub-navigation. The currently selected category is highlighted by using contrasting color, shape, size, or typeface. It is best to create the needed contrast by making combinations such as color and shape. 
+<br/><br/>
+<img src="images/tabbing-schema.png"/>
+<br/>
+By connecting the selected tab to the area underneath it, for example by making the both the area and the tab the same background color, the relationship is enforced even further.<br/>
+<br/>
+The most frequent use of tabs is in a horizontal menu. The tabs are then used <b>to separate categorized information</b>. Another use is <b>to show a (partial) view of one object</b>, for example when showing a <pattern-link type="is-contained-by" patternID="product-page"/> with sections about "Features", "Design", "Connectivity" etc. 
+</solution>
+
+<rationale>Tabs are inspired by their use in file cabinets where they separate sections of files. Although there are no real differences with a normal horizontal bar, the shape of the tabs makes the menu less boring and more visually outstanding. 
+</rationale>
+
+<example>At <a href="http://www.alltheweb.com">Alltheweb</a> a variation of tabs is used where the use is not to act only as main navigation, but as a filter for the type of results that are requested:<br/>
+<img src="images/tabbing-alltheweb.png" border="1"/>
+</example>
+
+<uses>
+</uses>
+
+<literature>http://www.useit.com/alertbox/991114.html, http://www.eleganthack.com/archives/002711.html
+</literature>
+</pattern>

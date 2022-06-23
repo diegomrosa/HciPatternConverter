@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern collection="welie" patternID="image-menu" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Image Menu</name>
+<author>Martijn van Welie</author>
+<problem>Users need so make a selection out of a limited set of items
+</problem>
+
+
+<context>The space for the menu is limited or when icons can be used effectively.
+</context>
+
+<illustration><img src="images/image-menu-ex1.gif" border="1"/><br/>From 
+<a href="http://www.apple.com">www.apple.com</a><br/> 
+</illustration>
+
+<pattlet>Allow users to select a menu item by selecting an image and display the label in a fixed location. 
+</pattlet>
+
+
+<solution>
+<img src="images/image-menu-wf.gif"/><br/>
+The icons are lined-up or placed into a convenient configuration (e.g. 3 by 3 or next to each other). Users can move the focus or mouse-pointer over these icons. The icon that is selected will be visually shown distinct from the others. while an icon is selected the label is shown in the 'label-area' which is usually above or below the icons.
+</solution>
+
+<rationale>This type of menu emphasizes icons while it is at the same time very compact. Especially in special circumstances with limited screen-space, e.g. mobile phone menus, this can create very effective menus.
+</rationale>
+
+<example>The SonyEricsson T68 uses an image menu as the main phone menu. The users can use a mini-joystick to select a menu item. The 3 by 3 arrangement corresponds with the keypad arrangement (the 1-9 keys) which work as shortcuts for the menu items.<br/><img src="images/image-menu-ex2.gif"/>
+<br/>
+Example of www.NPK.nl
+<img src="images/imagemenu-npk.png" border="1"/>
+</example>
+
+<uses>www.apple.com
+</uses>
+
+<references>
+</references>
+</pattern>

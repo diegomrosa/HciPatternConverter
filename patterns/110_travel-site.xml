@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="travel-site" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Travel Site</name>
+<author>Martijn van Welie</author>
+<problem>Users want to book a trip, holiday or flight
+</problem>
+
+
+<context>
+</context>
+
+<illustration><img src="#" border="1"/><br/>From
+<a href="http://www.matrox.com">www.matrox.com</a><br/>
+</illustration>
+
+<pattlet>Present a searchable database with booking possibilities
+</pattlet>
+
+
+<solution>Uses <pattern-link type="contains" patternID="booking"/>, is actual similar to a <pattern-link type="specialization" patternID="commerce"/>
+</solution>
+
+<rationale>
+</rationale>
+
+<example><img src="#"/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

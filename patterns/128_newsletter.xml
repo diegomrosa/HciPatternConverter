@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="newsletter" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Newsletter</name>
+<author>Christien Kintzen, Martijn van Welie</author>
+<problem>Users want to be regularily informed or updated.
+</problem>
+
+<illustration>
+<img src="images/newsletter-ex.gif" border="1"/><br/>
+From <a href="http://www.zdnet.com/">www.zdnet.com</a>
+<br/>
+</illustration>
+
+<context>A site with regularly updated content.
+</context>
+
+<pattlet>Send users a newsletter regularly
+</pattlet>
+
+
+<solution>
+Users normally register for a newsletter on a website. It the place where they register they should also have to possibility to unsubscribe. Signing up is done in a 'signup-box' that consists of a field to enter the email address and a button labeled 'signup'. In the same place there should be an indication of how to unsubscribed or manage the subscription (for changing the mail address or delivery options).
+<br/>
+The newsletter has to appear regularly and users must be informed of when delivery takes place. There must be a clear distinction between the newsletter and the site (if there is one) so that it doesn't look like you get a "site" in the mail. On the other hand is can share the basic design style that the site uses so that it becomes recognizable for users. The newsletter should site why and from who you received it and make it clear how to unsubscribe from it (optionally how to change settings). Typical elements, besides the main content, are:
+
+<ul>
+<li>The name of the sending site/company</li>
+<li>The table of contents</li>
+<li>Instructions about how to unsubscribe</li>
+<li>A disclaimer</li>
+<li>A date and/or issue number</li>
+</ul>
+</solution>
+
+<rationale>People may not want to visit the site every day to check if there is something new for them to find. A newsletter can keep them informed on a regular basis and requires only a minimal amount of attention. 
+</rationale>
+
+<example>This is the signup-box used on <a href="http://www.cnet.com">CNet</a>:<br/><img src="images/newsletter-signup.gif"/>
+</example>
+
+<uses>www.cnet.com;www.zdnet.com;www.cnn.com;www.zibb.nl
+</uses>
+
+<references>
+</references>
+</pattern>

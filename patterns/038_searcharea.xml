@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="searcharea" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Search Area</name>
+<author>Martijn van Welie</author>
+<problem>The users need to find a page
+</problem>
+
+<illustration>
+<img src="images/att-searchbox.png" border="1"/><br/>
+From <a href="http://www.att.com/">www.att.com</a>
+<br/>
+</illustration>
+
+<context>In addition to the main navigation scheme, the web site has secondary functionality to search for information. Such sites are typically medium to large sites. There may be several kinds of search-related functionality on the site. The search functionality is not the main way to access the information, it has a secondary role.
+</context>
+
+
+<pattlet>Use a dedicated area with different kinds of search functionality.
+</pattlet>
+
+
+<solution>Group the different kinds of search functionality and place them in a small rectangular area. The area is placed in a prominent position on the page but is not masking the main navigation. Use a combination of a <pattern-link type="contains" patternID="search"/> together with a <pattern-link type="contains" patternID="sitemap"/>, <pattern-link type="contains" patternID="site-index"/>, <pattern-link type="contains" patternID="search-tips"/> or <pattern-link type="contains" patternID="advanced-search"/>.
+</solution>
+
+<rationale>By combining all these search related functionality, the Search Area is THE place for searching and users only need to go to one place on the page. Alternatives and help is provided in a coherent way.
+</rationale>
+
+<example>Apple uses a search area with sitemap, tips and options.<br/><img src="images/apple-searchbox.png"/><br/>
+</example>
+
+<impact></impact>
+
+<uses><a href="http://www.att.com">www.att.com</a>; <a href="http://www.apple.com">www.apple.com</a>; <a href="http://www.cnet.com">www.cnet.com</a>
+</uses>
+<references>
+</references>
+</pattern>

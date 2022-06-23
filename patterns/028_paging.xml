@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern collection="welie" patternID="paging" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Paging</name>
+<author>Boyd de Groot, Martijn van Welie</author>
+<aka><pattern-link type="is-alias" patternID="searchpagination" collection="yahoo" label="Search pagination"/></aka>
+<problem>Users need to browse through a large list of items looking for the item that interests them most
+</problem>
+
+<illustration>
+<img src="images/paging-digg.png"/><br/>
+From <a href="http://www.digg.com/">www.digg.com</a>
+<br/>
+</illustration>
+
+<context>Often users need to go through a large list of items. This pattern is applicable when the items are too numerous to fit on one page. The items are typically ordered and the users are likely to find their desired item somewhere near the start, for example in <pattern-link type="is-contained-by" patternID="search-results"/> where this pattern is nearly t always used. Paging is also often used together with a <pattern-link type="is-contained-by" patternID="list-builder"/>, for example in an web-based e-mail application. The number of items is typically at 10 to 200 items. The 'Items' can be anything such as e-mail headers, names, photos, phone numbers and so on.  
+</context>
+
+<pattlet>Present the results grouped in pages with a fixed number of items and allow the users to move easily from one page of items to another
+</pattlet>
+
+<solution>Show navigation of the pages below the list of items. Provide a direct link to a particular page and links to the next/previous page that allow <pattern-link type="is-alternative" patternID="stepping"/> through the pages. Show around 5 to 10 items at a time. Also show the total number of items and use a title to say what kind of items they are. 
+<br/><br/>
+The basic structure for the navigation bar is: "Nr. of items", "previous", "1 2 3 4 5 ...", "next". The "previous" and "next" are only shown when there is a previous/next page. Additionally, links may be added to jump to the first or last page of items. <br/>
+<img src="images/paging-structure.png"/><br/>
+Depending on the font size for the page numbers, the size of the page number is quite small and therefore hard to click on. It may help to create an <pattern-link type="contains" patternID="enlarged-clickarea"/> by summarizing the hits, e.g. "11-20  21-30  ..." instead of "1 2 ...". The downside of this is that you may run out of space when there are too many items. In that cause, show the current page and a couple more, then some '...' followed by the last pages.
+</solution>
+
+<rationale>The navigation bar tells the users the most important information about the list; how many items there are, how many they see now and how to get to the rest. By placing the navigation below the list it is there when users need it most: after scanning all items on the page.<br/>
+<br/>
+Although paging is a very common and accepted way of interacting, the arrival of Ajax technology has introduced new possibilities where paging is no longer needed. All results are simply shown but only loaded as the user scrolls down. See for example the <a href="http://store.apple.com">Apple store's software section</a> or <a href="http://www.dzone.com">Dzone</a>
+</rationale>
+
+<example>This example from <a href="http://www.google.com">www.google.com</a> makes use of multiple O's to indicate the number of results and the clickable area around the previous/next button has been enlarged: <br/><img src="images/google-paging.gif" border="1"/><br/>
+<br/>
+At <a href="http://www.uxmag.com">www.uxmag.com</a> the page numbers are placed in a box in order to make the targets easier to be selected:<br/>
+<img src="images/paging-uxmag.png"/>
+<br/>
+<a href="http://www.flickr.com">www.flickr.com</a>, <a href="http://squidfingers.com/patterns/4/">Squidfingers</a> and many others also use this kind of large click targets.<br/>
+<br/>
+
+At <a href="http://www.alltheweb.com">www.alltheweb.com</a> the page numbers have been enlarged in a different way:<br/>
+<img src="images/paging-ex.gif"/>
+
+</example>
+<uses>
+</uses>
+<code-links>
+	<a href="http://unspace.ca/discover/pageless/">Endless-scrolling</a>
+</code-links>
+<literature>
+	Stuff on End-less scrolling:<br/>
+http://www.codeandcoffee.com/2007/04/17/ajax-and-the-endless-scrolling-feature-of-pages/
+http://looksgoodworkswell.blogspot.com/2005/06/death-to-paging-rico-livegrid-released.html
+http://way.nu/archives/2006/08/humanized-very-nice-ajax-eternal-scrolling-ui/
+</literature>
+
+<references>Paging is very similar to <a href="tabbing.html">Tabbing</a>. However, with Paging the users will typically browse from the first page to to other pages in a (semi-) linear way. Moreover, all items together have
+a task-specific order while items in Tabbing are ordered on category.
+</references>
+</pattern>

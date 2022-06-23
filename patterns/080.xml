@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="footer-bar" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Footer bar</name>
+<author>Martijn van Welie</author>
+<problem>Users need to know the conditions under which they can use a site
+</problem>
+
+<illustration>
+<img src="images/footer-ex1.gif" border="1"/><br/>
+From <a href="http://www.cnn.com/">www.cnn.com</a>
+<br/>
+</illustration>
+
+<context>The site contains material that is copyrighted or keeps personal data of customers.
+</context>
+
+<pattlet>Add a footer bar with links to the conditions of use.
+</pattlet>
+
+
+<solution>The conditions of use may include a link to a copyright statement, disclaimers, privacy statements and other legal matters. The footer bar is also often combined with a <pattern-link type="contains"  patternID="repeated-menu"/> or other types of navigation that may come in handy. A footer bar is appropriate on any page of the site and should therefore become a standard element of all page templates.
+</solution>
+
+<rationale>
+</rationale>
+
+<example><img src="images/footer-ex2.gif" border="1"/>
+</example>
+
+<uses>www.bn.com; www.cnn.com; www.amazon.com
+</uses>
+
+<references>
+</references>
+</pattern>

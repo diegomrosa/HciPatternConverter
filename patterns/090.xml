@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="liquid-layout" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Liquid Layout</name>
+<author>Martijn van Welie</author>
+<problem>Users must be able to read text comfortably regardless of the browser window size.
+</problem>
+
+
+<context>Basically any website can benefit from this pattern. Nonetheless, the pattern is most effective when used on pages where the is a lot of stuff to be read such as a <pattern-link type="is-contained-by" patternID="news-site"/>. 
+</context>
+
+<illustration>
+<img src="images/liquid-wired-a-small.gif" border="1"/><br/> 
+<img src="images/liquid-wired-b-small.gif" border="1"/>
+<br/>From 
+<a href="http://www.wired.com">www.wired.com</a><br/> 
+</illustration>
+
+<pattlet>Allow certain parts of the page to scale
+</pattlet>
+
+
+<solution>The basic page design must be such that text is readable already. But when users enlarge their browser window, the readability must increase. You must decide which parts of the page will scale along and which ones stay fixed. There is always a main content area that is on the <pattern-link type="contains" patternID="center-stage"/>. That one should scale. Other columns with related stuff or navigation usually does not scale.
+</solution>
+
+<rationale>Scaling the main content area helps users reading the main content. Other sections do not need re-scaling because they do not contain long content that users come for e.g. related sections, navigation, commercial stuff etc.
+</rationale>
+
+<example>At <a href="http://www.infosync.no/news/handheld/">www.infosync.no</a> the left column scales while the two right colums keep the same width:<br/><img src="images/liquid-infosync1-small.gif" border="1"/><br/>
+<img src="images/liquid-infosync2-small.gif" border="1"/><br/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

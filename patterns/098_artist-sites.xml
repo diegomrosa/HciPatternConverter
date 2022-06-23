@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="artist-sites" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Artist Site</name>
+<author>Martijn van Welie</author>
+<problem>Users are interested in an artist and his work.
+</problem>
+
+
+<context>You are designing a site for an artist, musician, painter, sculptor and so on. The artist and his work form the central content that meets the interests of the visitors. Users may want to see all possible information about the artist, his life, his works, his schedule and so on. Users may be 'fans' or 'enthusiasts' but they may also be interested in 'buying' work of the artist or 'hiring' him for a performance, thereby introducing a more commercial aspect to a largely artistic site.
+</context>
+
+<illustration><img src="images/artist-vai-small.png" border="1"/><br/>From
+<a href="http://www.vai.com">www.vai.com</a><br/>
+</illustration>
+
+<pattlet>Create a site with background information, timely information and "digital merchandise".
+</pattlet>
+
+
+<solution>The <pattern-link type="contains" patternID="homepage"/> of the site is very important for this type of site. The home-page must immediately make clear who the artist is and what (s)he does. A powerful way to do this is to place a photo or image of the artist on the home-page. Alternatively it could also be the work of the artist that is visible on the home-page. Another way is to simply say so using a tag-line. The content of such a site is typically:
+<ul>
+<li><b>News about the artist</b>. Consider a <pattern-link type="contains" patternID="news"/> for this or a special section, preferably directly on the home-page. News can also be brought in a more personal way using a <pattern-link type="contains" patternID="blog"/> where the artist talks about the latest news.</li>
+<li><b>Biography/discography/portfolio</b>. The work of the artists is central in this site and must be (partially) showcased. It is an essential part in the communication of the artist to its audience. Consider <pattern-link type="contains" patternID="image-browsing"/> to browse pictures when the work is highly visual or a <pattern-link type="contains" patternID="case-study"/> when the work is more elaborate and there is a story to tell. In other cases to as for musicians, small downloadable samples can be offered.</li>
+<li><b>Ordering Products/Merchandise or Bookings</b>. When users need to order something from the site, they essentially need a limited <pattern-link type="contains" patternID="shopping"/>. Products can be selected and a simple <pattern-link type="contains" patternID="shopping-cart"/> mechanism is present for the actual ordering of the product. Alternatively, the artist may be 'bookable' for a performance. This is mostly done using simply email but could also be done using a more elaborate <pattern-link type="contains" patternID="booking"/> process.</li>
+<li><b>Eventoverview/calender</b>. Users need to know what the artist is up to and when he performs or demonstrates his work. Usually an event-overview or calendar is available to present this information. Use <pattern-link type="contains" patternID="zebra-table"/> for making tables more readable. Consider linking to a <pattern-link type="contains" patternID="booking"/> for making a bookings directly from the event-overview.</li>
+<li><b>Personal information</b>. There is all sorts of personal information that can be presented about the artist. For example, his education, band history, influences, inspirations, vision and so on.</li>
+<li><b>Contact info</b>. Being able to get in contact is very important for an artists because new work or sales can come out of it. Usually an email or postal address suffices.</li>
+<li><b>Fan are</b>. In some cases where there is a large fan population, it makes sense to start creating a special area for them. Consider a <pattern-link type="contains" patternID="forum"/> or <a href="#">Guest Book</a> where users can express themselves. You can also add downloadable wallpapers, games, videos to the site.</li>
+</ul>
+
+
+</solution>
+
+<rationale>The artist is basically trying to 'sell' himself using the site. Very few artist can survive without doing marketing activities such as having a site. The information on the site must support users in making decisions about whether or not they want to buy/hire/book/recommend the artist for a certain purpose.
+</rationale>
+
+<example><img src="images/artist-miles-small.png" border="1"/><br/><img src="images/artist-esch-small.png" border="1"/>
+</example>
+
+<uses><a href="http://www.hgesch.de/">www.hgesch.de</a>, <a href="http://www.milesdavis.com">www.milesdavis.com</a>, <a href="http://www.vai.com">www.vai.com</a>
+</uses>
+
+<references>
+</references>
+</pattern>

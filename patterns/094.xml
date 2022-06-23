@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="processing-page" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Processing Page</name>
+<author>Martijn van Welie</author>
+<problem>Users need feedback that their action is being performed but may take a while to complete
+</problem>
+
+
+<context>You are designing a site where slow back-end systems are connected to. Some requests to the back-end system may take 5 to 30 seconds to complete and the users need some feedback telling them that their request is being performed and that they'll have to wait a bit. Only use this pattern when it is not possible to speed up the back-end processing time. Typically, a <pattern-link type="is-contained-by" patternID="travel-site"/> using this when flight-availability is being looked-up. It also occurs frequently in a <pattern-link type="is-contained-by" patternID="application"/>
+</context>
+
+<illustration><img src="images/processing-ba.gif" border="1"/><br/>From 
+<a href="http://www.british-airways.co.uk">www.british-airways.co.uk</a><br/> 
+</illustration>
+
+<pattlet>Provide a feedback page with animation
+</pattlet>
+
+
+<solution>Provide information about the reason for the slow response so that users can have understanding of the problem. Also add an animation or real progress feedback so that users get a sense of continuity or progress.
+</solution>
+
+<rationale>Although it would be best to provide real progress feedback, this is often not technically possible in a web environment. Providing this type of feedback is the least that should be done for users who need to wait.
+</rationale>
+
+<example><img src="images/booking-expedia2.gif" border="1"/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="tag-cloud" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name></name>
+<aka>Weighted lists</aka>
+<author>Martijn van Welie</author>
+<problem>Users need to know which tags are often used and their popularity
+</problem>
+
+
+<context>Usually a <pattern-link type="is-contained-by" patternID="blog"/> where articles can be tagged but it is also used on News Sites, photo galleries and stores. Basically, it must be a site where many content items are present and the site supports tagging by site visitors. The tags then provide an alternative way to find specific content.
+</context>
+
+<illustration><img src="images/tag-cloud-flickr.png" border="1"/><br/>From 
+<a href="http://www.flickr.com">www.flickr.com</a><br/> 
+</illustration>
+
+<pattlet>List the most common tags alphabetically and indicate their popularity by chaning the font size and weight
+</pattlet>
+
+
+<solution>List the top 30-50 most used tags and list them ordered alphabetically. Each tag is a link that takes to user to a page where all objects having that tag are listed. 
+<br/><br/>
+The relative popularity of each tag (i.e. the amount of items having the tag divided by the total amount of items compared to the most popular tag) is then depicted by varying the font size, and sometimes also the font weight. The tags are usually in a rectangular area, either in the main content area if it is a page dedicated to tags or in the right-hand column if it is secondary to the maint content. 
+</solution>
+
+<rationale>A tag cloud gives a visual depiction of relative frequency rather than absolute frequency. This helps people to understand the most often used ones versus the lesser used one, which often is an indication of popularity or high activity. Alternatively, users could be presented with a ordered list and frequency numbers but that does not facilitate easy comparisions very visually. Besides, a tag cloud looks cool, doesn't it? 
+<br/><br/>
+Another important aspect of tag clouds is that it says something about what people do on the site, rather than what the site designers have prepared for visitors. Some claim that this may provide a different, and possibly effective, way to navigate to information. However, there does not seem to be strong evidence that this is really the case. Hence, Tag clouds are no replacement for proper information hierarchy supported by an appropriate <pattern-link type="not-related" patternID="main-navigation"/>. They are probably mainly usefull for providing an different view on the content and an alternative way of navigating content. 
+</rationale>
+
+<example><img src="images/tag-cloud-lastfm.png"/>LastFm
+
+<img src="images/tag-cloud-amazon.png"/>http://www.amazon.com/gp/tagging/cloud/
+</example>
+
+<code-links>
+<a href="http://winkwaves.com/tag-cloud-generator">Tag cloud generator</a><br/>
+</code-links>
+
+<literature>
+<a href="http://en.wikipedia.org/wiki/Tag_cloud">Wikipedia on Tag Cloud</a><br/>
+<a href="http://www2007.org/htmlposters/poster988/">An assessment of tag presentation techniques</a><br/>
+<a href="http://www.zeldman.com/daily/0505a.shtml">Zeldman on tag clouds</a><br/>
+<a href="http://www.willmcgugan.com/2007/10/31/tag-clouds-look-better-sorted/">On sorted tag clouds</a><br/>
+<a href="http://www.joelamantia.com/blog/archives/tag_clouds/10_best_practices_for_displaying_tag_clouds.html">10 Best practices</a><br/>
+<a href="http://portal.acm.org/citation.cfm?doid=1240624.1240775">Getting our head in the clouds: toward evaluation studies of tagclouds</a><br/>
+<a href="http://jis.sagepub.com/cgi/rapidpdf/0165551506078083v1">The folksonomy tag cloud: When is it useful?</a><br/>
+<a href="http://www.nosolousabilidad.com/hassan/improving_tagclouds.pdf">Improving Tag-Clouds as Visual Information Retrieval Interfaces</a><br/>
+<a href="http://www.stanback.net/links-cloud.html">Tag cloud with zooming</a><br/>
+</literature>
+</pattern>

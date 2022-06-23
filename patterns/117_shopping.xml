@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="shopping" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Shopping Experience</name>
+<author>Martijn van Welie</author>
+<problem>Users want to look for products of interest and potentially purchase them
+</problem>
+
+
+<context>You are building a web site where you sell products, typically an <pattern-link type="is-contained-by" patternID="commerce"/> site but it can also be a site with paid content. The sort of products that you are trying to sell may vary a lot, ranging from books, electronics, to holiday and clothes. Some products can be delivered directly by downloading it and others will have to be delivered 'later' by some logistical process. No matter what product you are trying to sell, there are well known aspects to shopping that apply to all products and to all ways of shopping.
+</context>
+
+<illustration><img src="images/bn-shopping.png" border="0"/><br/>From
+<a href="http://www.bn.com">www.bn.com</a><br/>
+</illustration>
+
+<pattlet>Create an online shopping experience that matches off-line shopping experiences
+</pattlet>
+
+
+<solution>Shopping involves several fundamental activities that apply to both online and offline shopping activities. These activities needs to be supported for each type of product and domain. How to do that best is largely domain dependent, but some basic ideas can be defined: <br/>
+<br/>
+- <b>Discovering</b>. People need to know what they can buy in the store, as far as they don't already know it. Even if they have been in the store before they need to be informed of new products that are for sale. Even if there are no new products to sell, there may be products that should be brought under the users attention because of other reasons e.g. because they are discounted, very popular etc. Use <pattern-link type="contains" patternID="hotlist"/><br/>
+<br/>
+- <b>Browsing</b>. Most people like to browse through the store for seeing what they have and whether something attracts their attention. Browsing is made easier when products are categorized in ways that customers expect them to be. The categories allow them to browse in a specific manner that is a bit more directed than no structure at all. Use structured navigation such as a <pattern-link type="contains" patternID="doubletab"/> with <pattern-link type="contains" patternID="crumbs"/> so that people are fully aware of where they are and where they can go to.<br/>
+<br/>
+- <b>Comparing</b>. Often people do not know exactly which product they want. They may have several options that they want to compare using a <pattern-link type="contains" patternID="comparison"/> or <pattern-link type="contains" patternID="product-configurator"/>. <br/>
+<br/>
+- <b>Trying</b>. When people try a product they want to make sure it is the right product for them. Trying is all about 'seeing' certain aspects of the product. In many cases it is even possible to 'interact' with the product by 'virtually touching it', seeing close-ups, table of contents or a preview of a part of the object. Sometimes it may also be possible to try the real thing with some limitations on the use of it. In other words, create a <a href="#">Virtual Product Display</a><br/>
+<br/>
+- <b>Asking Opinions</b>. Many shops have shop assistants that help customers to find the right product for them. Online this is difficult to achieve but one could create <pattern-link type="contains" patternID="product-advisor"/> or collect recommendations/ratings/comments of other people that bought the product.<br/>
+<br/>
+- <b>Choosing</b>. Choosing is not the same as buying. Customers may choose several products and before they actually start buying, discard several of them at the last minute. Give them a place to keep products they may want to buy such as a <pattern-link type="contains" patternID="shopping-cart"/> or wish list<br/>
+<br/>
+- <b>Recommending</b>. Many times when people shop they do not find anything for themselves but they find something that might interest a friend or relative. In that case they want to recommend it to others or letting others know about the existence of the product. Use <pattern-link type="contains" patternID="send-to-friend"/> or list of recommended products.<br/>
+<br/>
+Besides finding a product people like, there are other factors that give people greater satisfaction with their purchase:<br/>
+
+- Having struck a bargain<br/>
+
+- The cheapest price<br/>
+
+- A unique product<br/>
+
+- The product comes with exceptional service<br/>
+
+- The product is more durable<br/>
+
+- The product is quickly delivered<br/>
+
+</solution>
+
+<rationale>People know the off-line shopping experience very well. The essentials of shopping should be taken into account for online shopping as well since they have little to do with the medium itself. The goal is to find the appropriate way to sell particular products in the web while paying attention to all aspects of the shopping experience.
+</rationale>
+
+<example>The <a href="http://www.gore-tex.co.uk/advisor/index.cfm">Gore-tex</a> product advisor that helps people find the right product for them:<br/>
+<img src="images/goretex-advisor.png" border="1"/>
+<br/>
+The 3D phone demo at <a href="http://www.nokia.com">Nokia</a> allows people to 'touch' and 'play' with the phone without physically holding it:<br/>
+<img src="images/nokia-3d.png" border="1"/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

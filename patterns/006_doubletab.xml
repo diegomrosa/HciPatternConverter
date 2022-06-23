@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern collection="welie" patternID="doubletab" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Double tab</name>
+<author>Martijn van Welie</author>
+<problem>The users need to navigate a hierarchical structure
+</problem>
+
+<illustration><img src="images/apple-doubletab.png" border="1"/>
+<br/>
+From <a href="http://www.apple.com">www.apple.com</a>
+<br/>
+</illustration>
+
+<context>Sites where large amounts of pages are available and are hierarchically structured. The number of elements in the toplevel and in the second level each are less than 10. Users want to see where they are now. Users want to know how to get back to the main page
+</context>
+
+<pattlet>Use a double tabular to show the two topmost levels.
+</pattlet>
+
+
+<solution>Use a nested tabular to show the topmost level and one level lower. The current page is marked in both tabular and they are visually "connected". Additionally, use colors to indicate the selected tab. The topmost tabular is always visible while the other tabular changes depending on the current top-level selection. The first tab in the top-level is reserved for the home page if there is not any other "Home" destination.
+</solution>
+
+<rationale>The tabular metaphor is well-known in user interface and facilitates easy navigation between groups of information. By showing the current position in the two topmost levels the users know where they are and can also jump to other categories.
+</rationale>
+
+<example>Dell's web site uses a more text-based double tab.<br/><img src="images/dell-doubletab.png"/><br/>
+</example>
+
+<impact/>
+
+<uses><a href="http://www.apple.com">www.apple.com</a>; <a href="http://www.iconmedialab.nl">www.iconmedialab.nl</a>; <a href="http://www.amazon.com">www.amazon.com</a>
+</uses>
+
+<references>
+If the hierarchy is deeper than two level use <a href="crumbs.html">Bread Crumbs</a> to show the deeper levels of the hierarchy.
+</references>
+</pattern>

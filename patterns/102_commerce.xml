@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="commerce" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>E-Commerce Site</name>
+<author>Martijn van Welie</author>
+<problem>User want to shop for a product.
+</problem>
+
+<illustration>
+<img src="images/amazon-ex.gif" border="1"/><br/>
+From <a href="http://www.amazon.com/">www.amazon.com</a>
+<br/>
+</illustration>
+
+<context>When visitors can buy products or services online. The number of products can be bought is not very important, this pattern applies very every basic online shopping site.
+</context>
+
+<pattlet>Create a 'virtual' store where visitors can browse, choose and pay for all their selections in one go.
+</pattlet>
+
+<solution>The basic e-commerce site is based around the same idea as a normal shop; you search for the products and put them in you cart until you decide to actually buy them. The main real difference is that people cannot 'touch' the products before buying them. So for successful commerce sites it is really important to make users 'feel good' about buying the product. You need to make sure they know EXACTLY what it is they are buying. use pictures or animations to show all relevant aspects of the products. Sometimes, a 3D model that people can manipulate can be a nice way to reach that 'touching the product' feeling online.<br/>
+<br/>
+An e-commerce site is based around the following components:
+<ul>
+<li>A database with product description</li>
+<li>Client profiles for personalization and purchase processes</li>
+<li>Some sort of Shopping cart mechanism</li>
+</ul>
+
+<b>The home-page</b> |
+When users visit an e-commerce site, it must be clear that products can be bought. This can be achieved by showing a <pattern-link type="contains" patternID="shopping-cart"/>, an icon for accessing the cart or a mini-cart, on the home-page. Also list some categories of products that you sell. Use a pay-off to give a reason why visitors should buy at your site and not any other site.<br/>
+<br/>
+An E-commerce site is based on the following principle; personal, effective, and efficient. When people shop online, the following issues are very important to take into account:
+<ul>
+<li>People must be able to <b>find</b> a product they like</li>
+<li>People must be able to <b>buy</b> selected products</li>
+<li>Care about the privacy of customers</li>
+<li>Offer good services after the actual purchase: e.g. being able to track the order or return purchased products</li>
+<li>Give people to shop at your site!</li>
+</ul>
+
+<b>The Shopping Experience</b> |
+The first part in the shopping experience is getting people to buy something. If you are trying to sell something, you need to put the products under the users' nose as much as you can without overdoing it. Show what you have, what is popular/hot/new/ etc. For example using various <pattern-link type="contains" patternID="hotlist"/>. When they see products, make sure they resemble the real thing as much as possible and let them 'virtually' touch/use the product. Also allow for <pattern-link type="contains" patternID="comparison"/> in order to help people <b>choose</b><br/>
+<br/>
+When you allow for <pattern-link type="contains" patternID="login"/>, visitors can be recognized for even better suggestions. The site can offer recommendations based on previous purchases or wish-lists. <br/>
+
+Once people have found a product they want to buy, use the <pattern-link type="contains" patternID="shopping-cart"/> for dealing with the purchase process. Make sure your design is clear and effective. You must show additional cost such as shipping costs at all times and be flexible with things such as delivery addresses.<br/>
+<br/>
+The second part of the shopping experience is about actually getting the product you ordered and making sure the customers is happy with the purchase. Offer the possibility to track the order and offer information about what to do when something has gone wrong e.g. the wrong product was delivered or the product was damaged.<br/>
+<br/>
+The third part concerns the creation of extra value so that people keep on using the site and buy more products. Using personalization in the form of recommendations is a nice way to suggest relevant products to returning customers. Other possibilities are 'wish lists' or 'favorite readings' that people can share with other visitors of the site.
+</solution>
+
+<rationale>The basic ideas behind an e-commerce site is to mimic a normal shop. The essentials are simple but getting the details right can be hard and have a big impact on your success.
+</rationale>
+
+<example>This example from <a href="http://www.esprit-online-shop.com/index_uk.htm">Esprit</a> shows an interesting approach. User can shop for clothes and once the arrive at a product they can see the item in different colors, see the material from close-by (the zoom button) and how it looks on a person (fitting button). Just as you would in a shop. It also shows in the bottom of the screen how many items you have in your cart and the total amount.<br/> <img src="images/esprit-ex.gif" border="1"/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

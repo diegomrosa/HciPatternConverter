@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="inplace-replacement" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name></name>
+<author>Martijn van Welie</author>
+<problem>Users need to see a bit more details on an item in a large list
+</problem>
+
+
+<context>Variation in using popups or <pattern-link type="is-alternative" patternID="overview-detail"/>. Only use when the amount of additional details that need to be shown is limited, typically 3-5 lines of text.
+</context>
+
+<illustration><img src="images/inplace-replacement-tmf.png" border="1"/><br/>From 
+<a href="http://www.tmf.nl">www.tmf.nl</a><br/> 
+</illustration>
+
+<pattlet>When selecting an item, create more space for the item and display additional details
+</pattlet>
+
+
+<solution>Basically, other items are moved down and the created space is used to give a bit more detail about the selected item. By clicking on the item 'header' again, or by clicking on a different item, the space is reduced to normal again. It is important that the display of the additional information is 'instantly' so that it feels like a mouse-over. So don't use a page refresh to create this effect.
+</solution>
+
+<rationale>When users just need a bit more information on the item, this type of interaction feels much better than opening a new screen with the details and then having to navigate back to the overview. An <pattern-link type="is-alternative" patternID="overview-detail"/> requires a separate fixed space for the details which may not always be possible in the page design. This method hardly consumes extra space while it still greatly improves the experience.
+</rationale>
+
+<example><img src="images/inplace-replacement-flex.png" border="0"/>
+</example>
+
+</pattern>

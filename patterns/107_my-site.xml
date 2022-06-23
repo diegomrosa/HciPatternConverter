@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="my-site" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>My Site</name>
+<author>Martijn van Welie</author>
+<problem>User have a need to define their own page elements
+</problem>
+
+<illustration>
+<img src="images/my-site-ex2.gif" border="1"/><br/>
+From <a href="http://www.netscape.com/">www.netscape.com</a>
+<br/>
+</illustration>
+
+<context>Typically used in a <pattern-link type="is-contained-by" patternID="portals"/>. Or in e-commerce sites where users have their own portions of the site.
+</context>
+
+<pattlet>Create a part of the site that belongs to a user and that is controlled by that user.
+</pattlet>
+
+
+<solution>First log in and then present a customized personal section. Usually the pages are built up using 'modules' that the users has selected. Each module is a <pattern-link type="contains" patternID="customization-window"/>. Users can change the which modules they want and in which layout and graphical presentation.
+</solution>
+
+<rationale>
+</rationale>
+
+<example><img src="images/my-site-ex1.gif" border="1"/>
+</example>
+
+<uses>
+<a href="http://www.yahoo.com">www.yahoo.com</a>;
+<a href="http://www.netscape.com">www.netscape.com</a>;
+<a href="http://www.lycos.com">www.lycos.com</a>;
+</uses>
+
+<references>
+</references>
+</pattern>

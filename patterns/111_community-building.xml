@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="community-building" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name></name>
+<author>Martijn van Welie</author>
+<problem>Users want to form a group of users with shared interests, that allows them to engage in community activities.
+</problem>
+
+
+<context>The site is either directly a <pattern-link type="is-contained-by" patternID="community"/> or it is a site where forming a community fits logically with the topic of the site. For example, sites that discuss products can create communities around the products themselves. Therefore, a <pattern-link type="is-contained-by" patternID="news-site"/> or <pattern-link type="is-contained-by" patternID="commerce"/> or <pattern-link type="is-contained-by" patternID="portals"/> can also have a community experience as a secondary experience next to its primary experience.
+</context>
+
+<illustration><img src="images/forum-leasecompare.png" border="1"/>From
+<a href="http://www.leasecompare.com">www.leasecompare.com</a><br/>
+</illustration>
+
+<pattlet>Create a site where users can collect, share, relate and donate
+</pattlet>
+
+
+<solution>Creating a community is done by offering possibilities to engage in community activities. Community building is about <b>sharing opinions, being heard, helping others, creating and sharing objects</b>. All of these activities are done in an atmosphere of openness, honesty and free of charge.<br/>
+<br/>
+There are several ways in which users can engage in community activities, for example:<br/>
+- A <pattern-link type="contains" patternID="forum"/> is a place where everybody can participate in a discussion on a particular topic or sub-topic. Quite often it is important that users can participate anonymously in a forum.<br/>
+<br/>
+- When the community is concerned with 'products' in the most general sense, users can offer <b>reviews</b> or <b>ratings</b> of the product on the <pattern-link type="contains" patternID="product-page"/>. This way they can share their experience with the product.<br/>
+<br/>
+- <b>Recommendations</b> are an extension of reviews where a users can create true recommendations, for example books on a certain topic. Another way is to <pattern-link type="contains" patternID="send-to-friend"/> a link to a product or information that could of interest for a friend.<br/>
+<br/>
+- A <pattern-link type="contains" patternID="poll"/> allows users to vote on certain statements or rate a particular product.<br/>
+<br/>
+- A <pattern-link type="contains" patternID="newsletter"/> can be used to keep a group updated about the group's activities or about a particular topic.<br/>
+<br/>
+- A community is by definition composed of a group of people, often group of volunteers. Therefore, an overview of the members important to show who actually are part of the community. Along with this, their background or online status can be listed as if often done in a <pattern-link type="contains" patternID="forum"/>. <br/>
+<br/>
+- Allow users to <b>create</b> their own things. For example, some sites organize contents where visitors are invites to send in their choice of the funniest image on a certain topic. Another for of expression could be to allow visitors to create their own personalized <pattern-link type="contains" patternID="my-site"/> or a Personal Site<br/>
+<br/>
+The combination of functionalities that is appropriate will depend on the sort of site and how much interaction within the community is desired. A Newsletter or Product Recommendations are relatively long term functionalities, whereas a Poll or a Forum will give people a reason to re-visit a site daily.
+</solution>
+
+<rationale>Communities are not designed or generated. One can only supply the means to a group of people and they will for the community by themselves.
+</rationale>
+
+<example>At <a href="http://www.chiplace">www.chiplace.org</a>, members of the CHI community can discuss and share their ideas. This screenshot is taken from the members section where the new members are listed and a selection of the existing members is shown.<br/><img src="images/community-chiplace.png" border="1"/>
+</example>
+
+<uses>www.chiplace.org; www.esato.com; www.cnn.com; www.amazon.com
+</uses>
+
+<references>
+</references>
+</pattern>

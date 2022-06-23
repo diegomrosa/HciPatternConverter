@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="outgoing-links" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Outgoing Links</name>
+<author>Martijn van Welie</author>
+<aka>
+	External links<br/>
+	Offsite links
+</aka>
+<problem>Users need to know when links will take them away from the current site.
+</problem>
+
+<illustration>
+<img src="images/external-links-wikipediaexample.png" border="1"/><br/>
+From <a href="http://en.wikipedia.org">Wikipedia</a>
+</illustration>
+
+<context>Most websites use a combination of internal links and external links. However, when the majority of the links are internal, the external links become the exception, for example in a <pattern-link type="is-contained-by" patternID="news-site"/>. In contrast, in a <pattern-link type="is-contained-by" patternID="portals"/> or <pattern-link type="is-contained-by" patternID="blog"/> the balance is usually towards external links. So when links to external pages on other sites are not the norm, it is good to tell people that the link they are about to click will take them away from the site they are browsing.
+</context>
+
+<pattlet>Mark links to external sites with an icon after the label
+</pattlet>
+
+<solution>Mark the links by adding an icon after the link label. When outgoing links are selected a new window is opened. Usually the icon is a combination of an outwards pointing arrow and a shape, for example:<br/>
+<img src="images/external.png" border="no"/> <img src="images/outgoing-link-cnn.gif" border="no"/> <img src="images/outgoing-link-randombit.gif" border="no"/><img src="images/outgoing-google.gif" border="no"/><br/>
+Sometimes the meaning of the icons is explained in the <pattern-link type="is-contained-by" patternID="footer-bar"/>.
+</solution>
+
+<rationale>By adding an icon, or other kind of marking, users know that such links are different and what to expect when they click on them. Marking the link will not solve any major usability issues with your site but it will subtly manage expectations of users as they browse the site.
+</rationale>
+
+<example>
+This example is from <a href="http://www.cnn.com">CNN.com</a>:<br/>
+<img src="images/outgoing-ex1.gif"/><br/><br/>
+This example is from <a href="http://news.com.com">CNet News.com</a>:<br/>
+<img src="images/outgoing-links-cnetexample.png"/>
+Other sites include Gmail, Randombit and many others.
+</example>
+
+<impact></impact>
+<code-links>
+	<a href="http://pooliestudios.com/projects/iconize/">Iconize links in CSS</a><br/>
+	<a href="http://www.kryogenix.org/days/2002/08/30/external">External links icons the CSS way</a>
+	<a href="http://lab.arc90.com/2006/08/external_link.php">External links icons the CSS way</a>
+</code-links>
+
+<literature><a href="http://www.maxdesign.com.au/presentation/external/">External links and the Web Content Accessibility Guidelines 1.0</a>
+</literature>
+
+<uses>www.microsoft.com; www.asktog.com; www.cnn.com
+</uses>
+</pattern>

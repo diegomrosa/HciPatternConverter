@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="thumbnail" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+
+<name>Thumbnail</name>
+
+<author>Bob Klaasse</author>
+
+<problem>You want to give the user an idea of how an image, movie or page looks like, 
+but doesn't want to display the full-scale image, movie or page because of download time and screen space.
+</problem>
+
+
+<context>
+You want to allow fast browsing through multiple images. The visitor must get an impression of the image, movie or page, 
+ so the visitor can decide if he/she wants to see the original sized page, movie or image. 
+It saves download time and screen space. Thumbnails are for example used in an <pattern-link type="is-contained-by" patternID="image-browsing"/>.
+</context>
+
+<illustration><img src="images/thumbnail-animals.gif"/><br/>A series of thumbnails from
+<a href="http://www.express-soft.com"> www.express-soft.com </a>
+</illustration>
+
+<pattlet>Display a smaller version of the movie, image or page.
+</pattlet>
+
+
+<solution> A thumbnail is a miniature display of an image, movie  or page. 
+Clicking on the thumbnail will allow the user to view the image, movie or page at full scale.
+It could be useful to write a description of the image, movie or page next to, or below the thumbnail. 
+The description could for example exist of what could be seen, the file size and the size in pixels.
+</solution>
+
+<rationale>By using thumbnails you can add more images, movies or pages on less space, and the user can easily select the one he/she wants to see.
+Further it saves bandwidth because the image, movie or page doesn't have to be downloaded completely.
+The main advantage is that users can see a preview of the picture, so the user knows better what to expect when clicking on the thumbnail. <br/>
+
+
+
+</rationale>
+
+<example>
+<illustration><img src="images/thumbnail-example3.gif"/> <br/>
+Thumbnail of a webpage displayed by the windows explorer.<br/>
+</illustration>
+</example>
+
+<uses>Thumbnails are much used in galleries, such as: <br/>
+<a href="http://gallery.menalto.com/">  gallery.menalto.com </a><br/>
+<a href="http://www.express-soft.com">  www.express-soft.com </a><br/>
+<a href="http://groups.msn.com"> groups.msn.com </a><br/>
+
+</uses>
+
+<references>
+CCI Dictionary Definition, 
+<a href="http://www.computeruser.com/resources/dictionary/popup_definition.php?lookup=8388"> http://www.computeruser.com/ </a>, (2003), downloaded on 29/04/2004.
+
+</references>
+</pattern>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="image-browsing" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Image Browsing</name>
+<author>Martijn van Welie</author>
+<problem>Users need to view and/or select images out of a set of images
+</problem>
+
+
+<context>Users have to view images as part of some higher level task such as viewing a portfolio, selecting an image to be printed, search for an image to be included in a presentation, viewing photo's of a car and so on. The number of images should not be to large, from 1 to 30 images is ok. Can be part of selecting the appropriate <pattern-link type="not-related" patternID="product-page"/> for a set of products.
+</context>
+
+<illustration><img src="images/image-browsing-eden.png" border="1"/><br/>From 
+<a href="http://www.edendesign.nl">www.edendesign.nl</a><br/> 
+</illustration>
+
+<pattlet>Allow users to select an image out of a set of thumbnail images
+</pattlet>
+
+
+<solution>Present a series of thumbnails of the image, possibly combined with a label or using a fixed label location as in an <pattern-link type="not-related" patternID="image-menu"/>. Users can then select an image that is shown in the main display area if that is feasible or otherwise in a separate window. One technique to make it more "fun" is to animate the image from thumbnail to full size. When the users sees one image, use <pattern-link type="contains" patternID="stepping"/> to allow them to navigate through the collection one by one.
+</solution>
+
+<rationale>Showing a thumbnail allows people to recognize the image they want visually without creating a bandwidth and screen-space problem. When the thumbnails and the selected image are shown in the same space, users can also switch easily between images.
+</rationale>
+
+<example><img src="images/imagebrowsing-npk.png"/>NPK
+</example>
+
+<uses>www.well-o-well.nl; www.nkp.nl
+</uses>
+
+<references>
+</references>
+</pattern>

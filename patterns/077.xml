@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="comment-box" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+
+<name>Comment Box</name>
+
+<author>Martijn van Welie, Bob Klaasse</author>
+
+<problem>Users want to comment on an article or product
+</problem>
+
+
+<context>
+A comment-box is often used on a <pattern-link type="is-contained-by" patternID="blog"/> but can also be used on an <pattern-link type="is-contained-by" patternID="article-page"/>, <pattern-link type="is-contained-by" patternID="guestbook"/> or for sharing experiences about the products of an <pattern-link type="is-contained-by" patternID="commerce"/>.
+Users may want to comment on the content of an article or share experiences about the product that is being discussed. The comment box serves a means for  <pattern-link type="is-contained-by" patternID="community-building"/>.
+
+</context>
+<illustration><img src="images/comment-box-okcancel.jpg" border="1"/><br/>From 
+<a href="http://www.ok-cancel.com">www.ok-cancel.com</a><br/> 
+</illustration>
+
+<pattlet>Add a small form below the article and after the other comments that allows users to submit a comment
+</pattlet>
+
+<solution>
+A comment box is basically a simple type of <pattern-link type="contains" patternID="forms"/>. The main fields are <u>Name</u>, <u>E-mail address
+</u> and the <u>Comments</u> themselves. Additionally a web site address may also be asked. The e-mail address is most of the time asked in order to be able to notify the commenter about replies or follow-ups but it is usually not shown when displaying the comment. Clearly indicate which fields are required and which are optional.
+
+<br/><br/>
+<b>Allowing HTML or not?</b><br/>
+When writing a comment it can be handy if you can insert a link or make some text bold. Sometimes using HTML codes is allowed for such purposes but usually the tags that are allowed are limited. Therefore the users must be told what they can use. Be careful though, allowing links attracts blog-spam like honey attracts bees!
+<br/><br/>
+
+<b>Battling blog-spam</b><br/>
+Blog-spam can be a very serious and annoying problem. There are several techniques to battle it. Besides technical solutions such as blacklisting IP addresses you can use some other techniques:
+<ol>
+<li>Only allow registered users to comments. But then you need to provide them with a <pattern-link type="contains" patternID="login"/></li>
+<li>Add a <pattern-link type="contains" patternID="captcha"/> to make sure that only humans add comments. However, this is not effective against humans adding spam.</li>
+<li>Use a moderation process. All comments must be approved first by the moderator before they appear on the site. If you use this inform the user that his comment will appear after it has been moderated.</li>
+</ol>
+<br/>
+
+<b>Giving feedback</b><br/>
+After a visitor has posted his comment, the comment must be placed below the last comment on the page, just above the Comment Box itself. Highlight the new comment and scroll the page to that position so that it clearly shows that the comment has been added. Using Ajax you can also simply add the comment without reloading the page and then highlight it. The comment shouldn't only display the comment itself, but also the time and date it was posted, the poster, and optionally things like place and country of the poster. 
+</solution>
+
+<rationale>
+The comment box is a way to create a feedback mechanism on a site, using just a simple form. Instead of offering a generic <pattern-link type="specialization" patternID="contact-us"/> it gives the uses a direct way of reacting on the same page the content resides. By placing the comments also on the page the feedback mechanism is complete. Basically, it becomes a simple one-page <pattern-link type="generalization" patternID="forum"/>.
+</rationale>
+
+<example><illustration><img src="images/comment-box-smashingmagazine.jpg" border="1"/><br/>This example rom 
+<a href="http://www.smashingmagazine.com">www.smashingmagazine.com</a> shows how you can explain which HTML tags can be used and how to indicate what is optional and what isn't.<br/> </illustration><br/>
+<illustration><img src="images/comment-box-mashable.jpg" border="1"/><br/>On  
+<a href="http://www.mashable.com/">www.mashable.com/</a> a slightly more complex variation is used where both registered and unregisterd users can comment.<br/> </illustration>
+</example>
+
+<uses>
+These sites also make use of a comment box: see the box below the content.<br/>
+For example: <br/>
+<a href="http://www.12forum.nl">www.12forum.nl</a><br/> 
+<a href="http://www.livejournal.com">www.livejournal.com</a><br/> 
+<a href="http://www.blurty.com/">www.blurty.com/</a><br/>  
+
+</uses>
+
+<code-links>
+<a href="http://scripts.tropicalpcsolutions.com/html/php-script/guestbook-php-script.html">PHP guestbook code</a><br/>
+<a href="http://www.zimmertech.com/tutorials/php/25/comment-form-script-tutorial.php">Comment Form tutorial</a><br/>
+<a href="http://www.maketemplate.com/feedback/">PHP Feedback Form tutorial</a><br/>
+<a href="http://www.hotscripts.com/Detailed/66289.html">TNT comments script</a>
+</code-links>
+
+<literature>
+<a href="http://www.humanized.com/weblog/2006/11/15/battling_spam_and_the_ring_of_gyges/">Battling spam in blogs</a><br/>
+<a href="http://www.ojr.org/ojr/glaser/1095201311.php">Bloggers Declare War on Comment Spam, but Can They Win?</a><br/>
+<a href="http://akismet.com/">Akismet anti-spam software</a>
+</literature>
+</pattern>

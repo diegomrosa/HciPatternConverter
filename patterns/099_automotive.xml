@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="automotive" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+
+<name>Automotive Sites</name>
+<author>Martijn van Welie</author>
+<problem>Users are interested in purchasing a car or need information related to a car
+</problem>
+
+
+<context>Sites for a international vehicle brand.
+</context>
+
+<illustration><img src="images/automotive-renault-small.png" border="1"/><br/>From
+<a href="http://www.renault.fr">www.renault.fr</a><br/>
+</illustration>
+
+<pattlet>Offer heavily branded overview of cars and related information supporting purchasing
+</pattlet>
+
+
+<solution>Most car brand sites are a <pattern-link type="specialization" patternID="multinational"/>. There is one site/page for the international entrance and then users are led to a local site, one per country using a <pattern-link type="contains" patternID="country-selector"/>. Generally speaking Automotive Sites focus on both the <b>brand</b> and the <b>cars</b>. Consequently it is a mix of an <pattern-link type="contains" patternID="information-experience"/> experience and a 'brand experience'.<br/>
+<br/>
+Users go to an automotive site for several reasons. It could be that they want to buy a new (or secondhand) car, they may need information about dealers or they may need information about other products from the company. Nonetheless, the 'buying' reason is the most important one from the car brand's perspective. From a users perspective, basic end-user questions for users are:
+<ul>
+<li>Which cars and which configurations?</li>
+<li>What are the prices? What are the financing possibilities?</li>
+<li>Why buy a car of this brand?</li>
+<li>Where can I find a dealer?</li>
+<li>Which occasions are available?</li>
+</ul>
+
+Although an Automotive site is not exactly an <pattern-link type="not-related" patternID="commerce"/>, it does support the <pattern-link type="contains" patternID="shopping"/>. For example, users must be able to compare cars, as type of <pattern-link type="contains" patternID="comparison"/>, or use a 'Car Configurator' which is a sort of <pattern-link type="contains" patternID="product-configurator"/>. The information about the cars themselves should not contain too much technical stuff. For most people this is not a purchase differentiator. The price, options and configurations are more important. There should be plenty of high-quality images of the car so that people can view it from any angle. An <pattern-link type="contains" patternID="image-browsing"/> my be useful for choosing different possibly with next and previous buttons added. Since it is impossible to 'try' a car on the web, it is important to make a great effort in trying to visually communicate the feeling of what a car is like.<br/>
+<br/>
+The structure of an 'Automotive Site' is pretty straightforward. Typical sections include"
+<ul>
+<li>Car Models, often cars a listed by using thumbnails in a row</li>
+<li>Used Cars</li>
+<li>Dealers, often using a 'Dealer Locator'</li>
+<li>Financial services</li>
+<li>News, in a <pattern-link type="contains" patternID="news"/> on the <pattern-link type="contains" patternID="homepage"/> with press releases, event, awards etc.</li>
+<li>History, brand history or racing history</li>
+</ul>
+</solution>
+
+<rationale>A car site is all about branded information. Cars are being sold because they appeal to their audience and therefore the site's main goal must be to market cars. Besides the "mandatory" sections the visual appearance must do much for the site.
+</rationale>
+
+<example><img src="images/automotive-saab-small.png" border="1"/><br/><img src="images/automotive-volvo-small.png" border="1"/>
+</example>
+
+<uses>all car manufacturers sites.
+</uses>
+
+<references>
+</references>
+
+<literature><a href="http://www.teced.com/PDFs/chi2003.pdf">Ethnographic Interviews Guide Design of Website for Vehicle Buyers</a><br/>
+Lori Anschuetz, Tec-Ed, Inc., USA; Stephanie Rosenbaum, Tec-Ed, Inc., USA
+</literature>
+</pattern>

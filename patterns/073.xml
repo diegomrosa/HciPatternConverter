@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="date-selector" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+
+<name>Date Selector</name>
+
+<author>Bob Klaasse, Martijn van Welie</author>
+
+<problem>Users need to select a date or a time period
+</problem>
+
+
+<context>
+The user must select a single date in a <pattern-link type="is-contained-by" patternID="forms"/>. For example to select the start and end date in  a <pattern-link type="is-contained-by" patternID="booking"/> or to fill in a date of birth in a <pattern-link type="is-contained-by" patternID="registration"/> form.
+A date could also be used when performing an <pattern-link type="is-contained-by" patternID="advanced-search"/> where users can search for items before/after a specific date. Typically, these are part of an application for finding arrival/departure times of flights, ships or trains.<br/><br/>
+
+When users need to select a time period, two date selectors can be used, one for the starting date and one for the ending date.
+</context>
+
+<illustration><img src="images/date-selector-expedia-small.png" border="0"/><br/>From <a href="http://www.expedia.com">www.expedia.com</a><br/>
+</illustration>
+
+<pattlet>Use a combination of an edit box and a graphical click able calendar 
+</pattlet>
+
+
+<solution>For experienced users an edit box where the date can be typed in, is by far the fastest way to input a date. Nevertheless, a hint should be placed next/under the edit box to indicate the expected format. After the edit box loses the focus, the entered date should be checked and reformatted. It is recommended to allow users to use multiple types of separators, both '/' and '-', as well as 2 digit or 4 digit years. 
+<br/><br/>
+For users that prefer a more graphical interface or when they do not know the exact date, a month-based click able calendar is presented. Days are presented in a table with rows of weeks. At the top of the table a month selector is present that allows users to move to the next/previous month as well as to jump to a specific month using a combo-box. When the user clicks on one of them that date will be entered in the form.
+<br/><br/>
+On many cases users can only select a particular number of days, e.g. in case of hotel bookings only certain dates have availability. This can be shown in the date selector by making only the 'possible' days click able and visually distinctive. Optionally there may also be a link to go back to current day. When it is necessary to select weeks, there can be an icon next to the rows to select entire weeks.
+</solution>
+
+<rationale>
+Users are already very familiar with a monthly calendar. This calendar allows them to quickly pick a date and prevent the entry of non-existing date. By combining the graphical calendar with an edit box, users that are used to entering dates can enter a date very efficiently. This solutions combines the clarity of the graphical calendar with the speed of keyboard entry.
+</rationale>
+
+<example>
+<img src="images/date-selector-transavia.png" border="0"/><br/>
+At <a href="http://www.transavia.com">www.transavia.com/</a> the date selector is not a popup but it is directly shown underneath the date. Once the 'from' and 'to' airports have been selected the users can see on which dates there are flights by the airline and the users can adjust their dates.<br/>
+<br/>
+<img src="images/date-selector-klm.png" border="1"/><br/>
+At <a href="http://www.klm.com">www.klm.com</a> a slightly different but also common way of using the date selector is found. The days and months are pulldowns but there is also an icon next to it that opens the date selector.<br/>
+
+<br/>
+<img src="images/date-selector-baylor.png" border="1"/><br/>
+At <a href="http://www.baylor.com">www.baylor.com</a> a variation is used where users can also select an entire week in an <pattern-link type="is-alternative" patternID="event-calendar"/>!<br/><br/>
+
+</example>
+
+
+<uses>
+<a href="http://www.mattkruse.com/javascript/calendarpopup/index.html">www.mattkruse.com/</a><br/>
+<a href="http://javascript.internet.com/forms/true-date-selector.html">http://javascript.internet.com</a><br/>
+<a href="http://www.nationalgallery.org.uk/">www.nationalgallery.org.uk/</a><br/> 
+</uses>
+
+<references>
+</references>
+</pattern>

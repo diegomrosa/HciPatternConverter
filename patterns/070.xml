@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="testimonials" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name></name>
+<author>Martijn van Welie</author>
+<problem> Users want to get independent information from other customers concerning the quality of the desired product/service and/or the trustworthiness of the vendor.
+</problem>
+
+
+<context>Use when products or services are sold online at your <pattern-link type="is-contained-by" patternID="commerce"/> and when it is difficult to provide objective and independent information on them, like pictures, multimedia aids or product samples. As part of the <pattern-link type="is-contained-by" patternID="shopping"/>, users need to make an assessment of the product which in the off-line world would be done by trying or inspecting the product physically. This assessment is important for their decision making process. From the perspective of the vendor, it can also be used to demonstrate your benevolence and that you do not have anything to hide from your customers. By allowing customers to comment on the product, other customers can use the information in their decision making process.
+</context>
+
+<illustration><img src="images/testimonials-amazon-small.gif" border="1"/><br/>From 
+<a href="http://www.amazon.co.uk">www.amazon.co.uk</a><br/> 
+</illustration>
+
+<pattlet>Allow users to give independent feedback on the quality product or services
+</pattlet>
+
+
+<solution>Users that also own the product or who have used the offered services before, can write a short review. The reviews are submitted by filling in a <pattern-link type="contains" patternID="forms"/>. The review, the reviews name and a rating will then be shown on the <pattern-link type="is-contained-by" patternID="product-page"/> under a section "Customer Reviews", or similar label. The <pattern-link type="is-contained-by" patternID="product-page"/> page itself contains a link or <pattern-link type="contains" patternID="action-button"/> for submitting a new review.<br/>
+
+<br/>
+<b>Independent reviewing.</b> In order to prevent misuse of reviews, as well as to allow users to establish an identity as a reviewer, it should be mandatory that reviewers should <pattern-link type="is-contained-by" patternID="login"/> before they can submit a review. For the review to be totally objective, the vendor should place the review as-is and not censor or edit the reviews, nor should the vendor place fake favorable reviews. Should such manipulations be uncovered and made public, customers would lose their trust in the testimonials and the company. The online store should try to use any negative reviews as feedback to enhance its services and business procedures.
+<br/>
+<br/>
+<b>Rating reviews.</b> As testimonials on the web are voluntary, and typically tend to attract the most opinionated users, the testimonials are inherently unreliable. One possible approach would be to allow the people reading the reviews to indicate whether a specific review was useful, e.g. in the light of also having purchased the product, and by rating the reviewers based on the perceived usefulness of their reviews. It is common to use some graphical metaphor, such as stars or bars, sometimes combined with numerical ratings. The benefit of this approach is that other users can get a first impression of the rating at a glance even before reading the whole review as well as the opportunity of enabling some kind of basic comparison, aside from the written individual reviews.
+<br/>
+<br/>
+<b>Showing reviews when users need them.</b>
+When implementing an online review tool at the web-site the vendor should pay attention to the consumer's necessity of being able to read this reviews at the appropriate moment and without any efforts. I.e., besides on a <pattern-link type="is-contained-by" patternID="product-page"/>, product reviews can also be made available immediately while users are searching for a product, abbreviated reviews can appear as part of the <pattern-link type="is-contained-by" patternID="search-results"/>.
+</solution>
+
+<rationale>Although many users reading customer reviews may recognize them as being subjective and unreliable, they usually tend to trust information from independent third parties - in this case other users which are impartial and unsuspected of telling not the truth - rather than the information provided by the (unfamiliar) online vendor, who is potentially suspicious of presenting information serving just his own interest. In addition, a review feature gives the customers the impression that the online store has nothing to hide from them and even wants them to communicate on their experiences with the store and its products. 
+</rationale>
+
+<example>This example from <a href="http://www.dooyoo.co.uk">www.dooyoo.co.uk</a> shown how the rating are shown as part of the <pattern-link type="is-contained-by" patternID="search-results"/> and even combined with a link to a <pattern-link type="contains" patternID="comparison"/>:<br/>
+<img src="images/testimonials-dooyoo.gif" border="1"/><br/><br/>
+At <a href="http://www.ciao.co.uk">www.ciao.co.uk</a> a book rating is even broken up in several aspects, which are then shown using bars:<br/>
+<img src="images/testimonials-ciao.gif" border="1"/>
+
+
+</example>
+<literature>
+This pattern is largely based (with permission) on a paper by Kaluscha and Grabner-Kraeuter, <a href="http://hillside.net/europlop/papers/WorkshopC/C9_Kaluscha+.pdf">"towards a pattern language for consumer trust in electronic commerce"</a>
+</literature>
+</pattern>

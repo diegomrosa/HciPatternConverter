@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="forms" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Forms</name>
+<author>Martijn van Welie</author>
+<problem>Users need to provide personal information and send it to a service provider
+</problem>
+
+
+<context>Users need to provide information. In many occasions, there can be a need for users to give information via a site. For example, when <pattern-link type="is-contained-by" patternID="booking"/> a flight, using an <pattern-link type="is-contained-by" patternID="advanced-search"/>, when doing a <pattern-link type="is-contained-by" patternID="registration"/> on a site, doing some online tax calculations, or simply to <pattern-link type="is-contained-by" patternID="login"/>. Giving particular information must be part of a user task or at least provide benefit for the endusers.
+</context>
+
+<illustration><img src="images/form-iht.png" border="1"/><br/>From 
+<a href="http://www.iht.com">www.iht.com</a><br/> 
+</illustration>
+
+<pattlet>Offer users a form with the necessary elements
+</pattlet>
+
+
+<solution>A form is essentially a collection of labels and input fields on a single page. When designing forms, the following issues must be taken into account.<br/>
+<br/>
+<b>Wording</b>. 
+Make sure that users understand what you are asking from them. Realize that there are internationalization issues here, e.g. "state" is only for US, "title" can be easily misinterpreted. Give examples to re-enforce the meaning of the field. Put examples below or at the right of the input field. Use prompts sparely, adding more text also increases the chance that people won't read it. So keep any form of introduction text short, no more than a couple of lines.<br/>
+<br/>
+<b>Grouping and ordering</b>. 
+Place elements in a logical ordering and group fields that together describe an entity, e.g. name and address could form "personal information".<br/>
+<br/>
+
+<img src="images/form-wf.gif" border="1"/><br/>
+<i>Basic Form Wireframe</i><br/>
+<br/>
+<b>Layout of label and input elements</b>. 
+Use grids, put the label left of the element or above it there are sever space limitations. Right align the label with the field so that label and field are always closely together. Both the labels and input elements must be aligned using <pattern-link type="contains" patternID="grid-based-layout"/>. Design in one column only, avoid having multiple input elements on the same line. Only do that if an entity is sensibly split up in part for which you need separate input elements. The length of text input fields must be determined by the information that needs to be supplied. However, keep in mind that this can vary because of internationalization issues as well. A surname in the US is usually quite short (one or two words), but in Spain they use much longer surnames (three to six words is not uncommon). <br/>
+<br/>
+<b>Mandatory and optional fields</b>. 
+In general making a distinction between mandatory and optional fields is a bad idea. Users should never have to fill in anything that is not required for the task at hand. However, there are certainly exceptions where optional fields make sense. In such cases it is important that it is clear to the user how filling in these fields will benefit them. For example, so that recommendations can be improved or so that the service can be improved (supporting multiple shipping addresses). If you have mandatory fields AND optional fields, mark the mandatory fields with an asterisk "<b>*</b>". If the users submits the form but not all mandatory fields have been filled in, show a popup that says which fields (still) need to be filled in. Also add a privacy statement....?<br/>
+<br/>
+<b>Using the right input element</b>
+It is important to use the right input element for a certain field. This depends on the number of options, single/multiple choice, and the sort of information that is required. For selecting elements from fixed sets use:<br/>
+<br/>
+Single Choice from a fixed set: (e.g. number of guests,)<br/>
+<ul>
+<li>less than 5 options: radio buttons</li>
+<li>5-10 options: a list box</li>
+<li>more than 10 options, listbox or editbox or a special control</li>
+</ul>
+Multiple Choice from a fixed set: checkboxes <br/>
+
+Alternatively, use edit boxes and check afterwards if the input has been interpreted correctly. For example www.ns.nl<br/>
+<br/>
+<b>Good defaults</b>
+In order to speed up data entry, it is often good to use appropriate default values. However, do not use default values for sensitive fields such as "gender". <br/>
+<br/>
+<b>Preventing input errors</b>
+Consider <pattern-link type="contains" patternID="format"/> to make sure users cannot provide invalid input. Otherwise, validate the data and give an <pattern-link type="contains" patternID="input-error"/>. Be aware that validation is not always 100 percent waterproof, e.g. it is simply not possible to verify that an email address is valid by checking it syntactically.<br/>
+<br/>
+<b>Keyboard navigation</b>
+Filling in forms is tedious and it goes much faster if you can use the keyboard to go from one field to the other. Make sure that the TAB key can be used to do this and that the ENTER key is a shortcut for "confirm", submit, save etc. When the page is loaded the cursor should be already in the first field and it should have the focus so that users can start typing straight away. Using the tab key users go to the next item in the form, i.e. the element to the right or below the current element.<br/>
+</solution>
+
+<rationale>Filling in forms is error-prone and things must be made as clear as possible for users. Using the right labels, widgets and defaults all contribute to the successful completion of the form.
+</rationale>
+
+<example><img src="images/form-snapfish-small.gif"/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

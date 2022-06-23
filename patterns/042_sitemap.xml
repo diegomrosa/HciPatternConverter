@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="sitemap" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Sitemap</name>
+<author>Martijn van Welie</author>
+<problem>The users need to find a specific page
+</problem>
+
+<illustration>
+<img src="images/sitemap-ex.gif" border="1"/><br/>
+From <a href="http://www.apple.com/find/sitemap.html">www.apple.com/</a>
+<br/>
+</illustration>
+
+<context>Small to medium sized sites. Typically when the site has more than two levels in the structure and many elements on each level. For such sites, the sitemap functions as a navigation alternative. For very small sites the main navigation typically already resembles a sitemap. Don't use sitemaps for really large sites unless it is a catalog. Users want to see where they can go. Users know that a site is organized but they don't know how.
+Users want to see where they are. </context>
+
+<pattlet>Show a map of the site.
+</pattlet>
+
+<solution>The sitemap shows a hierarchical structure of the site in one page. The structure is focused on the users' needs which could be the site's hierarchical structure or a different kind of structure. The map shows ALL elements of each level and at least two levels. Each level is labeled and possible color-coded to indicate a category. Color-coding can also be used to distinguish areas that are under restricted access. The layout of the map is basically a tree but other layouts are possible. The sitemap is accessible from every page in the web site. The page from which the sitemap is accessed is highlighted in the sitemap.
+</solution>
+
+<rationale>A sitemap is like a table of contents of a site. Showing a map with the sites structure and all the available pages gives the users complete information. It answers the question where they are and what is available. It also allows the users to reach that page in one action.
+</rationale>
+
+<example><img src="images/n_n_site_map.gif"/>
+</example>
+
+<impact></impact>
+
+<uses>
+</uses>
+</pattern>

@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="storytelling" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name></name>
+<author>Martijn van Welie</author>
+<problem>
+</problem>
+
+
+<context>
+</context>
+
+<illustration><img src="images/#" border="1"/><br/>From
+<a href="http://www.gap.com">www.gap.com</a><br/>
+</illustration>
+
+<pattlet>
+</pattlet>
+
+
+<solution>How to construct a story
+- plot
+- setting
+- characters
+- invisibility
+- mood
+- movement
+
+
+Use <pattern-link type="contains" patternID="guided-tour"/>.
+</solution>
+
+<rationale>
+</rationale>
+
+<example><img src="#"/>
+</example>
+
+<uses>
+</uses>
+
+<references>About Stanton and Anthony in a forked linear narrative
+Colors magazine
+Radical Media
+American Beauty
+London's Design Museum
+SuperBad
+Pedestrian
+
+</references>
+
+<literature>
+See Universal Design Principles book
+</literature>
+
+</pattern>

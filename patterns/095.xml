@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="enlarged-clickarea" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Enlarged Clickarea</name>
+<author>Martijn van Welie</author>
+<problem>User need to click on an item
+</problem>
+
+
+<context>The items are relatively small and hard to click in combination with the fact that clicking in other related areas does not have a significant meaning.
+</context>
+
+<illustration><img src="images/enlarged-clickarea-ex3.gif" border="1"/><br/>From 
+<a href="http://www.iht.com">www.iht.com</a><br/> 
+</illustration>
+
+<pattlet>Enlarge the click area to include neighboring areas
+</pattlet>
+
+
+<solution>When reading a news article it is logical that a click on the news-blurb will open up the entire article. Instead of clicking on the link 'read entire article' (or similar), users can simply click in the entire area of the news blurb. This can also be done when <pattern-link type="is-contained-by" patternID="paging"/> is used. When an article spans multiple pages, clicking on the last section can equal 'go to the next page", see the example from www.iht.com above.<br/>
+<br/><br/>
+Enlarging the effective 'clickarea' is an advanced feature that users can gradually discover. However, it is important to give some form of feedback to indicate that the enlarged area is in fact clickable. Highlighting the 'real' button or link on mouseover is usually the most obvious solution. 
+</solution>
+
+<rationale>According to Fitts' law, the time needed to select an object is proportional with its size. Simply put, larger objects are easier to select! Therefore is is good practice to make clickable objects as large as possible, even if the object is visually smaller.
+</rationale>
+
+<example>At <a href="http://www.zibb.nl">www.zibb.nl</a>The entire news blurb is clickable and not just the 'read more' link.<br/><img src="images/enlarged-clickarea-ex2.gif" border="1"/>
+
+<br/><br/>Google's 'next' button is also enlarged. For going to the next page, users can click anywhere in the dotted area:<br/><img src="images/enlarged-clickarea-ex4.png" border="1"/>
+</example>
+
+<uses>www.zibb.nl; www.iht.com
+</uses>
+
+<references>
+</references>
+</pattern>

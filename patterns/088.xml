@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="content-lock" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Premium Content Lock</name>
+<author>Martijn van Welie</author>
+<problem>Users need to know which content is for free and which is not.
+</problem>
+
+
+<context>You are designing a commerce sites where users need to register to get the premium content. Typically these are news sites or sites where particular content can be downloaded.
+</context>
+
+<illustration><img src="images/lock-ex3.gif" border="1"/><br/>From 
+<a href="http://www.afr.com">www.afr.com</a><br/> 
+</illustration>
+
+<pattlet>Show previews of premium content and mark it visually
+</pattlet>
+
+
+<solution>Premium content and non-premium content are displayed together. In order to make clear which content can only be seen/obtained by registered users, a visual marking is placed near the premium content items. When such a marked item is clicked on the users are asked to register or login. After logging in the item is shown and no more markings appear.
+<br/>
+The usage of the 'lock' must be explained on the page, typically as part of a <pattern-link type="is-contained-by" patternID="footer-bar"/>.
+</solution>
+
+<rationale>Visual markings make it clear that there is something special about these item and the icon of a lock enforces the idea that they cannot access it directly. 
+</rationale>
+
+<example><img src="images/lock-ex2.gif" border="1"/><br/>
+At CNN, a 'star' is used as a visual marking which is explained in the footer bar:<br/><img src="images/footer-ex1.gif" border="1"/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

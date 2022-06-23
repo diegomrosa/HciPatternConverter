@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="input-error" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Input Error Message</name>
+<author>Martijn van Welie</author>
+<problem>Users have entered input that could not be validated and they must be prompted to correct the input
+</problem>
+
+
+<context>Users have are trying to fill in <pattern-link type="is-contained-by" patternID="forms"/> and one or more of the fields is syntactically invalid or missing. Usually, there two kinds of problems: a) the field has not been filled in at all, or b) the field contains data in the wrong format.
+</context>
+
+<illustration><img src="images/input-error-amazon.png" border="1"/><br/>From 
+<a href="http://www.amazon.com">www.amazon.com</a><br/> 
+</illustration>
+
+<pattlet>Tell the users that there is a problem and how to solve the problem. Also tell the users where the problem occurred.
+</pattlet>
+
+
+<solution>The error message that is given needs to tell the users:
+<ol>
+<li><b>That an error has occurred</b>. This is best done by displaying a colored box at the top of the page containing a "important notice". The notice must say what the problem is and that the users can repair the problem by going to the "problem"-field and changing the input.</li>
+<li><b>Where the error occurred</b>. This is also done by stating the problem fields in the box at the top of the page in combination with a marking at the problem field itself. For example, the form widget can be colored as is done in the example above.</li>
+<li><b>How the error can be repaired</b>. This is done by giving repair information next to the problem field. This information must be marked visually in order to stand out as being "help information". Usually, such help information tells to users about the correct syntax of the entry field.</li>
+</ol>
+
+Although giving good error messages is important, one should always assess if the problem can be prevented! For example, using <pattern-link type="is-alternative" patternID="format"/> is can sometimes be possible to prevent incorrect input. 
+</solution>
+
+<rationale>Obviously, users must be made aware of the fact that there is a problem. Doing this a the top of the page in a visual distinct box assures that users will see it. In addition, users must receive helpful information that will put them on track again. TO achieve that it is important to give help information near the problem field itself so that the "problem" and the "solution" are close to each-other.
+</rationale>
+
+<example>This example from <a href="www.vanguard.com">www.vanguard.com</a> shows a variation where a popup window is used to display the error message.<br/><img src="images/input-error-vanguard-small.gif" border="1"/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

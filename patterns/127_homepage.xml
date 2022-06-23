@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="homepage" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Home-page</name>
+<author>Martijn van Welie</author>
+<problem>Users need to understand if they are at the right place, and if so, how they can move on to accomplish their task at your site
+</problem>
+
+
+<context>Every website has a home-page. It is like the front door of your house. For most users, it will be the starting point for navigating through your site. Typically, the home-page will be your most requested page of the entire site.
+</context>
+
+<illustration><img src="images/homepage-accenture-small.gif" border="1"/><br/>From
+<a href="http://www.accenture.com">www.accenture.com</a><br/>
+</illustration>
+
+<pattlet>Create a home-page that introduces the site to users and that helps them to get on their way on the site
+</pattlet>
+
+
+<solution>The home-page is an important page, it is the front door of your site. Users that found your site intentionally need feedback to confirm that they are in the right place. For other users that don't know you very well, you need to make clear who is behind the site and what there is to find. The home-page is often packed with stuff, but although it is ok to indicate what the site is about, putting a lot of stuff on the page is not always good. When links are buried in a christmas tree of page elements, users will not notice it. The home-page must balance navigation, branding, content, and promotion elements. Be careful not to make your page too full, users can only notice a couple of things at a time. <br/>
+<br/>
+On a more conceptual level, the home-page has three functions:<br/>
+<ul>
+<li><b>Introduction</b> The site must be introduced, both its purpose and identity. Users must know almost immediately what the site is for and who is behind it. This can be done in several ways. For example using a tag-line or pay-off. A tag-line is a short "one-liner" that makes it clear what the site or company is about. Identity can also be established using photography or by showing the company's logo, If identity cannot be established well visually, you can always add a short explanation. Animation can also be used to literally show who you are and what you do. For very well known brands, the introduction can be very short, just a logo and nothing else, e.g. nike. For unknown brands or sites with a highly specialistic purpose, a textual introduction is best. Another aspect of establishing an identity is having an <a href="#">About Us</a> reachable from the <pattern-link type="contains" patternID="meta-navigation"/>.</li>
+
+<li><b>Entrance </b>. Users seldom find what they need on the home-page. Therefore, the site's <pattern-link type="contains" patternID="main-navigation"/> must be clearly shown. On the home-page so that users know where to get started. Besides the usual menu bar, you can also use special home-page navigation such as a <pattern-link type="contains" patternID="doormat"/>. Other important elements include a <pattern-link type="contains" patternID="search"/>, <pattern-link type="contains" patternID="login"/> if needed and so on. For international site a <pattern-link type="contains" patternID="language-selector"/> or a <pattern-link type="contains" patternID="country-selector"/>. Next to the navigation, a home-page often also reveals so content from somewhere within the site. This can help to make users understand what the site is about and in some cases even <pattern-link type="contains" patternID="shortcut-box"/></li>
+<li><b>Announcement</b> On most sites, things happen and the site changes. The home-page is to place to communicate what is new, what is going on, new promotions and so on. Use a <pattern-link type="contains" patternID="news"/> for general news, or special news blocks for things like <pattern-link type="contains" patternID="case-study"/>.</li>
+</ul>
+
+Which exact elements are part of the home-page highly depends on the site. It will be different for every single site out there. Other less important issues in home-page design include having a proper title defined, and a nice simple/guessable URL.<br/>
+
+The home-page is a special page. It is therefore quite normal that it has a slightly different layout than the other pages of the site. Nonetheless, some level of consistency should be retained so that the home-page and other pages clearly "belong" to the same site!
+</solution>
+
+<rationale>The home-page is all about making a first impression.
+</rationale>
+
+<example>This example from <a href="http://www.nike.com">www.nike.com</a> is a good example of a very "empty" page. The Nike brand is so strong that they don't need to spend much words to establish identity. The navigation is very clear and users easily find their way.<br/><img src="images/homepage-nike-small.gif" border="1"/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern collection="welie" patternID="crumbs" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Breadcrumbs</name>
+<author>Martijn van Welie</author>
+<aka>
+	<pattern-link type="is-alias" patternID="breadcrumbs" collection="yahoo" label="Breadcrumb"/>
+</aka>
+
+<problem>The users need to know where they are in a hierarchical structure and navigate back to higher levels in the hierarchy
+</problem>
+
+<illustration><img src="images/crumbs-macromedia.gif"/>
+<br/>
+From <a href="http://www.macromedia.com">www.macromedia.com</a>
+</illustration>
+
+<context>Sites with a large hierarchical information structure, typically more than 3 levels deep. Such sites are medium to large sized and include <pattern-link type="is-contained-by" patternID="commerce"/>, catalogs, <pattern-link type="is-contained-by" patternID="portals"/>, <pattern-link type="is-contained-by" patternID="corporate"/> etc. The site has got some type of <pattern-link type="is-contained-by" patternID="main-navigation"/> that allows users to traverse the hierarchy. Users may want to jump several steps back instead of following the hierarchy. Users may be unfamiliar with the hierarchical structure of the information. 
+</context>
+
+<pattlet>Show the hierarchical path from the top level to the current page and make each step clickable
+</pattlet>
+
+<solution>
+The path shows the location of the current page in the total information structure. Each level of the hierarchy is labeled and functions as a link to that level. The current page is marked in order to give the users feedback about where they are now and should not be a link. Don't use the current page name in the breadcrumb as the only way to show section title, add a title anyway. <br/>
+<img src="images/crumbs-wf.png"/>
+<br/>
+The path shows that a top-down path is traversed by using appropriate separators such as &gt; or \ that suggest a downward motion. If the path becomes too long to fit in the designated place, some of the steps can be replaced by an ellipsis e.g. "...". The path is placed in a separate "bar" that preferably spans the entire width of the content area. It is placed close to the content area, preferably above the content area but below the page header.
+</solution>
+
+<rationale>The bread crumbs show the users where they are and how the information is structured. Because users see the way the hierarchy is structured they can learn it more easily. By making each label a link, the users can quickly browse up the hierarchy. They take up minimal space on the page and leave most of the space for the real content. Breadcrumbs are not for primary navigation and should always be used together with a form of <pattern-link type="is-contained-by" patternID="main-navigation"/>. Usability testing has shown that breadcrumbs are never cause trouble and that at least some people use them. So it is nearly always good to use them.
+<br/><br/>
+The name breadcrumb refers to the fairy-tale of Hansel and Gretel where a breadcrumb trail is used to mark the places Hansel has been. If the analogy were correct a breadcrumb should show the <b>history</b> of the users' actions rather than the <b>position</b> in the hierarchy. So the name breadcrumb is actually wrong... 
+</rationale>
+
+<example><img src="images/sun-crumbs.gif"/><br/>This example is taken from Sun's web site and shows the use of bread crumbs in product pages. The path from the top level is visible and the users can go to any of the other higher level product categories. 
+<br/><br/>
+<img src="images/crumbs-world66-small.gif" border="1"/><br/>This example from <a href="http://www.world66.com/asia/northeastasia/japan/tokyo/akihabara/shopping">World66</a> combines a <pattern-link type="contains" patternID="fly-out-menu"/> with a breadcrumb....!!!
+</example>
+
+<uses>
+<a href="http://www.sun.com">www.sun.com</a>
+; <a href="http://www.useit.com">www.useit.com</a>; <a href="http://www.yahoo.com">www.yahoo.com</a>
+</uses>
+<references>This pattern can be combined with most navigation patterns. 
+</references>
+<implementation>Usually a CMS provides a standard component for creating breadcrumbs. If you are not using a CMS but you have a database driven site, you can easily write some custom code for it.
+</implementation>
+<literature>
+<a href="http://www.useit.com/alertbox/breadcrumbs.html">Nielsen on breadcrumbs</a><br/>
+<a href="http://psychology.wichita.edu/surl/usabilitynews/52/breadcrumb.htm">Research on breadcrumbs</a>
+</literature>
+<code-links>
+	<a href="http://www.phpriot.com/d/articles/php/navigation/breadcrumbs/index.html">Implementing breadcrumbs in PHP</a><br/>
+	<a href="http://www.mindpalette.com/tutorials/breadcrumbs/index.php">PHP breadcrumb script</a>
+</code-links>
+</pattern>

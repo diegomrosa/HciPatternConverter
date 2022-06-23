@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="information-experience" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Informing Experience</name>
+<author>Martijn van Welie</author>
+<problem>Users need to find information related to a specific topic.
+</problem>
+
+
+<context>Basically, any site where users can get information by browsing a searching. In particular medium-sized sites can benefit from a more elaborate Information Seeking experience since the need for better searching mechanisms increases as the amount of information increases.
+</context>
+
+<illustration><img src="images/inf-ex-verizon-small.png" border="1"/><br/>From
+<a href="http://www.verizon.com">www.verizon.com</a><br/>
+</illustration>
+
+<pattlet>Primarily allow users to browse the information but combine it with more specific search tools that support other types of searching.
+</pattlet>
+
+
+<solution>Users are looking for 'something' on the site. Sometimes they may know exactly what they are looking for but in other occasions, they do not really know yet. As users enter your site at the <pattern-link type="not-related" patternID="homepage"/> they can usually use the <pattern-link type="contains" patternID="main-navigation"/> to start browsing.
+<br/><br/>
+When users are sensitized by what they see on your site, and are convinced that your site may have something of interest to them, a more general specific searching strategy starts. There are several different types of searching. The different types of information seeking depending primarily on the question whether or not the target is known:<br/>
+<br/>
+<ul>
+<li><b>Browsing/orientating</b>. Nor the target nor the criteria are known. User do not have a clearly defined goal other than to explore the information on the site. Users can get started by using the <pattern-link type="contains" patternID="main-navigation"/> to go through the main sections of the site.</li>
+<li><b>Locating</b>. The target is (partially) known. Users are on the site in order to locate something specific. These users are best served by a simple <pattern-link type="contains" patternID="search"/> that allows them to specify the object they are trying to locate, usually by keyword and selector for the object type. In other cases, specific locators such as a <pattern-link type="contains" patternID="store-locator"/> can be created that only deal with one type of object. Alternatively, if the number of elements is limited a <pattern-link type="contains" patternID="site-index"/> may also enable users to locate the object directly.</li>
+<li><b>Query</b>. The target is roughly know and users can find items by specific matching criteria. Users are looking for items that fall into a specific category. By setting the matching criteria, the set of possible results is defined. A simple <pattern-link type="contains" patternID="search"/> or a fully controllable <pattern-link type="contains" patternID="advanced-search"/> is usually sufficient for these type of searches. </li>
+<li><b>Structured drill-down</b>. The target is roughly known and users locate the target by gradually narrow down the results. For this type of search a fine-grained categorization is needed, possibly multi-faceted. Typically users will see the categorization in a <pattern-link type="contains" patternID="directory"/>, <pattern-link type="contains" patternID="site-index"/>, <pattern-link type="contains" patternID="sitemap"/>. For multi-faceted categorizations, <pattern-link type="contains" patternID="faceted-navigation"/> can be very effective.</li>
+<li><b>Assisted Search</b>. Users may roughly know what they want to achieve but not exactly what the target is called. They need help to find the target or matching criteria. You can try <pattern-link type="contains" patternID="topic-pages"/> or a <pattern-link type="contains" patternID="help-wizard"/> to get people started on topics and make them familiar with the appropriate terms.</li>
+</ul>
+Users may start their experience by selecting any of the above search types. While they are seeking information they may switch from one type to another. For example, a browsing search may be followed by a query or structured drill-down. In general the cognitive task of finding information follows the following steps:
+<ol>
+<li>Assessing information sources, or at least the tools that provide the access</li>
+<li>Selecting the source/tool based on need and type of information seeking</li>
+<li>Formulate the information request</li>
+<li>Use the tool and evaluate results</li>
+<li>Re-assess information seeking type and go to 2 or stop when need is satisfied</li>
+</ol>
+Most sites offer at least some information seeking mechanisms. The <pattern-link type="contains" patternID="search"/> is the most used one and depending on the complexity of the information on the site additional mechanisms may be chosen. It usually helps a lot to monitor the log file of the search engine to see what people are looking for. After analyzing the log file an appropriate additional mechanism may be chosen.
+<br/>
+</solution>
+
+<rationale>It is known from research than users have different types of search behavior (Canter1985). For each of type we can see that they are supported by a number of search-related patterns. Finding the right combination of search tools is of course the challenge.
+</rationale>
+
+<example><img src="#"/>
+</example>
+
+<uses>
+</uses>
+
+<literature>
+<a href="http://www.wqusability.com/articles/on-beyond-help.html">On Beyond Help</a><br/>
+<a href="http://www.co.umist.ac.uk/hci_design/appb.htm">Making claims on domains</a><br/>
+Canter, D., Rivers, R. and Storrs, G. (1985) Characterizing user navigation through complex data structures. Behaviour and Information Technology, 4(2), 93-102<br/>
+<a href="http://www.gseis.ucla.edu/faculty/bates/articles/info_SeekSearch-i-030329.html">Toward an Iintegrated Model of
+Information Seeking and Searching, by Marcia J. Bates</a>
+
+
+
+
+</literature>
+</pattern>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="multinational" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+<name>Multinational Site</name>
+<author>Martijn van Welie</author>
+<problem>Users need information about a large multinational company
+</problem>
+
+
+<context>The company is a multinational that has local presence in several countries. Each country has it's local site, for example a <pattern-link type="is-contained-by" patternID="corporate"/> that is in the local language and focused on the local market situation. Besides such local information there is information about the company as a whole that users are interested in. For example, investors journalists etc. For some, the company's main address is the place they start from even though they may be looking for local information.
+</context>
+
+<illustration><img src="images/multinational-se-small.gif" border="1"/><br/>From
+<a href="http://www.sonyericsson.com">www.sonyericsson.com</a><br/>
+</illustration>
+
+<pattlet>Create an proxy site that leads users to sub-sites.
+</pattlet>
+
+
+<solution>The site is usually a very basic site that is branded consistently with all local sites. One of the prima actions users can take is to use a <pattern-link type="contains" patternID="country-selector"/> to go to a local site. Additionally, there main also be a <pattern-link type="contains" patternID="language-selector"/>. In terms of real contents, the main items are press releases, news items, investor information, links to related sub-sites, contact information, 
+</solution>
+
+<rationale>Doesn't this depend on the sort of products? Nokia does things different....when not to do this?
+</rationale>
+
+<example><img src="images/multinational-vf-small.gif" border="1"/>
+</example>
+
+<uses>vodafone; sonyericcson
+</uses>
+
+<references>
+</references>
+</pattern>

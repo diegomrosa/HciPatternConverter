@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="creating" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Information Management</name>
+<author>Martijn van Welie</author>
+<problem>Users need to manage a set of objects
+</problem>
+
+
+<context>Web based applications, banking applications, email readers, CMS-es. Basically registration systems....also graphical drawing applications?
+</context>
+
+<illustration><img src="#" border="1"/><br/>From
+<a href="http://www.matrox.com">www.matrox.com</a><br/>
+</illustration>
+
+<pattlet>Allow users to manage sets of objects using overviews and detail-views
+</pattlet>
+
+
+<solution>When managing sets of objects, users basically work from one or more main <pattern-link type="contains" patternID="view"/>. The objects can be anything such as  emails, bills, work orders, notices, news texts, etc. Such overviews are often <pattern-link type="contains" patternID="list-builder"/> in combination with <pattern-link type="contains" patternID="column-filter"/>. When managing objects, the objects are the most important thing the users needs to see and is therefore presented on the <pattern-link type="contains" patternID="center-stage"/>. From the overview, the users can manage the set with typical operations such as
+
+<ul>
+<li><b>Creating</b>. This either creates an empty object only or users can create the item using a <pattern-link type="contains" patternID="forms"/> and/or a <pattern-link type="contains" patternID="wizard"/>.</li>
+<li><b>Modifying</b>. The details of the object can be changed, preferably in-place but otherwise in a new page. Usually some sort of <pattern-link type="contains" patternID="forms"/> is used.</li>
+<li><b>Deleting</b>. Select one or more objects manually or by setting criteria like in an <pattern-link type="contains" patternID="advanced-search"/> and then execute the deletion.</li>
+<li><b>Moving</b>. Select one or more objects and more to a new location.</li>
+<li><b>Copying</b>. Select and copy.</li>
+<li><b>Storing/retrieving</b>. Can be online or to a local filesystem.</li>
+<li><b>Sorting</b>. Either using <pattern-link type="contains" patternID="column-filter"/> or <pattern-link type="contains" patternID="table-sorter"/></li>
+</ul>
+The basic principle to use is "overview first". That often translates to seeing the result as far as it exists. Consider <pattern-link type="contains" patternID="wizard"/> when novice users are asked to create something.
+
+The users work on a central canvas that is surrounded by functionality grouped in menu's or other navigational items. <pattern-link type="contains" patternID="customization-window"/> can help to allow users to manage groups of functionalities that need to be in sight or away.
+</solution>
+
+<rationale>The basic principle at work is overview-by-detail. When viewing an overview, users can add, delete, copy
+</rationale>
+
+<example><img src="#"/>
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+</pattern>

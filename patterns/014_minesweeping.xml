@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern collection="welie" patternID="minesweeping" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Minesweeping</name>
+<author>Martijn van Welie</author>
+<problem>Users need to be stimulated to interact with navigational elements
+</problem>
+
+
+<context>The site you are designing is one where <pattern-link type="contains" patternID="fun"/> is more important that a purely <pattern-link type="not-related" patternID="information-experience"/>. The site is not information rich but more visual or theme related. Such site can often benefit from elements that invite users to interact more with the site and explore its possibilities. 
+</context>
+
+<illustration><img src="images/mines-orange-small.png" border="1"/><br/>From 
+<a href="http://www.orange.co.uk/photomessaging/photomessaging.html">www.orange.co.uk</a><br/> 
+</illustration>
+
+<pattlet>Show graphical elements that upon mouse-over reveal their meaning
+</pattlet>
+
+
+<solution>The graphical elements that have this "minesweeping" behavior must be easily recognizable. In some cases it may help to mark the objects very strong, e.g. by a blinking border or other animation. When the users move their mouse over the object, a label is shown that tells the users more about the item's meaning. Alternatively, the item merely changes shape in order to achieve the same meaning. Clicking on the item is identical to following a normal navigational link.
+</solution>
+
+<rationale>Although minesweeping actually <b>hides</b> information from the users, it can be an effective means to attract and stimulate interaction. For some users, especially young users, such stimulation is part of the perceiving something as "being fun". All in all, use this pattern with extreme care!!!
+</rationale>
+
+<example><img src="images/mines-disney-small.png"/>
+</example>
+
+<uses>disney, orange.
+</uses>
+
+<references>
+</references>
+</pattern>

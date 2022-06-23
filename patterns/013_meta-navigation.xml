@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern collection="welie" patternID="meta-navigation" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Meta Navigation</name>
+<author>Martijn van Welie</author>
+<problem>Users want to know who they are dealing with.
+</problem>
+
+<illustration>
+<img src="images/meta-nedstat.png" border="1"/><br/>
+From <a href="http://www.nedstat.nl/">www.nedstat.nl</a>
+<br/>
+</illustration>
+
+<context>Most web sites, especially for commercial sites who wish to get in contact with their visitors and are large enough to have searching facilities. Additionally, the site offers navigational functionality that should be available on every page. Some functionality is relevant on every page. Users may want to go to a different place in the page.
+</context>
+
+<pattlet>Reserve an area on every page for communication and secondary navigation elements.
+</pattlet>
+
+<solution>Usually the meta navigation bar consists of <I>navigation</I> elements AND <I>communicative</I> elements. Navigation elements include <pattern-link type="contains" patternID="home"/>, <pattern-link type="contains" patternID="search"/>, <pattern-link type="contains" patternID="sitemap"/>, and Index. Links to the worldwide site or other higher level sites are also a navigation elements. Communicative elements tell users something about the organization and how to get in touch, for example About Us, Contact, Feedback. The meta navigation bar is placed in the upper region of the page so that it is always visible.
+</solution>
+
+<rationale>The meta navigation bar contains functionality that is relevant on every page of the web site. It is therefore always accessible in an non-obtrusive way that does not cost much screen space.
+</rationale>
+
+<example><img src="images/meta-audi.png"/><br/>
+This example is taken from the Dutch Audi site where the meta navigation is used to make a reference to the worldwide Audi site.
+<br/><img src="images/meta-dell.png"/><br/>
+Another example from Dell.
+</example>
+
+<impact/>
+
+<uses><a href="http://www.nedstat.nl">www.nedstat.nl</a>; <a href="http://www.audi.nl">www.audi.nl</a>;<a href="http://www.dell.com">www.dell.com</a>
+</uses>
+<references>Consider using a dedicated <a href="searcharea.html">Search Area</a> if more than one kind of search functionality is available.
+</references>
+</pattern>

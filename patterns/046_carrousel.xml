@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="carrousel" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Carrousel</name>
+<author>Martijn van Welie</author>
+<aka>Rotating Menu</aka>
+<problem>The user needs to select an item out of a set of items
+</problem>
+
+
+<context>The items need considerable space to display, usually because the are displayed as an image. At the same time the space for the items is limited. Typically only enough for 5-8 items. The set of items shouldn't be to large because otherwise it takes to long to select the item. Do not use for more than 3x times the amount of items that are visible at one time.
+
+Can be part of an <pattern-link type="is-contained-by" patternID="image-browsing"/>
+</context>
+
+<illustration><img src="images/carrousel-icarousel.png" /><br/>From 
+<a href="http://zend.lojcomm.com.br/icarousel/">zend.lojcomm.com.br</a> 
+</illustration>
+
+<pattlet>Show the items by their visual representation in a circular fashion so that one item can be selected at a time.
+</pattlet>
+
+
+<solution>Align all items horizontally or vertically so that a 'strip' of items is created. Then show only some items of the strip and hide all the others. Place arrow buttons at both ends of the strip so that the user can move the visible area. Highlight the one that is currently selected. In order to improve usability make each item selectable and move the strip so that the selected item is in the middle. Also support keyboard navigation. Use some animation to make the sliding effect of the strip look nice.
+
+</solution>
+
+<rationale>Because the carrousel only shows some items at a time, you only need a small space to show many items. Because the carrousel is circular, users can reach items either by going left or going right. 
+<br/><br/>>
+Although the word 'carrousel' implicates a circular structure, many carrousels are not circular. It then becomes a 'sliding window' over a strip.
+</rationale>
+
+<example><a href="http://www.funda.nl">Funda</a>, a Dutch real-estate site, uses a carousel as part of an <pattern-link type="is-contained-by" patternID="image-browsing"/>:<br/>
+<img src="images/carroussel-funda.png"/>
+<br/>
+At <a href="http://movies.yahoo.com">Yahoo Movies</a> a non-circular carrousel is used. Also not the 3 dots next to the arrow keys that act as a 'you are here' indicator:<br/>
+<img src="images/carrousel-yahoo.png"/>
+
+</example>
+
+<uses>
+</uses>
+
+<references>
+</references>
+<code-links>
+	<a href="http://www.yourhead.com/carousel/index.html">Carousel component</a><br/>
+	<a href="http://theflashblog.com/?p=188">3D Carousel in Flash</a><br/>
+	<a href="http://zend.lojcomm.com.br/icarousel/">Image caroussel</a><br/>
+	<a href="http://www.jdstiles.com/java/nav/3dspinmenu.html">3D spinmenu</a><br/>
+	<a href="http://billwscott.com/carousel/">YUI based carrousel</a><br/>
+</code-links>
+<literature>
+</literature>
+</pattern>

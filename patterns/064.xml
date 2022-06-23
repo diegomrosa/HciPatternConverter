@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="comparison" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Product Comparison</name>
+<author>Martijn van Welie</author>
+<problem>The users need to compare similar products
+</problem>
+
+<illustration><img src="images/comparison-matrox.png" border="1"/><br/>From 
+<a href="http://www.matrox.com">www.matrox.com</a><br/> 
+</illustration>
+
+<context>Shopping sites, company products, auctioning sites. The users have 
+arrived at a product page or they have reached a list of products. Now they need 
+to decide for the product or for similar products. Users may differ in what they 
+consider important of a product. Users must be able to easily compare individual 
+features of the product. Products may differ in attributes. </context>
+
+<pattlet>Show a matrix of products and features
+</pattlet>
+
+
+<solution>Show the features on the rows of the matrix and the products in the
+columns. If a feature is present, mark it. Otherwise don't mark it. If the
+feature has specific interesting data for users, show the data instead of the
+mark.
+<br/>
+If there are many features, they can be grouped so that users can select which
+aspects they want to compare. When there are many products to compare, let users
+select which products they want compare. This can be done in one page when there
+are not so many products, otherwise it is done in two steps.
+<br/>
+<img src="images/comparison-wf.png"/>
+<br/>
+ <a href="wireframes/comparison.ppt">&gt; open
+ wireframe &lt;</a>
+</solution>
+
+<rationale>The product/features matrix gives immediate overview and facilitates
+easy comparison. By only marking available features visual clutter is minimized.
+</rationale>
+
+<example>This example from <a href="http://www.expedia.com">www.expedia.com</a> nicely combines a product comparison with <pattern-link type="is-contained-by" patternID="search"/> results. A search result can be selected for comparison and by clicking the link "compare selected cruises" the comparison is show. At the comparison screen itself, users can deselect one.<br/>
+<img src="images/expedia1.gif" border="1"/><br/>
+<img src="images/expedia2.gif" border="1"/><br/>
+An example from <a 
+href="http://www.creative.com">www.creative.com</a> with a selector for the 
+aspects and models:<br/> <img src="images/comparison-
+3dblaster.png"/><br/> and an example from <a 
+href="http://www.creative.com">www.mcafee.com</a>:<br/> 
+<img src="images/comparison-mcafee.png"/> </example>
+
+<uses>www.3dblaster.com</uses>
+
+<references>
+</references>
+</pattern>

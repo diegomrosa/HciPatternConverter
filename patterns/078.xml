@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<pattern collection="welie" patternID="format" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Constrained Input
+</name>
+<author>Martijn van Welie</author>
+<revision>5</revision>
+<problem>
+The user needs to supply the application with data but may be unfamiliar with which data is required or what syntax to use.
+</problem>
+
+<illustration>
+<img src="images/easycar-ex.gif" border="1"/><br/>
+From <a href="http://www.easycar.com">www.easycar.com</a>
+<br/>
+</illustration>
+
+<context>Any system where structured data must be entered. Data such as dates, room numbers, social security numbers or serial numbers are usually structured. The exact syntax used for such data may vary per country or product. When the data is entered using an unexpected syntax, the data cannot be used by the application. The user may be familiar with the data but may not know the exact required syntax. The user strives for entry speed but also wants it to be entered correctly. Cultural conventions determine what the user expects the syntax to be. For example, dd/mm/yy is usual in Europe while mm/dd/yy is used in the United States.
+</context>
+
+<pattlet>Only allow the user to enter data in the correct syntax.</pattlet>
+<solution>Present the user with fields for each data element of the structure. Label each field with the name of the data unit if there can be doubt about the semantics of the field. The field does not allow incorrect data to be entered. Avoid fields where users can type free text. Additionally, explain the syntax with an example or a description of the format. Provide sound defaults for required fields, fields that are not required should be avoided or otherwise marked as optional. When optional fields are used, the consequences for the user must be explained.
+</solution>
+
+<rationale>The main idea is avoid entering incorrect data by not making it possible to enter wrong data. By showing the required format the chances of errors are reduced because the user is given complete knowledge. However, because the user now has to give multiple data inputs instead of one, more time is needed to enter the data. The solution reduces the number or errors and increases satisfaction but the  performance time may go down.
+</rationale>
+
+<example>This snapshot is from the date selection at Expedia.com. Entering the date is spit up in three input areas. Each of the input fields allows only valid entries. Entering an invalid date becomes impossible.<br/>
+<img src="images/date-expedia.png" border="1"/><br/>
+</example>
+
+
+<uses><a href="http://www.expedia.com">www.expedia.com</a>;
+</uses>
+</pattern>

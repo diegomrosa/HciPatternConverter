@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern collection="welie" patternID="trail-menu" xmlns="http://www.welie.com/plml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.welie.com/plml.xsd">
+
+<name>Trail Menu</name>
+<author>Martijn van Welie</author>
+<problem>User need to find information in a hierarchical structure.
+</problem>
+
+<illustration>
+<img src="images/trail-example-argus.png" border="1"/><br/>
+From <a href="http://www.clearinghouse.net/">www.clearinghouse.net/</a>
+<br/>
+</illustration>
+
+<context>The site has a shallow structure, typically up to 5 or 6 levels, while the number of items on each level are numerous.
+</context>
+
+<pattlet>Show the traversed path in the menu
+</pattlet>
+
+
+<solution>This leads to a kind of <pattern-link type="contains" patternID="crumbs"/> but then integrated with the menu itself. The path can be shown horizontal or vertical. Each item of the path is a link type="" that takes users back to that level.
+<img src="images/trail-menu-wf.png"/>
+</solution>
+
+<rationale>This type of navigation is a mix between a breadcrumb and menus. It consumes very little space and allows for the display of many items on a particular level.
+</rationale>
+
+<example>The Ferrari site uses a horizontal variant that keeps the last two levels in sight.<br/><img src="images/ferrari-menu.png"/>
+<br/><br/>
+Here is another horizontal example from Siematic, a true combination of a <pattern-link type="contains" patternID="crumbs"/> and <pattern-link type="contains" patternID="fly-out-menu"/>.
+<br/><img src="images/trail-menu-siemens-small.png"/>
+
+</example>
+
+<uses><a href="http://www.ferrari.com">www.ferrari.com</a>
+; www.argus.com
+</uses>
+
+<references>
+</references>
+</pattern>
